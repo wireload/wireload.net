@@ -1,0 +1,432 @@
+/*  
+Theme Name: Playing With Wire Theme
+Theme URI: http://www.playingwithwire.com/
+Description: Playing With Wire's theme, based on THiC's Minima Plus Plus.
+Version: 1.1
+Author: WireLoad LLC
+Author URI: http://www.wireload.net
+*/
+
+#blogTitle {
+	position: absolute;	
+	font-family: 'Arial Black', Sans-Serif;
+	color: #333;
+	font-size: 10pt;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#blogTitle a {
+	color: #333;
+}
+
+
+#masthead {
+padding: 0;
+margin: 0 auto;
+border: none;
+border-top: 1px solid #aaa;
+border-bottom: 1px solid #aaa;
+background-image: url(images/mast_head.jpg);
+width: 727px;
+height: 211px;
+}
+
+#masthead a, #masthead a:hover {
+	background: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#menu {
+	width: 727px;
+	height: 35px;
+	margin: 0 auto 0 auto;
+	padding-top: 2px;
+  background: #FEFEFE;
+  vertical-align: middle;
+}
+
+#rssbuttons {
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#rssbuttons a {
+  color: #9BA3A7;
+}
+
+#rssbuttons a img {
+}
+
+#rssbuttons a:hover img {
+}
+
+#menu div a:visited {
+  color: #7A8286;
+}
+
+
+.right {
+	float: right;
+	padding-top: 0px;
+	padding-right: 10px;
+}
+.left {
+	float: left;
+	padding-top: 0px;
+	padding-left:10px;
+}
+.commentBox {
+}
+.commentBox p {
+	padding-top: 0px;
+	margin-top: 0px;
+}
+ul.linklog {
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-left: 20px;
+}
+ul.linklog li {
+	list-style: url(http://www.playingwithwire.com/images/bullet.jpg);
+}
+body {
+  background: #FEFEFE url(images/background.png) repeat-y center;
+  margin:0;
+  padding:0px 20px;
+  font:x-small Georgia,Serif;
+  text-align:center;
+  color:#333;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+  }
+a:link {
+  color: #3778A3;
+  text-decoration:none;
+  }
+a:visited {
+  color: #994D99;
+  text-decoration:none;
+  }
+a:hover {
+  background: url(http://www.playingwithwire.com/images/quotebck.gif);
+  color:#c60;
+  text-decoration:underline;
+  }
+a img {
+  border-width:0;
+  }
+
+/* Header
+----------------------------------------------- */
+#header {
+  width:710px;
+  margin:0 auto 10px;
+  border:1px solid #ccc;
+  }
+#blog-title {
+  margin:5px 5px 0;
+  padding:20px 20px .25em;
+  border:1px solid #eee;
+  border-width:1px 1px 0;
+  font-size:200%;
+  line-height:1.2em;
+  font-weight:normal;
+  color:#666;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  }
+#blog-title a {
+  color:#666;
+  text-decoration:none;
+  }
+#blog-title a:hover {
+  color:#c60;
+  }
+#description {
+  margin:0 5px 5px;
+  padding:0 20px 20px;
+  border:1px solid #eee;
+  border-width:0 1px 1px;
+  max-width:700px;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Content
+----------------------------------------------- */
+#content {
+  width:710px;
+  margin:0 auto;
+  margin-top: 1em;
+  padding:0;
+  text-align:left;
+  }
+#main {
+  padding-left: 7px;
+  width:460px;
+  float:left;
+  }
+#sidebar {
+  margin-top: 0em;
+  width:220px;
+  float:right;
+  }
+
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:1.5em 0 .5em;
+  }
+.post {
+  margin:.5em 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.post-title {
+  margin:0;
+  font-size:135%;
+  line-height:1.5em;
+  background:url("http://www.playingwithwire.com/images/bullet.gif")
+no-repeat 4px .5em;
+  display:block;
+  border-width:0 1px 1px;
+  padding:2px 14px 2px 20px;
+  color:#c60;
+  }
+.post-title a, .post-title a:visited, .post-title strong {
+  display:block;
+  text-decoration:none;
+  color:#c60;
+  font-weight:normal;
+  }
+.post-title strong, .post-title a:hover {
+  background: url(http://www.playingwithwire.com/images/quotebck.gif);
+  color:#333;
+  }
+.post div {
+  font:99%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+.bookmarks {
+
+}
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#ccc;
+  }
+.post-footer em, .comment-link {
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#999;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+
+.post blockquote {
+  background: #f5f6f7
+url(http://www.playingwithwire.com/images/quotebck.gif);
+  padding: 10px 20px;
+  color:#666;
+  font-style:italic;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+
+/* Sidebar Content
+----------------------------------------------- */
+#sidebar ul {
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+  padding-bottom: 1em;
+  border-bottom:1px dotted #ccc;
+  list-style:none;
+  }
+#sidebar li {
+  margin:0;
+  padding:0 0 .25em 15px;
+  font:100%/1.6em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-indent:-15px;
+  line-height:1.5em;
+  }
+#sidebar p {
+  color:#333;
+  line-height:1.3em;
+  font:95%/1.3em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  }
+#sidebar hr {
+  height:0px;
+  margin:.5em 0 1.5em;
+  padding:0 0 1.5em;
+  padding-bottom: 1em;
+  border: none;
+  border-bottom:1px dotted #ccc;
+}
+
+
+/* Profile
+----------------------------------------------- */
+
+
+#profile-container {
+  margin:0 0 1.5em;
+  border-bottom:1px dotted #ccc;
+  padding-bottom:1.5em;
+  }
+.profile-datablock {
+
+
+
+  margin:.5em 0 .5em;
+  }
+.profile-img {
+  display:inline;
+  }
+.profile-img img {
+  float:left;
+  padding:4px;
+  border:1px solid #ddd;
+  margin:0 8px 3px 0;
+  }
+.profile-data {
+  margin:0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.profile-data strong {
+  display:none;
+  }
+.profile-textblock {
+  margin:0 0 .5em;
+  }
+.profile-link {
+  margin:0;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  width:660px;
+  clear:both;
+  margin:0 auto;
+  }
+#footer hr {
+  display:none;
+  }
+#footer p {
+  margin:0;
+  padding-top:15px;
+  font:78%/0.8em "Trebuchet MS",Trebuchet,Verdana,Sans-serif;
+  text-transform:lowercase;
+  letter-spacing:.1em;
+
+  }
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left
+}
+
+.footad {
+   width: 336px;
+   margin: 1em;
+   margin-left: auto;
+   margin-right: auto;
+}

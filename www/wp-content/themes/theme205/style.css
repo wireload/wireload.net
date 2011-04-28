@@ -1,0 +1,580 @@
+/*  
+Theme Name: WordPress theme 205
+Theme URI: http://wordpress.org/
+Description: Theme 205.
+Version: 2.0
+*/
+
+/* CSS Document */
+body  {
+	background-color:#ffffff;
+	color:#2F373A;
+	padding:0px 0px 0px 0px; 
+	margin:0px 0px 0px 0px; 
+}
+
+.main_div {
+	width:790px;
+	vertical-align:top;
+	text-align:left;
+}
+
+a {
+	color:#070809;
+	text-decoration:underline;
+}
+a:hover {
+	color:#070809;
+	text-decoration:none
+}
+
+.pagetitle {
+	padding:0px 0px 15px 0px;
+	margin:0px 0px 0px 0px;
+	color:#070809;
+}
+p {
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+html { 
+	font-size:10pt; 
+	font-family:tahoma, arial; 
+} 
+.normal { 
+	font-size:1.01em; 
+	font-family:tahoma, arial; 
+} 
+.big { 
+	font-size:1.11em; 
+	font-family:tahoma, arial; 
+}
+.bigger { 
+	font-size:1.21em; 
+	font-family:tahoma, arial; 
+}
+.small { 
+	font-size:0.91em; 
+	font-family:tahoma, arial; 
+}
+h1 { 
+	color:#FFFFFF;
+	font-size:4.11em;
+	font-weight:normal;
+	line-height:1.01em;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px; 
+}
+h3 { 
+	color:#070809;
+	font-size:1.81em; 
+	font-weight:normal; 
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+} 
+#respond { 
+	color:#070809;
+	font-size:1.81em;
+	font-weight:normal; 
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+.head h3 a {
+	color:#070809;
+	text-decoration:none;
+}
+.head h3 a:hover {
+	color:#070809;
+	text-decoration:none;
+}
+
+.menu {
+	vertical-align:top;
+	/*padding:17px 15px 3px 15px;*/
+	padding:17px 0px 3px 0px;
+	text-align:right;
+	font-size: 8pt;
+}
+.menu ul {
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	list-style:none;
+}
+.menu ul li {
+	padding:0px 0px 0px 0px; 
+	margin:0px 0px 0px 0px;
+	display:inline;
+}
+.menu ul li a {
+	background:url(images/more_bg.jpg) right top no-repeat;
+	color:#234400;
+	text-decoration:none;
+	padding:0px 28px 0px 22px;
+	margin:0px 0px 0px 0px;
+	font-size:1.21em;
+}
+.menu ul li a:hover {
+	text-decoration:underline;
+	color:#234400;
+	font-size:1.21em;
+}
+.menu ul li a.last, .menu ul li a:hover.last {
+	background:none;
+	color:#234400;
+	text-decoration:none;
+	padding:0px 0px 0px 22px;
+	margin:0px 0px 0px 0px;
+	font-size:1.21em;
+}
+
+.header {
+	background:url(images/header.jpg) left top no-repeat;
+	width:790px;
+	height:224px;
+}
+
+.header a, .header a:hover {
+	text-decoration: none;
+	background: none;
+	font-size: 0px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.co_name {
+	vertical-align:top;
+	padding:75px 20px 20px 155px;
+}
+.co_name a {
+	color:#ffffff;
+	text-decoration:none;
+}
+.co_name a:hover {
+	color:#ffffff;
+	text-decoration:none;
+}
+.slogan {
+	vertical-align:top;
+	padding:3px 345px 0px 0px;
+	color:#2B7300;
+	line-height:1.11em;
+	font-size:1.11em;
+}
+
+.bbg {
+	background:url(images/bbg.jpg) left top repeat-y;
+	width:790px;
+}
+.table {
+	width:790px;
+	display:table;
+}
+.table_row {
+	width:790px;
+	height:100%;
+	display:table-row;
+}
+.line1 {
+	width:13px;
+	height:100%;
+	vertical-align:top;
+	display:table-cell;
+}
+.line2 {
+	width:31px;
+	height:100%;
+	vertical-align:top;
+	display:table-cell;
+}
+.line3 {
+	width:44px;
+	height:100%;
+	vertical-align:top;
+	display:table-cell;
+}
+.left {
+	width:242px;
+	height:100%;
+	vertical-align:top;
+	display:table-cell;
+}
+.right {
+	width:460px;
+	height:100%;
+	vertical-align:top;
+	display:table-cell;
+	padding:22px 0px 0px 0px;
+}
+.head {
+	background:url(images/head_bg.jpg) left bottom repeat-x;
+	vertical-align:top;
+	padding:0px 0px 10px 0px;
+	color:#070809;
+}
+
+.author {
+	background:url(images/head_bg.jpg) left bottom repeat-x;
+	vertical-align:top;
+	padding:0px 0px 10px 0px;
+	margin:0px 0px 22px 0px;
+	color:#A7B4B9;
+}
+.author span {
+	color:#69C200;
+}
+.author a {
+	color:#A7B4B9;
+	text-decoration:none;
+}
+.author a:hover {
+	color:#A7B4B9;
+	text-decoration:underline;
+}
+.table1 {
+	width:460px;
+	display:table;
+}
+.table_row1 {
+	width:460px;
+	height:100%;
+	display:table-row;
+}
+.left1 {
+	width:260px;
+	height:100%;
+	vertical-align:top;
+	display:table-cell;
+	text-align:left;
+}
+.right1 {
+	width:200px;
+	height:100%;
+	vertical-align:top;
+	display:table-cell;
+	text-align:right;
+}
+.content_txt {
+	padding:18px 0px 10px 0px;
+	line-height:1.41em;
+	font-size:1.05em;
+}
+
+.content_txt h3 a {
+	color:#070809;
+	text-decoration:none;
+}
+.content_txt h3 a:hover {
+	color:#070809;
+	text-decoration:none;
+}
+
+.content_txt a {
+	color:#EE4E00;
+	text-decoration:none;
+}
+.content_txt a:hover {
+	color:#EE4E00;
+	text-decoration:underline;
+}
+.content_txt strong {
+	color:#2F373A;
+}
+
+.content_txt p {
+	font-size:1.05em;
+	margin:0px 0px 1.3em 0px;
+}
+
+.content_txt .p {
+	color:#7EBE1C;
+	font-size:1.21em;
+	padding:5px 0px 8px 22px;
+	font-style:italic;
+	font-weight:bold;
+	margin:8px 0px 0px 0px;
+	background:url(images/p_bg.jpg) left top repeat-y;
+}
+.content_text h2 { 
+	color:#292F30;
+	font-size:1.21em;
+	font-weight:bold;
+	padding:2px 10px 6px 59px;
+	margin:0px 0px 0px 0px;
+} 
+
+hr {
+  border: none;
+	border-bottom: dotted grey 1px;
+	padding: 0;
+	margin: 0;
+  height: 0;
+	vertical-align:top;
+}
+
+.postmetadataalt {
+	color:#68777D;
+	font-size:9pt; 
+}
+
+.footer {
+	background:url(images/footer.jpg) left top no-repeat;
+	width:790px;
+	height:67px;
+}
+.footer_txt {
+	vertical-align:top;
+	padding:23px 0px 0px 297px;
+	color:#808080;
+}
+.footer_txt strong {
+	color:#808080;
+}
+.footer_txt a {
+	color:#808080;
+	text-decoration:none;
+}
+.footer_txt a:hover {
+	color:#808080;
+	text-decoration:underline;
+}
+
+.widget_style {
+	vertical-align:top;
+	text-align:left;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	color:#000000;
+   font-size: 0.8em;
+}
+.widget_style h2 { 
+	color:#292F30;
+	font-size:1.21em;
+	font-weight:bold;
+	padding:22px 10px 6px 59px;
+	margin:0px 0px 0px 0px;
+	background:url(images/cats_head2.gif) left top no-repeat #F1F5F5;
+} 
+.widget_style a {
+	text-decoration:underline;
+	color:#68777D;
+}
+.widget_style a:hover {
+	text-decoration:none;
+	color:#68777D;
+}
+.widget_style ul {
+	padding:5px 10px 15px 24px; 
+	margin:0px 0px 0px 0px;
+	background:url(images/cats_bg.jpg) left bottom repeat-x #F1F5F5;
+}
+.widget_style li {
+	list-style:none;
+	padding:0px 0px 0px 14px;
+	margin:0px 0px 0px 0px;
+	background:url(images/li_bg1.gif) left top no-repeat;
+	vertical-align:top;
+	line-height:1.61em;
+	font-size:1.11em;
+	color:#68777D;
+}
+.widget_style ul li a {
+	text-decoration:none;
+	color:#68777D;
+}
+.widget_style li a:hover {
+	text-decoration:underline;
+	color:#68777D;
+}
+
+.widget_style div {
+	padding:5px 10px 15px 24px; 
+	margin:0px 0px 0px 0px;
+	line-height:1.61em;
+	font-size:1.11em;
+	color:#68777D;
+	background:url(images/cats_bg.jpg) left bottom repeat-x #F1F5F5;
+}
+
+#links_with_style ul {
+	padding:0px 0px 0px 0px; 
+	margin:0px 0px 0px 0px;
+	background:url(images/cats_bg.jpg) left bottom repeat-x #F1F5F5;
+}
+#links_with_style ul ul {
+	padding:5px 10px 15px 24px; 
+	margin:0px 0px 0px 0px;
+}
+#links_with_style li h2 { 
+	color:#292F30;
+	font-size:1.21em;
+	font-weight:bold;
+	padding:22px 10px 6px 59px;
+	margin:0px 0px 0px 0px;
+	background:url(images/cats_head2.gif) left top no-repeat #F1F5F5;
+} 
+#links_with_style ul li {
+	list-style:none;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	background:none;
+	vertical-align:top;
+}
+#links_with_style ul li ul li {
+	list-style:none;
+	padding:0px 0px 0px 14px;
+	margin:0px 0px 0px 0px;
+	background:url(images/li_bg1.gif) left top no-repeat;
+	vertical-align:top;
+	line-height:1.61em;
+	font-size:1.11em;
+	color:#68777D;
+}
+#links_with_style ul li a {
+	text-decoration:none;
+	color:#68777D;
+}
+#links_with_style ul li a:hover {
+	text-decoration:underline;
+	color:#68777D;
+}
+
+#categories h2 { 
+	color:#292F30;
+	font-size:1.21em;
+	font-weight:bold;
+	padding:22px 10px 6px 59px;
+	margin:0px 0px 0px 0px;
+	background:url(images/cats_head1.gif) left top no-repeat #ffffff;
+} 
+#categories ul {
+	padding:5px 10px 15px 24px; 
+	margin:0px 0px 0px 0px;
+	background:url(images/cats_bg.jpg) left bottom repeat-x #ffffff;
+}
+#categories div {
+	padding:5px 10px 15px 24px; 
+	margin:0px 0px 0px 0px;
+	background:url(images/cats_bg.jpg) left bottom repeat-x #ffffff;
+}
+
+#search {
+	background:url(images/cats_bg.jpg) left bottom repeat-x #F1F5F5;
+	vertical-align:top;
+	padding:25px 15px 26px 23px;
+	margin:0px 0px 0px 0px;
+	color:#2B2E2F;
+	font-size:1.11em;
+}
+#search span {
+	color:#2B2E2F;
+}
+#search input {
+	font-size:12px; 
+	color:#2B2E2F;
+	font-family:Tahoma, arial, verdana, courier;
+	width:137px;
+	height:21px;
+	border:inset 1px #879CA3;
+	padding:0px 0px 0px 0px;
+	margin:5px 12px 0px 0px;
+	vertical-align:middle;
+}
+#search .input {
+	width:39px;
+	height:21px;
+	border:none;
+	padding:0px 0px 0px 0px;
+	margin:5px 0px 0px 0px;
+	vertical-align:middle;
+}
+
+.right #search {
+	background:none;
+	vertical-align:top;
+	padding:15px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	color:#2B2E2F;
+	font-size:1.11em;
+}
+.right #search span {
+	color:#2B2E2F;
+}
+.right #search input {
+	font-size:12px; 
+	color:#2B2E2F;
+	font-family:Tahoma, arial, verdana, courier;
+	width:337px;
+	height:21px;
+	border:inset 1px #879CA3;
+	padding:0px 0px 0px 0px;
+	margin:5px 12px 0px 0px;
+	vertical-align:middle;
+}
+.right #search .input {
+	width:39px;
+	height:21px;
+	border:none;
+	padding:0px 0px 0px 0px;
+	margin:5px 0px 0px 0px;
+	vertical-align:middle;
+}
+
+
+#links_with_style  {
+	vertical-align:top;
+}
+#archives  {
+	vertical-align:top;
+}
+#meta  {
+	vertical-align:top;
+}
+#recent-comments  {
+	vertical-align:top;
+}
+#recent-posts  {
+	vertical-align:top;
+}
+#categories  {
+	vertical-align:top;
+}
+#calendar_wrap {
+	vertical-align:top;
+	padding:10px 10px 15px 64px;
+}
+#calendar {
+	vertical-align:top;
+	background:url(images/cats_bg.jpg) left bottom repeat-x #F1F5F5;
+}
+#calendar_wrap a {
+	text-decoration:underline;
+	font-weight:bold;
+}
+#calendar_wrap a:hover {
+	text-decoration:none;
+	font-weight:bold;
+}
+#google-search  {
+	vertical-align:top;
+}
+#gsearch {
+	text-align:left;
+}
+#pages  {
+	vertical-align:top;
+}
+#text-1 {
+	vertical-align:top;
+}
+.textwidget {
+	text-align:left;
+	padding:10px 20px 15px 24px;
+	background:url(images/cats_bg.jpg) left bottom repeat-x #F1F5F5;
+}
+#delicious {
+	vertical-align:top;
+}
+#delicious-box {
+	text-align:left;
+}
