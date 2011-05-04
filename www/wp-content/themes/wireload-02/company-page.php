@@ -21,7 +21,7 @@ problems and then mercilessly work them out with fanciful applications. Our apps
 			<div>
 				<h3>Blotter</h3>
 				<ul>
-					<li><a href="https://twitter.com/BlotterApp"><img src="<?php echo_images_uri() ?>/a_ico1.png" alt="Follow Blotter on Twitter" />Follow Blotter on Twitter</a></li>
+					<li><a href="http://twitter.com/BlotterApp"><img src="<?php echo_images_uri() ?>/a_ico1.png" alt="Follow Blotter on Twitter" />Follow Blotter on Twitter</a></li>
 					<li><a href="http://support.wireload.net/forums/356140-frequently-asked-questions"><img src="<?php echo_images_uri() ?>/a_ico2.png" alt="The Blotter FAQ" />The Blotter FAQ</a></li>
 					<li><a href="http://support.wireload.net/anonymous_requests/new"><img src="<?php echo_images_uri() ?>/a_ico3.png" alt="Contact Blotter support" />Contact Blotter support</a></li>
 				</ul>
@@ -29,7 +29,7 @@ problems and then mercilessly work them out with fanciful applications. Our apps
 			<div>
 				<h3 style="color:#6c7f23;">Quiet</h3>
 				<ul>
-					<li><a href="https://twitter.com/QuietApp"><img src="<?php echo_images_uri() ?>/a_ico4.png" alt="Follow Quiet on Twitter" />Follow Quiet on Twitter</a></li>
+					<li><a href="http://twitter.com/QuietApp"><img src="<?php echo_images_uri() ?>/a_ico4.png" alt="Follow Quiet on Twitter" />Follow Quiet on Twitter</a></li>
 					<li><a href="http://support.wireload.net/forums/356141-frequently-asked-questions"><img src="<?php echo_images_uri() ?>/a_ico5.png" alt="The Quiet FAQ" />The Quiet FAQ</a></li>
 					<li><a href="http://support.wireload.net/anonymous_requests/new"><img src="<?php echo_images_uri() ?>/a_ico6.png" alt="Contact Quiet support" />Contact Quiet support</a></li>
 				</ul>
