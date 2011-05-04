@@ -1,0 +1,10 @@
+build
+www/static/source
+.git
+.gitignore
+build_config.yml
+rsync.exclude
+www/.htaccess
+www/wp-config.php
+*~
+.DS_Store

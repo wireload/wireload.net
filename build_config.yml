@@ -1,0 +1,6 @@
+static: "www/static"
+deploy:
+  path: /www/wireload.net/
+  presets:
+    production:
+      hosts: ['hostadmin@hosting.wireload.net']
