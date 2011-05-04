@@ -127,7 +127,7 @@ Template Name: Quiet Page
   	<li><a href="http://support.wireload.net"><img src="<?php echo_images_uri() ?>/ico_supp.png" alt="Support" />Support</a></li>
   	<li><a href="http://support.wireload.net/forums/356141-frequently-asked-questions"><img src="<?php echo_images_uri() ?>/ico_faq.png" style="margin-left: -76px;" alt="FAQ" />FAQ</a></li>
   	<li><a href="https://twitter.com/QuietApp"><img src="<?php echo_images_uri() ?>/twitter_quiet_icon.png" style="top: 2px;" alt="Twitter" />Twitter</a></li>
-  	<li><a href="#"><img src="<?php echo_images_uri() ?>/fb_quiet_icon.png" style="margin-left: -63px;" alt="Facebook" />Facebook</a></li>
+  	<li><a href="https://www.facebook.com/pages/Quiet/200263450010941"><img src="<?php echo_images_uri() ?>/fb_quiet_icon.png" style="margin-left: -63px;" alt="Facebook" />Facebook</a></li>
   </ul>
 
 <?php get_footer('product'); ?>
