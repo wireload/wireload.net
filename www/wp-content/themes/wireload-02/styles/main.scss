@@ -866,56 +866,80 @@ a, input {
 	font: 15px Arial, Helvetica, sans-serif;
 }
 
-#contact-form #send-but {
-	width: 192px;
-	height: 42px;
-	position: absolute;
-	bottom: 4px;
-	left: 166px;
-	margin: 0px;
-	overflow: hidden;
-	cursor: pointer;
+#contact-form
+{
+  #send-but {
+  	width: 192px;
+  	height: 42px;
+  	position: absolute;
+  	bottom: 4px;
+  	left: 166px;
+  	margin: 0px;
+  	overflow: hidden;
+  	cursor: pointer;
+
+    #but {
+    	width: 192px;
+    	height: 42px;
+    	position: absolute;
+    	left: 0px;
+    	top: 0px;
+    	background: url(../images/send_bg.png);
+
+      i {
+      	width: 84px;
+      	height: 11px;
+      	position: absolute;
+      	left: 54px;
+      	bottom: 14px;
+      	background: url(../images/send_but.png) no-repeat left top;
+      }
+      em {
+      	width: 138px;
+      	height: 11px;
+      	position: absolute;
+      	left: 27px;
+      	bottom: 14px;
+      	background: url(../images/thank_you.png) no-repeat left top;
+      	display: none;
+      }
+    }
+
+    :hover #but i {
+    	background-position: left -11px;
+    }
+
+    #border {
+    	width: 184px;
+    	height: 46px;
+    	position: absolute;
+    	left: 4px;
+    	top: 0px;
+    	background: url(../images/send_sh.png) no-repeat left top;
+    	z-index: 1;
+    }
+
+    input {
+      visibility: hidden;
+    }
+  }
+
+  .sent {
+  	cursor: default;
+
+  	#but i {
+  	  display: none !important;
+  	}
+  	#but em {
+  	  display: inline !important;
+  	}
+  }
 }
-#send-but #border {
-	width: 184px;
-	height: 46px;
-	position: absolute;
-	left: 4px;
-	top: 0px;
-	background: url(../images/send_sh.png) no-repeat left top;
-	z-index: 1;
+
+.wpcf7-validation-errors {
+  display: none;
 }
-#but {
-	width: 192px;
-	height: 42px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	background: url(../images/send_bg.png);
-}
-#but i {
-	width: 84px;
-	height: 11px;
-	position: absolute;
-	left: 54px;
-	bottom: 14px;
-	background: url(../images/send_but.png) no-repeat left top;
-}
-#send-but:hover #but i {
-	background-position: left -11px;
-}
-#contact-form #send-but.sended {
-	cursor: default;
-}
-#but em {
-	width: 138px;
-	height: 11px;
-	position: absolute;
-	left: 27px;
-	bottom: 14px;
-	background: url(../images/thank_you.png) no-repeat left top;
-	display: none;
-}
+
 
 #news-list {
 	width: 923px;

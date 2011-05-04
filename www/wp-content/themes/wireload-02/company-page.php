@@ -64,45 +64,13 @@ problems and then mercilessly work them out with fanciful applications. Our apps
 
 		</div>
 		<!-- for contact form 7 -->
-		<script type="text/javascript">var _wpcf7 = { cached: 1 };</script>
-		<form action="/company/#wpcf7-f1-p310-o1" method="post" class="wpcf7-form">
-		<form action="">
-			<div id="contact-form">
-				<div>
-					<label>Name:</label>
-					<span class="inp"><input type="text" name="your-name" value="" class="wpcf7-text wpcf7-validates-as-required" /></span>
-				</div>
-				<div>
-					<label>Email:</label>
-					<span class="inp"><input type="text" name="your-email" value="" class="wpcf7-text wpcf7-validates-as-email wpcf7-validates-as-required" /></span>
-					<!-- If not valid, use "error" class:
-
-					<span class="inp"><input type="text" /></span>
-
-					-->
-				</div>
-				<div>
-					<label>Your Message:</label>
-					<span class="txt"><textarea name="your-message"></textarea></span>
-
-					<!-- If not valid, use "error" class:
-
-					<span class="txt error"><textarea></textarea></span>
-
-					-->
-				</div>
-				<div id="send-but">
-					<span id="border"></span>
-					<span id="but" onclick="getElementById('form_element_id').submit()" class="wpcf7-submit"><i></i><em></em></span>
-					<!-- Need to port the following:
-					 <input type="submit" value="Send" class="wpcf7-submit" /><img class="ajax-loader" style="visibility: hidden;" alt="Sending ..." src="http://wireload.net/wp-content/plugins/contact-form-7/images/ajax-loader.gif" /><
-					-->		
-				</div>
-			</div>
-		</form>
+		<?php while (have_posts()) : the_post() ?>
+    <?php the_content(__('Read more &raquo;', 'wireload-02')); ?>
+    <?php endwhile; ?>
 
 	</div>
 
 </div>
+
 
 <?php get_footer(); ?>

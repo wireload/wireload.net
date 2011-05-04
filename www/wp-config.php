@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * The base configurations of the WordPress.
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
@@ -28,7 +28,11 @@ define('WP_CACHE', true); //Added by WP-Cache Manager
 define('DB_NAME', 'wireblog');    // The name of the database
 define('DB_USER', 'wireblog');     // Your MySQL username
 define('DB_PASSWORD', 'aun4eg3eep1e7o'); // ...and password
-define('DB_HOST', 'mysql.wireload.net');    // 99% chance you won't need to change this value
+define('DB_HOST', 'mysql.wireload.net');
+
+// WireLoad: Get rid of Contact Form 7 JS and CSS. We have our own.
+define('WPCF7_LOAD_JS', false);
+define('WPCF7_LOAD_CSS', false);
 
 /** MySQL hostname */
 #define('DB_HOST', 'localhost');

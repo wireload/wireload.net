@@ -848,45 +848,48 @@ a, input {
   margin: 0px;
   overflow: hidden;
   cursor: pointer; }
-
-#send-but #border {
-  width: 184px;
-  height: 46px;
-  position: absolute;
-  left: 4px;
-  top: 0px;
-  background: url(../images/send_sh.png) no-repeat left top;
-  z-index: 1; }
-
-#but {
-  width: 192px;
-  height: 42px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background: url(../images/send_bg.png); }
-
-#but i {
-  width: 84px;
-  height: 11px;
-  position: absolute;
-  left: 54px;
-  bottom: 14px;
-  background: url(../images/send_but.png) no-repeat left top; }
-
-#send-but:hover #but i {
-  background-position: left -11px; }
-
-#contact-form #send-but.sended {
+  #contact-form #send-but #but {
+    width: 192px;
+    height: 42px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url(../images/send_bg.png); }
+    #contact-form #send-but #but i {
+      width: 84px;
+      height: 11px;
+      position: absolute;
+      left: 54px;
+      bottom: 14px;
+      background: url(../images/send_but.png) no-repeat left top; }
+    #contact-form #send-but #but em {
+      width: 138px;
+      height: 11px;
+      position: absolute;
+      left: 27px;
+      bottom: 14px;
+      background: url(../images/thank_you.png) no-repeat left top;
+      display: none; }
+  #contact-form #send-but :hover #but i {
+    background-position: left -11px; }
+  #contact-form #send-but #border {
+    width: 184px;
+    height: 46px;
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    background: url(../images/send_sh.png) no-repeat left top;
+    z-index: 1; }
+  #contact-form #send-but input {
+    visibility: hidden; }
+#contact-form .sent {
   cursor: default; }
+  #contact-form .sent #but i {
+    display: none !important; }
+  #contact-form .sent #but em {
+    display: inline !important; }
 
-#but em {
-  width: 138px;
-  height: 11px;
-  position: absolute;
-  left: 27px;
-  bottom: 14px;
-  background: url(../images/thank_you.png) no-repeat left top;
+.wpcf7-validation-errors {
   display: none; }
 
 #news-list {

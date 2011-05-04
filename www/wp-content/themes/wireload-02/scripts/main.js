@@ -52,19 +52,6 @@ $(function() {
 		}
 	);
 
-	$("#send-but").click(function() {
-		if (this.className != "sended") {
-			this.className = "sended";
-			$("#but").animate({top: -37}, 400, function() {
-				$("i", this).hide();
-				$("em", this).show();
-				setTimeout(function() {
-					$("#but").animate({top: 0}, 1200);
-				}, 200)
-			});
-		}
-	})
-
 });
 
 function slide(i) {

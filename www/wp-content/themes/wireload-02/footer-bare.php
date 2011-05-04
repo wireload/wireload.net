@@ -8,5 +8,9 @@
 	</div>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/scripts/jquery.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/scripts/main.js"></script>
+  <?php if (is_page('company')): ?>
+  <script type='text/javascript' src='<?php echo get_template_directory_uri() ?>/scripts/jquery.form.js?ver=2.52'></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/scripts/cf7-script-modified.js"></script>
+  <?php endif ?>
 </body>
 </html>
