@@ -981,6 +981,9 @@ a, input {
   color: #0b7eff;
   font-weight: bold; }
 
+#news-list .shadowed img {
+  max-width: 510px; }
+
 #news-details {
   width: 923px;
   float: left;

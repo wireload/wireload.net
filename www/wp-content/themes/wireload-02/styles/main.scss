@@ -1032,6 +1032,12 @@ a, input {
 	font-weight: bold;
 }
 
+// Make images less wide on the front page.
+#news-list .shadowed img
+{
+  max-width: 510px;
+}
+
 #news-details {
 	width: 923px;
 	float: left;
