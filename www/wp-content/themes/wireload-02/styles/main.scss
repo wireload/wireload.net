@@ -382,6 +382,20 @@ a, input {
 	margin: 50px 0px 10px -4px;
 	background: url(../images/s_bg2.png) no-repeat;
 }
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.unselectable * {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 #ps-right {
 	position: absolute;
 	right: 21px;

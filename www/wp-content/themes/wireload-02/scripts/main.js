@@ -97,16 +97,129 @@ function slide(i) {
 	}).removeClass("cur");
 }
 
+function getFrame(element) {
+    var rect = element.offset();
+        rect.right = rect.left + element.width();
+        rect.bottom = rect.top + element.height();
+    return rect;
+}
+
+function inRect(point, rect) {
+    return (point.x >= rect.left &&
+        point.x < rect.right &&
+        point.y >= rect.top &&
+        point.y < rect.bottom);
+}
+
+function setSelectable(element, aFlag) {
+    if (aFlag)
+        element.removeClass('unselectable');
+    else
+        element.addClass('unselectable');
+}
+
 function initProductSlider() {
-	var items = $("#ps-wrap .item");
-	var curItem = items.filter(".act");
-	var slState = $("#ps-selector").attr("class");
+	var items = $("#ps-wrap .item"),
+	    curItem = items.filter(".act"),
+	    slState = $("#ps-selector").attr("class");
 
 	$("#ps-controls li").click(function() {
 		psSlide($("#ps-controls li").index(this));
 	});
 
-	$("#ps-selector").click(changeState);
+	var grabbed = false,
+	    clickedBackground = false,
+	    firstPos,
+	    lastPos,
+	    originalLeft;
+
+    // Clicking the background (and not the knob) causes a slide.
+	$("#ps-selector").mousedown(function(event) {
+	    firstPos = { x: event.pageX, y: event.pageY };
+        clickedBackground = true;
+        // While the user is interacting with the toggle, don't select text.
+        setSelectable($('body.quiet'), false);
+	});
+
+    // Clicking the knob enables it to be dragged around.
+	$("#ps-selector div").mousedown(function(event) {
+	    grabbed = true;
+	    firstPos = {x: event.pageX, y: event.pageY};
+	    lastPos = {x: event.pageX, y: event.pageY};
+	    originalLeft = $("#ps-selector div").css('left').replace('px', '');
+        // While the user is interacting with the toggle, don't select text.
+        setSelectable($('body.quiet'), false);
+	});
+
+    // React to mouseup anywhere on the page in case the mouse slides off
+    // the original click target.
+	$("body.quiet").mouseup(function(event) {
+        if (!grabbed && !clickedBackground)
+            return;
+
+        // The user is done interacting, allow text selection again.
+        setSelectable($('body.quiet'), true);
+
+        var endPos = {x: event.pageX, y: event.pageY};
+
+        // Detect simple clicks on the background (outside of the knob).
+	    if (clickedBackground && !grabbed)
+	    {
+	        clickedBackground = false;
+
+	        var backRect = getFrame($("#ps-selector"));
+            if (Math.abs(firstPos.x - endPos.x) < 3 &&
+                Math.abs(firstPos.y - endPos.y) < 3 &&
+                inRect(endPos, backRect))
+            {
+                changeState();
+            }
+	        return;
+	    }
+
+        // The end of click and drag of the knob.
+	    grabbed = false;
+
+        var knob = $("#ps-selector div"),
+            left = knob.css('left').replace('px', '');
+
+        lastPos = {x: event.pageX, y: event.pageY};
+
+        var knobRect = getFrame(knob);
+
+        // If the user just clicked and released, slide over.
+        if (Math.abs(firstPos.x - endPos.x) < 3 &&
+            Math.abs(firstPos.y - endPos.y) < 3 &&
+            inRect(endPos, knobRect))
+        {
+            changeState();
+        }
+        // Otherwise check how far the knob was dragged.
+        else if (originalLeft == 49 && left < 25)
+            changeState();
+        else if (originalLeft == 0 && left > 24)
+            changeState();
+        else if (left != originalLeft)
+        	$("#ps-selector div").animate({left: originalLeft}, 200);
+
+	});
+
+	$("body.quiet").mousemove(function(event) {
+	    if (!grabbed)
+	        return;
+
+        var endPos = { x: event.pageX, y: event.pageY },
+            left = $("#ps-selector div").css('left').replace('px', ''),
+	        dx = lastPos.x - endPos.x;
+	    lastPos = { x: event.pageX, y: event.pageY };
+
+	    left = left - dx;
+	    if (left < 0)
+	        left = 0;
+	    if (left > 49)
+	        left = 49;
+	    $("#ps-selector div").css('left', left);
+	});
 
 	function psSlide(i) {
 		curItem = items.filter(".act");
