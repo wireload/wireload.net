@@ -5,6 +5,6 @@ www/static/source
 build_config.yml
 rsync.exclude
 www/.htaccess
-www/wp-config.php
+www/wp-content/w3tc/
 *~
 .DS_Store
