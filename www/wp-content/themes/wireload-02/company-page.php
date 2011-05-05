@@ -49,7 +49,7 @@ problems and then mercilessly work them out with fanciful applications. Our apps
 	<div class="item">
 		<div class="left">
 			<h2 style="color:#2078f2">Is there anything else you’d like to talk to us about?</h2>
-			<p>If you have a question or want to get in touch with someone about WireLoad specifically use the contact form.</p>
+			<p>If you have a question or want to get in touch with someone about WireLoad specifically, use the contact form.</p>
 			<em>Please remember to use the Product Support for support questions - we will unfortunately not be able to respond to support requests through the general contact form.</em>
 
 			<div class="sep"></div>
