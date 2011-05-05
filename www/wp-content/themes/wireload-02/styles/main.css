@@ -962,7 +962,7 @@ a, input {
   left: 21px;
   background: url(../images/tags_ico.png) no-repeat left center; }
 
-#news-list .tags a {
+#news-list a {
   color: #0b7eff; }
 
 #news-list .right {
