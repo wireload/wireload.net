@@ -3,8 +3,10 @@ html, body {
   padding: 0px;
   height: 100%;
   color: #313a45;
-  background: url(../images/bg.jpg);
   font: 14px Helvetica, Arial, sans-serif; }
+
+body {
+  background: url(../images/bg.jpg); }
 
 ul, p, h1, h2, h3, h4, h5, h6, form {
   list-style: none;
@@ -33,18 +35,20 @@ a, input {
   min-width: 942px;
   background: url(../images/top_bg.png) repeat-x left top; }
 
-.quiet #page {
-  position: relative;
-  background: url(../images/bg2.jpg) repeat center top; }
-  .quiet #page #top-bg {
-    position: absolute;
-    left: 50%;
-    width: 1100px;
-    height: 523px;
-    padding: 0;
-    margin: 0;
-    margin-left: -618px;
-    background: url(../images/quiet_bg_composite.jpg) no-repeat center top; }
+body.quiet {
+  background: none; }
+  body.quiet #page {
+    position: relative;
+    background: url(../images/bg2.jpg) repeat center top; }
+    body.quiet #page #top-bg {
+      position: absolute;
+      left: 50%;
+      width: 1100px;
+      height: 523px;
+      padding: 0;
+      margin: 0;
+      margin-left: -618px;
+      background: url(../images/quiet_bg_composite.jpg) no-repeat center top; }
 
 #main {
   padding-bottom: 130px;
