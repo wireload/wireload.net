@@ -251,7 +251,7 @@ function initProductSlider() {
 		$("#mb").animate({top: 95}, 300, 'swing', function() {
 			$(this).animate({top: 115}, 600, 'swing');
 		});
-		$("#macbook-shadow").animate({top: 437}, 300, 'swing', function() {
+		$("#macbook-shadow").animate({top: 432}, 300, 'swing', function() {
 			$(this).animate({top: 427}, 600, 'swing');
 		});
 
