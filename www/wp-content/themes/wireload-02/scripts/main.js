@@ -18,8 +18,14 @@ window.onload = function() {
 
 	setTimeout(function() {
 		var t = 400;
+		$("#macbook-glow-on").css('opacity', 0).show();
 		$("#ps-left").css({opacity: 0}).show().animate({opacity: 1, top: 78}, t, 'swing');
-		$("#macbook").css({opacity: 0}).show().animate({opacity: 1, top: -168}, t, 'swing', function() { $("#macbook-glow-on").fadeIn(); });
+		$("#macbook").css({opacity: 0}).show().animate({opacity: 1, top: -168}, t, 'swing', function() {
+		    $("#macbook-glow-on").animate({opacity: 0.5}, t);
+		});
+		// Animate the shadow downwards instead so it looks like the MB and the shadow start
+		// together and then separate, like if the MB is lifting up.
+		$("#macbook-shadow").css({top: 397, opacity: 0}).animate({top: 427, opacity: 1}, t, 'swing');
 		$(".ps-right-text:first-child").animate({top: 139, opacity: 1}, t, 'swing').addClass("prt-cur");
 	}, 1000);
 }
@@ -243,8 +249,12 @@ function initProductSlider() {
 			left: 411
 		});
 		$("#mb").animate({top: 95}, 300, 'swing', function() {
-			$(this).animate({top: 115}, 600, 'swing')
+			$(this).animate({top: 115}, 600, 'swing');
 		});
+		$("#macbook-shadow").animate({top: 437}, 300, 'swing', function() {
+			$(this).animate({top: 427}, 600, 'swing');
+		});
+
 		$(".ps-right-text.prt-cur").animate({top: 144, opacity: 0}, 300, function() {
 			$(".ps-right-text[rel='" + items.eq(idx).attr("rel") + "']").css({top: 159}).animate({top: 139, opacity: 1}, 400).addClass("prt-cur");
 		}).removeClass("prt-cur");
@@ -269,8 +279,7 @@ function initProductSlider() {
 			$("#ps-wrap .act img.on").fadeOut(400, function() {
 				$("#ps-wrap .item:not('.act') img.on").hide();
 			});
-			$("#macbook-glow-on").fadeIn(400);
-			$("#macbook-glow-off").fadeOut(400);
+			$("#macbook-glow-on").animate({opacity: 0.5}, 400);
 		}
 		else {
 			slState = "on";
@@ -282,8 +291,7 @@ function initProductSlider() {
 			$("#ps-wrap .act img.on").fadeIn(400, function() {
 				$("#ps-wrap .item:not('.act') img.on").show();
 			});
-			$("#macbook-glow-on").fadeOut(400);
-			$("#macbook-glow-off").fadeIn(400);
+			$("#macbook-glow-on").animate({opacity: 1}, 400);
 		}
 	}
 }

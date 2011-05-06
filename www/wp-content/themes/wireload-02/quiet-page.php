@@ -9,8 +9,7 @@ Template Name: Quiet Page
   <div id="body">
   	<div id="prod-slider">
   		<div id="macbook">
-  		  <div id="macbook-glow-on" class="macbook-glow"><img src="<?php echo_images_uri() ?>/mb_on.png"></div>
-  		  <div id="macbook-glow-off" class="macbook-glow"><img src="<?php echo_images_uri() ?>/mb_off.png"></div>
+  		  <div id="macbook-glow-on" class="macbook-glow"></div>
   			<div id="mb">
   				<div id="ps-wrap">
   					<div class="item act" rel="Attention Saver">
@@ -27,6 +26,7 @@ Template Name: Quiet Page
   					</div>
   				</div>
   			</div>
+  			<div id="macbook-shadow"></div>
   		</div>
 
   		<strong id="ps-right">Wanna see <span>how it works</span>?</strong>

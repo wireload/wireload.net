@@ -487,10 +487,21 @@ body.quiet {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 5px;
   width: 100%;
   height: 100%;
   display: none; }
+
+#macbook-glow-on {
+  background: url(../images/mb_glow.png) no-repeat center center; }
+
+#macbook-shadow {
+  width: 800px;
+  height: 60px;
+  position: absolute;
+  top: 427px;
+  left: 30px;
+  background: url(../images/mb_shadow.png) no-repeat center top; }
 
 #mb {
   width: 600px;
