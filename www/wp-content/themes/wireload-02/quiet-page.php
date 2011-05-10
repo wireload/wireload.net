@@ -132,9 +132,11 @@ Template Name: Quiet Page
 
 <?php get_footer('product'); ?>
 
+<![if gt IE 8]>
 <span id="corner-banner">
   <span>
     <em>New site celebration!</em>
     <a href="http://itunes.apple.com/us/app/quiet/id421759530?mt=12#">50% off this week.</a>
   </span>
 </span>
+<![endif]>

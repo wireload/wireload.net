@@ -40,7 +40,7 @@ window.onload = function() {
     		});
     		$("#macbook-shadow").css({top: 427}).show();
 
-    		$(".ps-right-text.prt-cur").show().animate({top: 139}, t, 'swing');
+    		$(".ps-right-text.prt-cur").css({visibility: 'visible'}).show().animate({top: 139}, t, 'swing');
         }
 	}, 1000);
 }
