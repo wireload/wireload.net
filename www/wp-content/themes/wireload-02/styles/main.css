@@ -472,7 +472,7 @@ body.quiet {
   text-shadow: #CFE6DD 0px 1px 1px;
   text-align: left;
   line-height: 90%;
-  opacity: 0; }
+  visibility: hidden; }
 
 #macbook {
   width: 825px;

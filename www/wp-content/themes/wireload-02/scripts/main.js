@@ -18,15 +18,30 @@ window.onload = function() {
 
 	setTimeout(function() {
 		var t = 400;
-		$("#macbook-glow-on").css('opacity', 0).show();
-		$("#ps-left").css({opacity: 0}).show().animate({opacity: 1, top: 78}, t, 'swing');
-		$("#macbook").css({opacity: 0}).show().animate({opacity: 1, top: -168}, t, 'swing', function() {
-		    $("#macbook-glow-on").animate({opacity: 0.5}, t);
-		});
-		// Animate the shadow downwards instead so it looks like the MB and the shadow start
-		// together and then separate, like if the MB is lifting up.
-		$("#macbook-shadow").css({top: 397, opacity: 0}).animate({top: 427, opacity: 1}, t, 'swing');
-		$(".ps-right-text:first-child").animate({top: 139, opacity: 1}, t, 'swing').addClass("prt-cur");
+		$(".ps-right-text:first-child").addClass("prt-cur");
+		if (browserCanAnimateOpacity())
+		{
+    		$("#macbook-glow-on").css('opacity', 0).show();
+    		$("#ps-left").css({opacity: 0}).show().animate({opacity: 1, top: 78}, t, 'swing');
+    		$("#macbook").css({opacity: 0}).show().animate({opacity: 1, top: -168}, t, 'swing', function() {
+    		    $("#macbook-glow-on").animate({opacity: 0.5}, t);
+    		});
+    		// Animate the shadow downwards instead so it looks like the MB and the shadow start
+    		// together and then separate, like if the MB is lifting up.
+    		$("#macbook-shadow").css({top: 397, opacity: 0}).animate({top: 427, opacity: 1}, t, 'swing');
+    		$(".ps-right-text.prt-cur").css({visibility: 'visible', opacity: 0}).animate({top: 139, opacity: 1}, t, 'swing');
+		}
+        else
+        {
+            // Simplified code for IE only.
+    		$("#ps-left").show();
+    		$("#macbook").show().animate({top: -168}, t, 'swing', function() {
+    		    $("#macbook-glow-on").hide();
+    		});
+    		$("#macbook-shadow").css({top: 427}).show();
+
+    		$(".ps-right-text.prt-cur").show().animate({top: 139}, t, 'swing');
+        }
 	}, 1000);
 }
 
@@ -59,6 +74,10 @@ $(function() {
 	);
 
 });
+
+function browserCanAnimateOpacity() {
+    return !($.browser.msie && ($.browser.version == "7.0" || $.browser.version == "8.0"));
+}
 
 function slide(i) {
 	var items = $("#s-wrap .item");
@@ -95,7 +114,7 @@ function slide(i) {
 		t = 1000;
 	}
 
-	if ($.browser.msie && ($.browser.version == "7.0" || $.browser.version == "8.0")) {
+	if (!browserCanAnimateOpacity()) {
 		curItem.css("visibility", "hidden").hide(function() {
 			bgs.eq(curIdx).animate({left: -946}, 750);
 			bgs.eq(idx).animate({left: 0}, 750, function() {
@@ -105,7 +124,8 @@ function slide(i) {
 			});
 		}).removeClass("cur");
 	}
-	else {
+	else
+	{
 		curItem.fadeOut(300, function() {
 			bgs.eq(curIdx).animate({left: -946}, 750, 'swing');
 			bgs.eq(idx).animate({left: 0}, 750, function() {
@@ -268,9 +288,18 @@ function initProductSlider() {
 			$(this).animate({top: 427}, 600, 'swing');
 		});
 
-		$(".ps-right-text.prt-cur").animate({top: 144, opacity: 0}, 300, function() {
-			$(".ps-right-text[rel='" + items.eq(idx).attr("rel") + "']").css({top: 159}).animate({top: 139, opacity: 1}, 400).addClass("prt-cur");
-		}).removeClass("prt-cur");
+        if (browserCanAnimateOpacity())
+        {
+    		$(".ps-right-text.prt-cur").animate({top: 144, opacity: 0}, 300, function() {
+    			$(".ps-right-text[rel='" + items.eq(idx).attr("rel") + "']").css({top: 159, visibility: 'visible', opacity: 0}).animate({top: 139, opacity: 1}, 400).addClass("prt-cur");
+    		}).removeClass("prt-cur");
+        }
+        else
+        {
+    		$(".ps-right-text.prt-cur").animate({top: 144}, 300).fadeOut(300, function() {
+    			$(".ps-right-text[rel='" + items.eq(idx).attr("rel") + "']").css({top: 159, visibility: 'visible'}).fadeIn(300).animate({top: 139}, 400).addClass("prt-cur");
+    		}).removeClass("prt-cur");
+        }
 
 		curItem.animate({left: -411}, 400).removeClass("act");
 		items.eq(idx).animate({left: 0}, 400).addClass("act");
@@ -292,7 +321,10 @@ function initProductSlider() {
 			$("#ps-wrap .act img.on").fadeOut(400, function() {
 				$("#ps-wrap .item:not('.act') img.on").hide();
 			});
-			$("#macbook-glow-on").animate({opacity: 0.5}, 400);
+			if (browserCanAnimateOpacity())
+			    $("#macbook-glow-on").animate({opacity: 0.5}, 400);
+			else
+			    $("#macbook-glow-on").hide();
 		}
 		else {
 			slState = "on";
@@ -304,7 +336,10 @@ function initProductSlider() {
 			$("#ps-wrap .act img.on").fadeIn(400, function() {
 				$("#ps-wrap .item:not('.act') img.on").show();
 			});
-			$("#macbook-glow-on").animate({opacity: 1}, 400);
+			if (browserCanAnimateOpacity())
+			    $("#macbook-glow-on").animate({opacity: 1}, 400);
+			else
+			    $("#macbook-glow-on").show();
 		}
 	}
 }
