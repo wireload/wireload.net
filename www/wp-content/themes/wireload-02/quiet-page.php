@@ -29,7 +29,7 @@ Template Name: Quiet Page
   			<div id="macbook-shadow"></div>
   		</div>
 
-  		<strong id="ps-right">Wanna see <span>how it works</span>?</strong>
+  		<strong id="ps-right">Want to see <span>how it works</span>?</strong>
 
   		<div id="ps-left">
   			<h1>Quiet</h1>
