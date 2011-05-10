@@ -94,13 +94,26 @@ function slide(i) {
 		items.eq(idx).css({top: -20});
 		t = 1000;
 	}
-	curItem.animate({opacity: 0}, 300, function() {
-		bgs.eq(curIdx).animate({left: -946}, 750);
-		bgs.eq(idx).animate({left: 0}, 750, function() {
-			items.eq(idx).animate({top: 0, opacity: 1}, t).addClass("cur");
-			stop = false;
-		});
-	}).removeClass("cur");
+
+	if ($.browser.msie && ($.browser.version == "7.0" || $.browser.version == "8.0")) {
+		curItem.css("visibility", "hidden").hide(function() {
+			bgs.eq(curIdx).animate({left: -946}, 750);
+			bgs.eq(idx).animate({left: 0}, 750, function() {
+				items.eq(idx).show().css("visibility", "visible");
+				items.eq(idx).animate({top: 0}, t).addClass("cur");
+				stop = false;
+			});
+		}).removeClass("cur");
+	}
+	else {
+		curItem.fadeOut(300, function() {
+			bgs.eq(curIdx).animate({left: -946}, 750, 'swing');
+			bgs.eq(idx).animate({left: 0}, 750, function() {
+			    items.eq(idx).css({opacity: 0}).show().animate({top: 0, opacity: 1}, t, 'swing').addClass("cur");
+				stop = false;
+			});
+		}).removeClass("cur");
+	}
 }
 
 function getFrame(element) {
