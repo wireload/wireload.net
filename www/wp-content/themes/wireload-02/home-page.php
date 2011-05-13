@@ -20,7 +20,7 @@ Template Name: Home Page
 			</a>
 		</div>
 		<div class="item" id="si2">
-		  <a href="/products/quiet">
+		  <a href="/products/quiet/">
 			<img src="images/Quiet_slogan.png" alt="Preserve your train of thought and be effective with Quiet." style="bottom: 137px; left: 66px;" />
 			<img src="images/Quiet_pic.png" alt="Quiet" style="bottom: 46px; left: 195px;" />
 			<p class="s-right" style="top: 276px; right: 64px;">Preserve your train<br />of thought and be effective<br />with <strong>Quiet.</strong></p>
@@ -52,7 +52,7 @@ Template Name: Home Page
 		<a class="button" href="http://www.blotterapp.com"><span>Learn more</span></a>
 	</div>
 	<div class="item">
-		<a href="/products/quiet">
+		<a href="/products/quiet/">
 			<span class="img">
 				<img src="images/img2.png" alt="Quiet" />
 				<span class="i-border"></span>
