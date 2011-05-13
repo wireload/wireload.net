@@ -60,7 +60,7 @@ Template Name: Home Page
 		</a>
 		<h6 style="color: #6c7f23;">Quiet</h6>
 		<p>Peace. And Quiet.</p>
-		<a class="button" href="/products/quiet"><span>Learn more</span></a>
+		<a class="button" href="/products/quiet/"><span>Learn more</span></a>
 	</div>
 	<div class="item">
 		<a href="http://www.yippiemove.com">

@@ -8,8 +8,8 @@
 
 		<ul id="top-menu">
 			<li><a href="/"><span>Apps</span></a></li>
-			<li><a href="/news"><span>News</span></a></li>
-			<li><a href="/company"><span>Company</span></a></li>
+			<li><a href="/news/"><span>News</span></a></li>
+			<li><a href="/company/"><span>Company</span></a></li>
 			<li><a href="http://support.wireload.net"><span>Support</span></a></li>
 		</ul>
 	</div>
