@@ -12,6 +12,10 @@
   <script type='text/javascript' src='<?php echo get_template_directory_uri() ?>/scripts/jquery.form.js?ver=2.52'></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/scripts/cf7-script-modified.js"></script>
   <?php endif ?>
+  <?php if (is_page('blotter')): ?>
+  <script type='text/javascript' src='<?php echo get_template_directory_uri() ?>/scripts/jquery.ifixpng.js'></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/scripts/blotter.js"></script>
+  <?php endif ?>
 
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
