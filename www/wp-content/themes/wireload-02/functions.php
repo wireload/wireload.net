@@ -34,6 +34,10 @@ function page_bodyclass() {  // add class to <body> tag
 	} elseif (is_page()) {
     $page = $wp_query->query_vars["pagename"];
 	}
+  // Make product pages take on the 'product' class.
+	if (is_page('quiet') || is_page('blotter'))
+	  $page .= ' product';
+
 	if ($page)
 		echo 'class= "'. $page . ' ' . implode(' ', get_body_class()) . '"';
 }
