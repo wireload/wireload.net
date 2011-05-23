@@ -658,11 +658,11 @@ body.quiet {
   color: #a9b3c0;
   font-size: 11px; }
 
-#app-store {
+.app-store-button {
   float: left;
   margin: 36px 0px 0px 28px; }
 
-#app-store:hover {
+.app-store-button:hover {
   margin-top: 38px;
   margin-bottom: -2px; }
 
@@ -1404,34 +1404,34 @@ body.blotter {
         font-size: 56px;
         color: #313030;
         text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
-        margin-top: 60px; }
+        margin-top: 70px; }
       body.blotter #page #promo-head h2 {
         font-size: 21px;
         color: #313030;
         text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px; }
       body.blotter #page #promo-head .button {
         margin-left: 15px;
-        margin-right: 650px;
+        margin-right: 660px;
         margin-top: 30px; }
     body.blotter #page #prod-name {
-      margin-top: -20px;
+      margin: 10px;
       margin-left: 30px;
-      padding-left: 220px;
+      padding-left: 190px;
       margin-bottom: 10px;
-      padding-top: 20px;
       color: #DFE9EF;
       font-size: 31px;
-      line-height: 80px; }
+      line-height: 120px;
+      font-weight: bold; }
       body.blotter #page #prod-name img {
         bottom: auto;
-        top: -60px; }
+        top: 0px; }
     body.blotter #page #below-promo {
-      background: url(../images/blotter/bg-main.jpg);
+      background: white;
       border: 1px solid #163045;
+      color: #333;
       width: 925px;
       margin-left: 7px;
-      overflow: hidden;
-      padding: 0 0 32px; }
+      overflow: hidden; }
       body.blotter #page #below-promo p {
         margin: 0 0 21px;
         line-height: 22px;
@@ -1448,24 +1448,17 @@ body.blotter {
         margin-top: 22px;
         margin-bottom: 42px; }
     body.blotter #page .container {
+      border-top: 1px solid #CCC;
       overflow: hidden;
       height: 1%;
-      padding: 13px 58px 0 69px;
-      margin-bottom: 32px; }
-      body.blotter #page .container .app-btn {
+      padding: 45px 58px 0 69px;
+      margin-bottom: 32px;
+      text-align: left; }
+      body.blotter #page .container a.app-store-button {
         float: right;
-        background: url(../images/app-store-button.png) no-repeat;
-        width: 218px;
-        height: 45px;
-        color: #252525;
-        margin-top: 15px;
-        text-align: center;
-        padding: 12px;
-        padding-top: 5px;
-        font-size: 20px;
-        font-weight: bold;
-        text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
-        overflow: hidden; }
+        margin-top: 15px; }
+      body.blotter #page .container a.app-store-button:hover {
+        margin-top: 17px; }
     body.blotter #page .like-it {
       clear: right;
       float: right;
@@ -1473,11 +1466,9 @@ body.blotter {
       padding: 0;
       margin: 0;
       padding-top: 20px; }
-    body.blotter #page .like-it div {
-      margin: auto;
-      width: 195px; }
-    body.blotter #page a.app-btn:hover {
-      text-decoration: none; }
+      body.blotter #page .like-it div {
+        margin: auto;
+        width: 195px; }
     body.blotter #page .container .btn:hover {
       text-decoration: none; }
     body.blotter #page .description {
@@ -1498,7 +1489,7 @@ body.blotter {
       float: left;
       padding: 17px 22px 0 0; }
     body.blotter #page .gallery-box {
-      background: #a0a8ae url(../images/bg-gallery-box.jpg) repeat-x 0 39px;
+      background: #a0a8ae url(../images/blotter/bg-gallery-box.jpg) repeat-x 0 39px;
       width: 959px;
       position: relative;
       overflow: hidden; }
@@ -1508,18 +1499,20 @@ body.blotter {
       line-height: 39px;
       margin-bottom: 70px; }
     body.blotter #page .heading {
-      background: url(../images/bg-heading.gif) repeat-x; }
+      color: #f9f9f9;
+      text-shadow: rgba(48, 48, 48, 0.5) 0px 1px 0px;
+      background: url(../images/blotter/bg-heading.gif) repeat-x; }
     body.blotter #page .marker {
       position: absolute;
       top: 39px;
       left: 463px;
-      background: url(../images/marker.gif) no-repeat;
+      background: url(../images/blotter/marker.gif) no-repeat;
       width: 33px;
       height: 24px;
       text-indent: -9999em;
       overflow: hidden; }
     body.blotter #page .prev {
-      background: transparent url(../images/bg-prev.gif) no-repeat;
+      background: transparent url(../images/blotter/bg-prev.gif) no-repeat;
       width: 18px;
       height: 18px;
       position: absolute;
@@ -1529,7 +1522,7 @@ body.blotter {
       overflow: hidden;
       z-index: 50; }
     body.blotter #page .next {
-      background: transparent url(../images/bg-next.gif) no-repeat;
+      background: transparent url(../images/blotter/bg-next.gif) no-repeat;
       width: 18px;
       height: 18px;
       position: absolute;
@@ -1544,7 +1537,7 @@ body.blotter {
       list-style: none;
       overflow: hidden;
       position: absolute;
-      top: 596px;
+      top: 536px;
       left: 453px;
       z-index: 50; }
     body.blotter #page .paging li {
@@ -1553,7 +1546,7 @@ body.blotter {
       width: 11px;
       height: 11px; }
     body.blotter #page .paging a {
-      background: url(../images/bg-paging.gif) no-repeat 0 0;
+      background: url(../images/blotter/bg-paging.gif) no-repeat 0 0;
       width: 11px;
       height: 11px;
       text-indent: -9999em;
@@ -1566,7 +1559,7 @@ body.blotter {
     body.blotter #page .gallery {
       overflow: hidden;
       width: 959px;
-      height: 523px;
+      height: 463px;
       position: relative;
       z-index: 20; }
     body.blotter #page .gallery-list {
@@ -1580,7 +1573,7 @@ body.blotter {
       padding: 0px 180px 0px 179px;
       margin: 0;
       float: left;
-      background: transparent url(../images/screenshot-shadow.png) no-repeat center 290px; }
+      background: transparent url(../images/blotter/screenshot-shadow.png) no-repeat center 290px; }
     body.blotter #page .gallery-list li img {
       position: relative; }
     body.blotter #page .gallery-list li img.reflection {
@@ -1605,7 +1598,9 @@ body.blotter {
       height: 1%;
       position: relative;
       float: left;
-      left: -50%; }
+      left: -50%;
+      color: #f9f9f9;
+      text-shadow: rgba(48, 48, 48, 0.5) 0px 1px 0px; }
     body.blotter #page .advantage-list li {
       float: left;
       width: 173px;
@@ -1614,11 +1609,11 @@ body.blotter {
       margin: 0 29px;
       text-align: left; }
     body.blotter #page .advantage-list .type1 {
-      background: url(../images/feature-button-zero-percent.png) no-repeat; }
+      background: url(../images/blotter/feature-button-zero-percent.png) no-repeat; }
     body.blotter #page .advantage-list .type2 {
-      background: url(../images/feature-button-rolling.png) no-repeat; }
+      background: url(../images/blotter/feature-button-rolling.png) no-repeat; }
     body.blotter #page .advantage-list .type3 {
-      background: url(../images/feature-button-narrow.png) no-repeat; }
+      background: url(../images/blotter/feature-button-narrow.png) no-repeat; }
     body.blotter #page .calendar-box {
       float: left;
       padding: 4px 0 0 5px;

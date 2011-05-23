@@ -121,7 +121,7 @@ Template Name: Quiet Page
   	</div>
   </div>
 
-  <a id="app-store" href="http://itunes.apple.com/us/app/quiet/id421759530?mt=12#"><img src="<?php echo_images_uri() ?>/app_store.png" alt="AppStore" /></a>
+  <a class="app-store-button" href="http://itunes.apple.com/us/app/quiet/id421759530?mt=12#"><img src="<?php echo_images_uri() ?>/app_store.png" alt="AppStore" /></a>
 
   <ul id="right-links">
   	<li><a href="http://support.wireload.net"><img src="<?php echo_images_uri() ?>/ico_supp.png" alt="Support" />Support</a></li>

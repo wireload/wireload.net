@@ -1,3 +1,8 @@
+@mixin extruded-white-text {
+  color: #f9f9f9;
+  text-shadow: rgba(48, 48, 48, 0.5) 0px 1px 0px;
+}
+
 html, body {
 	margin: 0px;
 	padding: 0px;
@@ -690,11 +695,11 @@ body.quiet {
 	font-size: 11px;
 }
 
-#app-store {
+.app-store-button {
 	float: left;
 	margin: 36px 0px 0px 28px;
 }
-#app-store:hover {
+.app-store-button:hover {
 	margin-top: 38px;
 	margin-bottom: -2px;
 }
@@ -1515,7 +1520,7 @@ body.blotter {
         font-size: 56px;
         color:#313030;
       	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
-      	margin-top: 60px;
+      	margin-top: 70px;
       }
 
       h2 {
@@ -1526,34 +1531,34 @@ body.blotter {
 
       .button {
         margin-left: 15px;
-        margin-right: 650px;
+        margin-right: 660px;
         margin-top: 30px;
       }
     }
 
     #prod-name {
-      margin-top: -20px;
+      margin: 10px;
       margin-left: 30px;
-      padding-left: 220px;
+      padding-left: 190px;
       margin-bottom: 10px;
-      padding-top: 20px;
       color: #DFE9EF;
       font-size: 31px;
-      line-height: 80px;
+      line-height: 120px;
+      font-weight: bold;
 
       img {
         bottom: auto;
-        top: -60px;
+        top: 0px;
       }
     }
 
     #below-promo {
-    	background:url(../images/blotter/bg-main.jpg);
+    	background: white;
     	border:1px solid #163045;
+    	color: #333;
     	width: 925px;
     	margin-left: 7px;
     	overflow:hidden;
-    	padding:0 0 32px;
 
     	p {
       	margin:0 0 21px;
@@ -1577,27 +1582,22 @@ body.blotter {
       }
     }
     .container {
+    	border-top: 1px solid #CCC;
+
     	overflow:hidden;
     	height:1%;
-    	padding:13px 58px 0 69px;
-    	margin-bottom:32px;
+    	padding: 45px 58px 0 69px;
+    	margin-bottom: 32px;
+    	text-align: left;
 
-      .app-btn {
+      a.app-store-button {
       	float:right;
-      	background:url(../images/app-store-button.png) no-repeat;
-      	width:218px;
-      	height:45px;
-      	color:#252525;
       	margin-top:15px;
-      	text-align: center;
-        padding: 12px;
-        padding-top: 5px;
 
-      	font-size: 20px;
-      	font-weight: bold;
-      	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
-      	overflow:hidden;
       }
+    	a.app-store-button:hover {
+    	  margin-top: 17px;
+    	}
     }
 
     .like-it {
@@ -1607,15 +1607,11 @@ body.blotter {
       padding: 0;
       margin: 0;
       padding-top: 20px;
-    }
 
-    .like-it div {
-      margin: auto;
-      width: 195px;
-    }
-
-    a.app-btn:hover {
-      text-decoration: none;
+      div {
+        margin: auto;
+        width: 195px;
+      }
     }
 
     .container .btn:hover {text-decoration:none;}
@@ -1641,7 +1637,7 @@ body.blotter {
     	padding:17px 22px 0 0;
     }
     .gallery-box {
-    	background:#a0a8ae url(../images/bg-gallery-box.jpg) repeat-x 0 39px;
+    	background:#a0a8ae url(../images/blotter/bg-gallery-box.jpg) repeat-x 0 39px;
     	width:959px;
     	position:relative;
     	overflow:hidden;
@@ -1652,19 +1648,22 @@ body.blotter {
     	line-height:39px;
     	margin-bottom:70px;
     }
-    .heading {background:url(../images/bg-heading.gif) repeat-x;}
+    .heading {
+      @include extruded-white-text;
+      background:url(../images/blotter/bg-heading.gif) repeat-x;
+    }
     .marker {
     	position:absolute;
     	top:39px;
     	left:463px;
-    	background:url(../images/marker.gif) no-repeat;
+    	background:url(../images/blotter/marker.gif) no-repeat;
     	width:33px;
     	height:24px;
     	text-indent:-9999em;
     	overflow:hidden;
     }
     .prev {
-    	background: transparent url(../images/bg-prev.gif) no-repeat;
+    	background: transparent url(../images/blotter/bg-prev.gif) no-repeat;
     	width:18px;
     	height:18px;
     	position:absolute;
@@ -1675,7 +1674,7 @@ body.blotter {
     	z-index:50;
     }
     .next {
-    	background: transparent url(../images/bg-next.gif) no-repeat;
+    	background: transparent url(../images/blotter/bg-next.gif) no-repeat;
     	width:18px;
     	height:18px;
     	position:absolute;
@@ -1691,7 +1690,7 @@ body.blotter {
     	list-style:none;
     	overflow:hidden;
     	position:absolute;
-    	top:596px;
+    	top:536px;
     	left:453px;
     	z-index:50;
     }
@@ -1702,7 +1701,7 @@ body.blotter {
     	height:11px;
     }
     .paging a {
-    	background:url(../images/bg-paging.gif) no-repeat 0 0;
+    	background:url(../images/blotter/bg-paging.gif) no-repeat 0 0;
     	width:11px;
     	height:11px;
     	text-indent:-9999em;
@@ -1714,7 +1713,7 @@ body.blotter {
     .gallery {
     	overflow:hidden;
     	width:959px;
-    	height:523px;
+    	height:463px;
     	position:relative;
     	z-index:20;
     }
@@ -1731,7 +1730,7 @@ body.blotter {
     	padding: 0px 180px 0px 179px;
     	margin:0;
     	float:left;
-    	background: transparent url(../images/screenshot-shadow.png) no-repeat center 290px;
+    	background: transparent url(../images/blotter/screenshot-shadow.png) no-repeat center 290px;
     }
     .gallery-list li img {position:relative;}
 
@@ -1759,6 +1758,8 @@ body.blotter {
     	position:relative;
     	float:left;
     	left:-50%;
+
+    	@include extruded-white-text;
     }
     .advantage-list li {
     	float:left;
@@ -1768,9 +1769,9 @@ body.blotter {
     	margin:0 29px;
     	text-align:left;
     }
-    .advantage-list .type1 {background:url(../images/feature-button-zero-percent.png) no-repeat;}
-    .advantage-list .type2 {background:url(../images/feature-button-rolling.png) no-repeat;}
-    .advantage-list .type3 {background:url(../images/feature-button-narrow.png) no-repeat;}
+    .advantage-list .type1 {background:url(../images/blotter/feature-button-zero-percent.png) no-repeat;}
+    .advantage-list .type2 {background:url(../images/blotter/feature-button-rolling.png) no-repeat;}
+    .advantage-list .type3 {background:url(../images/blotter/feature-button-narrow.png) no-repeat;}
     .calendar-box {
     	float:left;
     	padding:4px 0 0 5px;

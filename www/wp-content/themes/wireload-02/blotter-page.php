@@ -10,13 +10,13 @@ Template Name: Blotter Page
 	<div id="promo-head">
 		<h1 class="logo">Blotter</h1>
 		<h2>Unforgettable calendar.</h2>
-		<a class="button btn-v2" href="http://itunes.apple.com/us/app/quiet/id421759530?mt=12#"><span>Buy now</span></a>
+		<a class="button btn-v2" href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12"><span>Buy now</span></a>
 	</div>
-	<h2 id="prod-name"><img src="<?php echo_images_uri() ?>/blotter/blotter_ico.png" alt="Blotter Icon" />The future will never look the same.</h2>
+	<h2 id="prod-name"><img src="<?php echo_images_uri() ?>/blotter/blotter_ico.png" alt="Blotter Icon" />The future will never look the same again.</h2>
 
 	<div id="below-promo">
 		<div class="container">
-			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-btn">Available Now On The App Store</a>
+			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-store-button"><img src="<?php echo_images_uri() ?>/app_store.png" alt="Available Now On The App Store" /></a>
 			<div class="like-it">
 			  <div>
   			  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="BlotterApp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
@@ -88,10 +88,9 @@ Template Name: Blotter Page
 					</ul>
 				</div>
 			</div>
-			<div class="calendar-box"><img src="<?php echo_images_uri() ?>/blotter/img-calendar.gif" alt="calendar" width="512" height="370" /></div>
 			<p>Blotter is an easy way to increase your productivity. With your week right before you, it is fast to see if you can make a meeting on Tuesday or if you’ll be able to go home early on Friday.</p>
 			<p>Blotter is fully compatible with Mac OS X Snow Leopard, including Spaces, Exposé and Mobile Me.</p>
-			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-btn btn2">Available Now On The App Store</a>
+			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-store-button"><img src="<?php echo_images_uri() ?>/app_store.png" alt="Available Now On The App Store" /></a>
 		</div>
 	</div>
 </div>
