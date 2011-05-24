@@ -87,16 +87,18 @@ Template Name: Blotter Page
 		</div>
 		<div class="container bottom">
       <div class="testimonials">
-        <h2>What People Say</h2>
+        <h2>What People Have Said</h2>
   			<span class="left">
     			<p>Pick of the Week in <a href="http://wiki.twit.tv/wiki/MacBreak_Weekly_239">MacBreak Weekly</a>!</p>
     			<p><em>"Blotter is a great productivity application. It places your iCal calendar directly onto your desktop in a discreet and out of the way fashion, while also being easily accessible. No setup is required, all you have to do is install it from the Mac App Store and your ready to go."</em><br/>- <a href="http://macappolis.com/index.php?id=2973847242085471834">MacAppolis</a></p>
-    			<p><em>"It's pretty...I like [it]."</em><br/> - Leo Leporte, MacBreak Weekly</p>
+          <p><em>"How do you guy[s] live without @BlotterApp?"</em><br/> - @pouramie</p>
+    			<p><em>"It makes me use my desktop for something useful, while adding the ease of previewing what is coming up right now, without looking too far away."</em><br/> - <a href="http://www.erikbernskiold.com/2011/04/27/blotter-showing-ical-on-your-desktop/">Erik Bernskiold</a></p>
   			</span>
   			<span class="right">
   			  <p><em>"@blotterapp is the only app that i USE RELIGIOUSLY ! its brilliant !"</em><br/> - @drbuk</p>
           <p><em>"[Blotter is] well designed."</em><br/> - Alex Lindsay, MacBreak Weekly</p>
     			<p><em>"With Blotter, you can display your iCal content on your desktop and so keep an eye on your important stuff much easier – and surprisingly enough, find that there just might be time to do everything properly."</em><br/> - Julia Altermann, <a href="http://mac.appstorm.net/reviews/productivity-review/blotter-displaying-ical-on-your-desktop/">Mac App Storm</a></p>
+          <p><em>"With Blotter, you'll stop forgetting appointments because they are right there, in your face, all the time."</em><br/> - <a href="http://www.elliottplack.com/blog/2011/4/14/blotter-for-mac.html">Elliott Plack</a></p>
   			</span>
       </div>
 			<ul class="advantage-list">
@@ -106,6 +108,11 @@ Template Name: Blotter Page
 			</ul>
 
 			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-store-button"><img src="<?php echo_images_uri() ?>/app_store.png" alt="Available Now On The App Store" /></a>
+      <ul id="right-links">
+      	<li><a href="http://support.wireload.net"><img src="<?php echo_images_uri() ?>/ico_supp.png" alt="Support" />Support</a></li>
+      	<li><a href="http://support.wireload.net/forums/356140-frequently-asked-questions"><img src="<?php echo_images_uri() ?>/ico_faq.png" style="margin-left: -76px;" alt="FAQ" />FAQ</a></li>
+      	<li><a href="http://twitter.com/BlotterApp"><img src="<?php echo_images_uri() ?>/a_ico1.png" style="top: 2px;" alt="Twitter" />Twitter</a></li>
+      </ul>
 		</div>
 	</div>
 </div>

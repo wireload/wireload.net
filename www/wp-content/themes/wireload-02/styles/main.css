@@ -1649,3 +1649,10 @@ body.blotter {
       background: url(../images/blotter/feature-button-rolling.png) no-repeat; }
     body.blotter #page .advantage-list .type3 {
       background: url(../images/blotter/feature-button-narrow.png) no-repeat; }
+    body.blotter #page #right-links li {
+      padding: 23px 0;
+      padding-left: 6px;
+      background: none; }
+    body.blotter #page #right-links li a {
+      color: #333;
+      text-shadow: #fefefe 0px 1px 0px; }

@@ -1832,6 +1832,18 @@ body.blotter {
     .advantage-list .type1 {background:url(../images/blotter/feature-button-zero-percent.png) no-repeat;}
     .advantage-list .type2 {background:url(../images/blotter/feature-button-rolling.png) no-repeat;}
     .advantage-list .type3 {background:url(../images/blotter/feature-button-narrow.png) no-repeat;}
+
+    #right-links {
+      li {
+        padding: 23px 0;
+        padding-left: 6px;
+        background: none;
+      }
+      li a {
+        color: #333;
+        text-shadow: #fefefe 0px 1px 0px;
+      }
+    }
   }
 }
 
