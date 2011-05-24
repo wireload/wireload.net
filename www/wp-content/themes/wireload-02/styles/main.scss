@@ -716,13 +716,16 @@ body.quiet {
 	font-size: 11px;
 }
 
-.app-store-button {
-	float: left;
-	margin: 36px 0px 0px 28px;
-}
-.app-store-button:hover {
-	margin-top: 38px;
-	margin-bottom: -2px;
+.quiet {
+  .app-store-button {
+  	float: left;
+  	margin: 36px 0px 0px 28px;
+  }
+
+  .app-store-button:hover {
+  	margin-top: 38px;
+  	margin-bottom: -2px;
+  }
 }
 
 #right-links {
@@ -1608,6 +1611,7 @@ body.blotter {
 
     	a.app-store-button:hover {
     	  margin-top: 47px;
+      	margin-bottom: -2px;
     	}
 
     	.left, .right {
@@ -1784,6 +1788,7 @@ body.blotter {
       }
       a.app-store-button:hover {
         margin-top: 12px;
+      	margin-bottom: -2px;
       }
     }
 
@@ -1834,6 +1839,8 @@ body.blotter {
     .advantage-list .type3 {background:url(../images/blotter/feature-button-narrow.png) no-repeat;}
 
     #right-links {
+      padding-top: 3px;
+
       li {
         padding: 23px 0;
         padding-left: 6px;

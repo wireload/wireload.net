@@ -658,11 +658,10 @@ body.quiet {
   color: #a9b3c0;
   font-size: 11px; }
 
-.app-store-button {
+.quiet .app-store-button {
   float: left;
   margin: 36px 0px 0px 28px; }
-
-.app-store-button:hover {
+.quiet .app-store-button:hover {
   margin-top: 38px;
   margin-bottom: -2px; }
 
@@ -1466,7 +1465,8 @@ body.blotter {
         margin: 0;
         margin-top: 45px; }
       body.blotter #page .container a.app-store-button:hover {
-        margin-top: 47px; }
+        margin-top: 47px;
+        margin-bottom: -2px; }
       body.blotter #page .container .left, body.blotter #page .container .right {
         float: left;
         width: 225px;
@@ -1611,7 +1611,8 @@ body.blotter {
         margin-left: 0px;
         margin-top: 10px; }
       body.blotter #page .bottom a.app-store-button:hover {
-        margin-top: 12px; }
+        margin-top: 12px;
+        margin-bottom: -2px; }
     body.blotter #page .testimonials {
       margin-left: -25px;
       float: left;
@@ -1649,10 +1650,12 @@ body.blotter {
       background: url(../images/blotter/feature-button-rolling.png) no-repeat; }
     body.blotter #page .advantage-list .type3 {
       background: url(../images/blotter/feature-button-narrow.png) no-repeat; }
-    body.blotter #page #right-links li {
-      padding: 23px 0;
-      padding-left: 6px;
-      background: none; }
-    body.blotter #page #right-links li a {
-      color: #333;
-      text-shadow: #fefefe 0px 1px 0px; }
+    body.blotter #page #right-links {
+      padding-top: 3px; }
+      body.blotter #page #right-links li {
+        padding: 23px 0;
+        padding-left: 6px;
+        background: none; }
+      body.blotter #page #right-links li a {
+        color: #333;
+        text-shadow: #fefefe 0px 1px 0px; }
