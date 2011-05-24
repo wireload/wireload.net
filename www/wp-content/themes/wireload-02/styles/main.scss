@@ -3,6 +3,27 @@
   text-shadow: rgba(48, 48, 48, 0.5) 0px 1px 0px;
 }
 
+@mixin linear-top-bottom-gradient($top, $bottom) {
+  /* fallback */
+  background-color:$bottom;
+  /* chrome 2+, safari 4+; multiple color stops */
+  background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,$top),color-stop(1,$bottom));
+  /* chrome 10+, safari 5.1+ */
+  background-image:-webkit-linear-gradient($top,$bottom);
+  /* firefox; multiple color stops */
+  background-image:-moz-linear-gradient(top,$top,$bottom);
+  /* ie 6+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom');
+  /* ie8 + */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='$top', endColorstr='$bottom')";
+  /* ie10 */
+  background-image: -ms-linear-gradient($top,$bottom);
+  /* opera 11.1 */
+  background-image: -o-linear-gradient($top,$bottom);
+  /* The "standard" */
+  background-image: linear-gradient($top,$bottom);
+}
+
 html, body {
 	margin: 0px;
 	padding: 0px;
@@ -1450,6 +1471,10 @@ body.blotter {
     position: relative;
   	background: url(../images/bg2.jpg) repeat center top;
 
+    #main {
+      padding-bottom: 80px;
+    }
+
     #top-bg {
       position: absolute;
     	left: 50%;
@@ -1480,13 +1505,6 @@ body.blotter {
         font-weight: bold;
       }
       a:hover {text-decoration:underline;}
-    }
-
-    .top {
-    	overflow:hidden;
-    	width:961px;
-    	margin:0 auto;
-    	padding:6px 0 7px;
     }
 
     .support {
@@ -1553,7 +1571,6 @@ body.blotter {
     }
 
     #below-promo {
-    	background: white;
     	border:1px solid #163045;
     	color: #333;
     	width: 925px;
@@ -1563,7 +1580,7 @@ body.blotter {
     	p {
       	margin:0 0 21px;
       	line-height:22px;
-      	font-size:17px;
+      	font-size:16px;
       }
 
       .item-list li p {
@@ -1572,65 +1589,82 @@ body.blotter {
       	line-height:17px;
       	font-size:13px;
       }
-
-      .text-future {
-      	display:block;
-      	color:white;
-      	font-size:36px;
-      	margin-top: 22px;
-      	margin-bottom:42px;
-      }
     }
     .container {
-    	border-top: 1px solid #CCC;
+      @include linear-top-bottom-gradient(#f9f9f9, #DCE7F0);
+
+    	border: 1px solid #CCC;
 
     	overflow:hidden;
     	height:1%;
-    	padding: 45px 58px 0 69px;
-    	margin-bottom: 32px;
+    	padding: 45px;
     	text-align: left;
 
       a.app-store-button {
       	float:right;
-      	margin-top:15px;
-
+      	margin: 0;
+      	margin-top: 45px;
       }
+
     	a.app-store-button:hover {
-    	  margin-top: 17px;
+    	  margin-top: 47px;
     	}
+
+    	.left, .right {
+        float: left;
+        width: 225px;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
     }
 
-    .like-it {
-      clear: right;
-      float: right;
-      width: 242px;
-      padding: 0;
-      margin: 0;
-      padding-top: 20px;
+    .top {
+      padding-bottom: 0;
 
-      div {
-        margin: auto;
-        width: 195px;
+      .description {
+        float: left;
+        margin-left: -25px;
+      	width:550px;
+      }
+
+      .like-it {
+        clear: right;
+        float: right;
+        width: 242px;
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+        padding-right: (242px - 195px) / 2 - 5px;
+
+        div {
+          margin: auto;
+          width: 195px;
+        }
       }
     }
 
     .container .btn:hover {text-decoration:none;}
-    .description {
-    	width:500px;
-    }
     .item-list {
     	overflow:hidden;
     	height:1%;
-    	margin:0 0 23px;
+    	width: 229px * 3 - 20px;
+    	margin:0 auto;
     	padding:0;
     	list-style:none;
-    }
-    .item-list li {
-    	float:left;
-    	overflow:hidden;
-    	width:229px;
-    	margin-left:71px;
-    	display:inline;
+
+      li {
+      	float:left;
+      	overflow:hidden;
+      	width:209px;
+      	padding-right: 20px;
+      	display:inline;
+      	text-align: left;
+      }
+
+      li:last-child
+      {
+        padding-right: 0px;
+      }
     }
     .item-list .alignleft {
     	float:left;
@@ -1638,7 +1672,6 @@ body.blotter {
     }
     .gallery-box {
     	background:#a0a8ae url(../images/blotter/bg-gallery-box.jpg) repeat-x 0 39px;
-    	width:959px;
     	position:relative;
     	overflow:hidden;
     }
@@ -1679,7 +1712,7 @@ body.blotter {
     	height:18px;
     	position:absolute;
     	top:331px;
-    	left:896px;
+    	right: 45px;
     	text-indent:-9999em;
     	overflow:hidden;
     	z-index:50;
@@ -1712,7 +1745,6 @@ body.blotter {
     .paging a:hover {background-position:0 -11px;}
     .gallery {
     	overflow:hidden;
-    	width:959px;
     	height:463px;
     	position:relative;
     	z-index:20;
@@ -1727,7 +1759,7 @@ body.blotter {
 
     .gallery-list li {
     	position:relative;
-    	padding: 0px 180px 0px 179px;
+    	padding: 0px 165px 0px 164px;
     	margin:0;
     	float:left;
     	background: transparent url(../images/blotter/screenshot-shadow.png) no-repeat center 290px;
@@ -1737,95 +1769,67 @@ body.blotter {
     .gallery-list li img.reflection { display:block; }
 
     .calendar-box img {display:block;}
-    .list-holder {
-    	position:relative;
-    	width:960px;
-    	overflow:hidden;
-    	margin:-5px -58px 52px -69px;
+
+    .gallery-list a img.sliding{display:block !important;}
+
+    .testimonials {
+      margin-left: -25px;
+      float: left;
+      width: 550px;
+
+      h2 {
+        margin-left: 25px;
+        padding-bottom: 12px;
+        font-weight: bold;
+      }
+
+      a, a:visited {
+      	color: #0b7eff !important;
+      }
+
+      p {
+        text-align: justify;
+        font-size: 14px !important;
+      }
     }
-    .list-frame {
-    	position:relative;
-    	left:50%;
-    	float:left;
-    	text-align:center;
-    }
+
     .advantage-list {
     	margin:0;
     	padding:0;
+    	padding-top: 30px;
+    	padding-left: 15px;
     	list-style:none;
     	overflow:hidden;
     	height:1%;
     	position:relative;
-    	float:left;
-    	left:-50%;
 
     	@include extruded-white-text;
     }
+
     .advantage-list li {
     	float:left;
     	width:173px;
     	height:56px;
-    	padding:9px 8px 0 61px;
+    	padding:9px 8px 20px 61px;
     	margin:0 29px;
     	text-align:left;
     }
     .advantage-list .type1 {background:url(../images/blotter/feature-button-zero-percent.png) no-repeat;}
     .advantage-list .type2 {background:url(../images/blotter/feature-button-rolling.png) no-repeat;}
     .advantage-list .type3 {background:url(../images/blotter/feature-button-narrow.png) no-repeat;}
-    .calendar-box {
-    	float:left;
-    	padding:4px 0 0 5px;
-    	margin-right:74px;
-    }
-    .btn2 {
-    	float:right;
-    	display:inline;
-    	margin:29px -1px 0 0;
-    	overflow:hidden;
-    }
-    .btn2:hover {text-decoration:none;}
-    #footer {
-    	width:947px;
-    	overflow:hidden;
-    	margin:0 auto;
-    	padding:7px 0 35px 14px;
-    }
-    #footer a, #footer span {font-size:13px;}
-    #footer span {padding-left:21px;}
-    .plug-fade ul{
-    	height:px;
-    	width:px;
-    	position:relative !important;
-    	overflow:hidden !important;
-    	list-style:none;
-    	padding:0;
-    	margin:0;
-    }
-    .plug-fade ul li{
-    	height:px;
-    	width:px;
-    	position:absolute !important;
-    	top:0 !important;
-    	left:0;
-    	z-index:1 !important;
-    }
-    .plug-fade ul li.active{z-index:2 !important;}
 
-    .plug-slide{
-    	height:px;
-    	width:px;
-    	overflow:visible !important;
-    	position:relative !important;
+    .bottom {
+      border-top: 1px solid #DCE7F0;
+
+      a.app-store-button {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+      a.app-store-button:hover {
+        margin-top: 12px;
+      }
     }
-    .plug-slide ul{
-    	height:px;
-    	width:99999px !important;
-    	position:absolute !important;
-    	top:0 !important;
-    	z-index:1 !important;
-    }
-    .plug-slide ul li{float:left !important;position:relative !important;}
-    .gallery-list a img.sliding{display:block !important;}
+
   }
 }
 
