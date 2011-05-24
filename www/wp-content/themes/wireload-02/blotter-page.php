@@ -18,13 +18,13 @@ Template Name: Blotter Page
 		<div class="container top">
   		<div class="description">
   		  <span class="left">
-  			<p>Did you ever mark something in your calendar only to <strong>forget to check the calendar</strong>?</p>
-  			<p>No more. Blotter is a Mac application which places your weekly <strong>calendar right on your desktop</strong>. Discreet and out of the way, yet only a glance away.</p>
+    			<p>Did you ever mark something in your calendar only to <strong>forget to check the calendar</strong>?</p>
+    			<p>No more. Blotter is a Mac application which places your weekly <strong>calendar right on your desktop</strong>. Discreet and out of the way, yet only a glance away.</p>
   			</span>
   			<span class="right">
-  			<p>With your week right before you, it is fast to see if you can make a meeting on Tuesday or if you’ll be able to go home early on Friday.</p>
-  			<p>Blotter is fully compatible with Mac OS X Snow Leopard, including Spaces, Exposé and Mobile Me.</p>
-  			</span?
+    			<p>With your week right before you, it is fast to see if you can make a meeting on Tuesday or if you’ll be able to go home early on Friday.</p>
+    			<p>You can also quickly add new events or tasks using hotkeys and Blotter's status bar menu.</p>
+  			</span>
   		</div>
 
 			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-store-button"><img src="<?php echo_images_uri() ?>/app_store.png" alt="Available Now On The App Store" /></a>
@@ -66,21 +66,21 @@ Template Name: Blotter Page
 				<ul class="gallery-list">
 					<li>
 					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf-full.jpg">
-					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf.jpg" alt="Blotter calendar on green Mac OS X wallpaper." width="600" height="376" />
+					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf.jpg" alt="Blotter calendar on green Mac OS X wallpaper." width="600" height="375" />
 					  </a>
 				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 					<li>
 					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-aurora-full.jpg">
-					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-aurora.jpg" alt="Blotter calendar on OS X Leopard." width="600" height="376" />
+					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-aurora.jpg" alt="Blotter calendar with 'New Event' window." width="600" height="375" />
 					  </a>
 				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-aurora-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 					<li>
-					  <a href="<?php echo_images_uri() ?>/blotter/blotter-narrow-calendar-over-city-full.jpg">
-					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-narrow-calendar-over-city.jpg" alt="Narrow left hand side Blotter calendar." width="600" height="376" />
+					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome-full.jpg">
+					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome.jpg" alt="Blotter calendar over a desktop background of Rome." width="600" height="375" />
 					  </a>
-				    <img src="<?php echo_images_uri() ?>/blotter/blotter-narrow-calendar-over-city-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
+				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 				</ul>
 			</div>

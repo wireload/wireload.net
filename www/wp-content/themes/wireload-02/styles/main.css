@@ -1473,7 +1473,8 @@ body.blotter {
         padding-left: 25px;
         padding-right: 25px; }
     body.blotter #page .top {
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      border-bottom: 0px none; }
       body.blotter #page .top .description {
         float: left;
         margin-left: -25px;
@@ -1496,7 +1497,7 @@ body.blotter {
       height: 1%;
       width: 667px;
       margin: 0 auto;
-      padding: 0;
+      padding: 30px 0 20px 0;
       list-style: none; }
       body.blotter #page .item-list li {
         float: left;
@@ -1512,6 +1513,8 @@ body.blotter {
       padding: 17px 22px 0 0; }
     body.blotter #page .gallery-box {
       background: #a0a8ae url(../images/blotter/bg-gallery-box.jpg) repeat-x 0 39px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #BCC7D0;
       position: relative;
       overflow: hidden; }
     body.blotter #page .gallery-box strong {
@@ -1559,7 +1562,7 @@ body.blotter {
       overflow: hidden;
       position: absolute;
       top: 536px;
-      left: 453px;
+      left: 435px;
       z-index: 50; }
     body.blotter #page .paging li {
       float: left;
@@ -1602,6 +1605,13 @@ body.blotter {
       display: block; }
     body.blotter #page .gallery-list a img.sliding {
       display: block !important; }
+    body.blotter #page .bottom {
+      border-top: 1px solid #AEBCC7; }
+      body.blotter #page .bottom a.app-store-button {
+        margin-left: 0px;
+        margin-top: 10px; }
+      body.blotter #page .bottom a.app-store-button:hover {
+        margin-top: 12px; }
     body.blotter #page .testimonials {
       margin-left: -25px;
       float: left;
@@ -1639,10 +1649,3 @@ body.blotter {
       background: url(../images/blotter/feature-button-rolling.png) no-repeat; }
     body.blotter #page .advantage-list .type3 {
       background: url(../images/blotter/feature-button-narrow.png) no-repeat; }
-    body.blotter #page .bottom {
-      border-top: 1px solid #DCE7F0; }
-      body.blotter #page .bottom a.app-store-button {
-        margin-left: 0px;
-        margin-top: 10px; }
-      body.blotter #page .bottom a.app-store-button:hover {
-        margin-top: 12px; }
