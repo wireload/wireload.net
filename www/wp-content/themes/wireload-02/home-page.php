@@ -15,7 +15,7 @@ Template Name: Home Page
 	</div>
 	<div id="s-wrap">
 		<div class="item cur" id="sw-blotter">
-		  <a href='http://www.blotterapp.com'>
+		  <a href='/products/blotter/'>
 			<img src="images/blotter_pic.png" alt="Blotter - The future will never look the same." style="bottom: 0px; left: 5px;" />
 			</a>
 		</div>
@@ -41,7 +41,7 @@ Template Name: Home Page
 
 <div id="prod-items">
 	<div class="item">
-		<a href="http://www.blotterapp.com">
+		<a href="/products/blotter/">
 			<span class="img">
 				<img src="images/img1.png" alt="Blotter" />
 				<span class="i-border"></span>
@@ -49,7 +49,7 @@ Template Name: Home Page
 		</a>
 		<h6>Blotter</h6>
 		<p>Unforgettable calendar.</p>
-		<a class="button" href="http://www.blotterapp.com"><span>Learn more</span></a>
+		<a class="button" href="/products/blotter/"><span>Learn more</span></a>
 	</div>
 	<div class="item">
 		<a href="/products/quiet/">
