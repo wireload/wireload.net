@@ -30,7 +30,7 @@ Template Name: Blotter Page
 			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-store-button"><img src="<?php echo_images_uri() ?>/app_store.png" alt="Available Now On The App Store" /></a>
 			<div class="like-it">
 			  <div>
-  			  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="BlotterApp">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+          <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.blotterapp.com" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
           <iframe src="http://www.facebook.com/plugins/like.php?href=blotterapp.com&amp;layout=button_count&amp;show_faces=true&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
         </div>
     	</div>
