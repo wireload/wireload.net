@@ -19,7 +19,7 @@ Template Name: Blotter Page
   		<div class="description">
   		  <span class="left">
     			<p>Did you ever mark something in your calendar only to <strong>forget to check the calendar</strong>?</p>
-    			<p>No more. Blotter is a Mac application which places your weekly <strong>calendar right on your desktop</strong>. Discreet and out of the way, yet only a glance away.</p>
+    			<p>No more. Blotter is a Mac calendar viewer which places your weekly calendar <strong>right on your desktop</strong>. Discreet and out of the way, yet only a glance away.</p>
   			</span>
   			<span class="right">
     			<p>With your week right before you, it is fast to see if you can make a meeting on Tuesday or if you’ll be able to go home early on Friday.</p>
