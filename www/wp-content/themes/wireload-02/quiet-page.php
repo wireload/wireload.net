@@ -71,24 +71,24 @@ Template Name: Quiet Page
   				<h5><img src="<?php echo_images_uri() ?>/fake/img1.jpg" alt="How it works" class="i-right" />Preserve your train of thought and
   be effective with Quiet.</h5>
   				<ul>
-  					<li>Focus on a single window of any application, or a single space.</li>
-  					<li>Fade out other windows, or bring them out of
-  focus with the beautiful 'Focus Out' effect.*</li>
-  					<li>Hide the menu bar unless you mouse over it.</li>
-  					<li>Optionally hide the Dock.</li>
+  					<li>Focus on a single window of any application, or on a whole space.</li>
+  					<li>Fade out other windows, or bring them out of focus with the beautiful 'Focus Out' effect.†</li>
+  					<li>Optionally use your desktop wallpaper as your focus backdrop.</li>
+  					<li>Hide the menu bar until you mouse over it.</li>
+  					<li>Optionally hide the Dock.††</li>
   				</ul>
 
   				<h5><img src="<?php echo_images_uri() ?>/fake/img2.jpg" alt="Quiet silence messengers" class="i-left" />While in 'focused mode', Quiet will silence applications as follows:</h5>
   				<ul>
   					<li>Change your status in Adium and iChat to 'busy'.</li>
-  					<li>Mute incoming calls in Skype through the
-  'Do Not Disturb' mode.</li>
+  					<li>Silence Skype through the 'Do Not Disturb' mode.</li>
   					<li>Disable the 'new mail' sound in Apple Mail.</li>
   					<li>Hide Growl alerts.</li>
   					<li>Control all of the above behaviors with individual settings.</li>
   				</ul>
 
-  				<p><small>* The 'Focus Out' effect requires a fast Mac with at least 512 MB of Video RAM. Intel integrated video chipsets do not support this effect.</small></p>
+  				<p><small>† The 'Focus Out' effect requires a fast Mac with at least 512 MB of Video RAM. Intel integrated video chipsets do not support this effect.</small></p>
+  				<p><small>†† Hiding the Dock will reveal minimized applications.</small></p>
   			</div>
 
   		</div>
@@ -131,3 +131,12 @@ Template Name: Quiet Page
   </ul>
 
 <?php get_footer('product'); ?>
+
+<![if gt IE 8]>
+<span id="corner-banner">
+  <span>
+    <em>Version 1.1</em>
+    <a href="http://itunes.apple.com/us/app/quiet/id421759530?mt=12#">now in the App Store!</a>
+  </span>
+</span>
+<![endif]>
