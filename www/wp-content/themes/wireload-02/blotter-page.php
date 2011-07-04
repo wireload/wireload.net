@@ -95,6 +95,7 @@ Template Name: Blotter Page
     			<p><em>"It makes me use my desktop for something useful, while adding the ease of previewing what is coming up right now, without looking too far away."</em><br/> - <a href="http://www.erikbernskiold.com/2011/04/27/blotter-showing-ical-on-your-desktop/">Erik Bernskiold</a></p>
   			</span>
   			<span class="right">
+ 				<p><em>"Blotter calendar is much sexier than even the Lion calendar in full-screen. Apple should take some design cues from the Blotter developers for the future."</em><br/> - Steve Sande, <a href="http://www.tuaw.com/2011/06/30/blotter-for-mac-puts-ical-on-your-desktop/">TUAW</a></p>
   			  <p><em>"@blotterapp is the only app that i USE RELIGIOUSLY ! its brilliant !"</em><br/> - @drbuk</p>
           <p><em>"[Blotter is] well designed."</em><br/> - Alex Lindsay, MacBreak Weekly</p>
     			<p><em>"With Blotter, you can display your iCal content on your desktop and so keep an eye on your important stuff much easier – and surprisingly enough, find that there just might be time to do everything properly."</em><br/> - Julia Altermann, <a href="http://mac.appstorm.net/reviews/productivity-review/blotter-displaying-ical-on-your-desktop/">Mac App Storm</a></p>
