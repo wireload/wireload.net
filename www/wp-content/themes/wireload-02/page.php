@@ -11,8 +11,8 @@
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf(__('Permalink to %s', 'wireload-02'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></h2>
 		<a href="/news" id="lnk-back">Back to List of News</a>
 	</div>
-	<div id="nd-body" class='post-content'>
-		<?php the_content(__('Read more &raquo;', 'wireload-02')); ?>
+	<div class='nd-body post-content'>
+	  <?php the_content(__('Read more &raquo;', 'wireload-02')); ?>
 	  <div class="tags"><?php the_tags('<span class="tag-links">', ", ", "</span>") ?></div>
 	</div>
 	<div id='nd-comments'>
