@@ -1008,7 +1008,7 @@ body.quiet {
   color: #0b7eff;
   font-weight: bold; }
 
-#news-list .shadowed img {
+#news-list .shadowed img, #news-list img.alignnone, #news-list img.aligncenter, #news-list img.alignright, #news-list img.alignleft {
   max-width: 510px; }
 
 #news-details {
@@ -1295,6 +1295,75 @@ ul.page-numbers li > *.next:hover {
   font-weight: bold;
   background: url(../images/crop2.gif) no-repeat center top; }
 
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* =End WordPress Core
+-------------------------------------------------------------- */
 .post-content h1, .post-content h2, .post-content h3, .post-content h4 {
   margin-top: 1em; }
 .post-content ul, .post-content ol {
