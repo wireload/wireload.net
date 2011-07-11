@@ -45,4 +45,10 @@ function page_bodyclass() {  // add class to <body> tag
 /* Disable the Admin Bar. */
 add_filter( 'show_admin_bar', '__return_false' );
 
+// Stop WordPress from polluting the download.
+if (!is_admin())
+{
+	wp_deregister_script('jquery');
+}
+
 remove_filter('comments_number', 'dsq_comments_number');
