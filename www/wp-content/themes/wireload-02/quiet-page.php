@@ -131,12 +131,3 @@ Template Name: Quiet Page
   </ul>
 
 <?php get_footer('product'); ?>
-
-<![if gt IE 8]>
-<span id="corner-banner">
-  <span>
-    <em>Version 1.1</em>
-    <a href="http://itunes.apple.com/us/app/quiet/id421759530?mt=12#">now in the App Store!</a>
-  </span>
-</span>
-<![endif]>
