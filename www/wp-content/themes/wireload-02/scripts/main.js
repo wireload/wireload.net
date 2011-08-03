@@ -6,8 +6,8 @@ var stop = false;
 window.onload = function() {
     // Preload images.
 	images = new Array();
-	images[0]="/wp-content/themes/wireload-02/images/quitet_logo.png";
-	images[1]="/wp-content/themes/wireload-02/images/but.png";
+	images[0]="http://static.wireload.net/wp-content/themes/wireload-02/images/quitet_logo.png";
+	images[1]="http://static.wireload.net/wp-content/themes/wireload-02/images/but.png";
 
 	var imgsObjcs = new Array();
     for (i = 0; i < images.length; i++) {
