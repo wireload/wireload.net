@@ -1,4 +1,7 @@
 <?php
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
 /**
  * The base configurations of the WordPress.
  *
@@ -24,7 +27,7 @@
 /** MySQL database password */
 #define('DB_PASSWORD', 'yourpasswordhere');
 
-define('WP_CACHE', true); //Added by WP-Cache Manager
+ //Added by WP-Cache Manager
 define('DB_NAME', 'wireblog');    // The name of the database
 define('DB_USER', 'wireblog');     // Your MySQL username
 define('DB_PASSWORD', 'aun4eg3eep1e7o'); // ...and password
