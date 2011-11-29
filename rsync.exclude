@@ -4,6 +4,7 @@ www/static/source
 .gitignore
 build_config.yml
 rsync.exclude
+logs/
 www/.htaccess
 www/wp-content/w3tc/
 *~
