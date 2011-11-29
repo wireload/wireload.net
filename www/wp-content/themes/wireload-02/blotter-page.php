@@ -71,10 +71,10 @@ Template Name: Blotter Page
 				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 					<li>
-					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-aurora-full.jpg">
-					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-aurora.jpg" alt="Blotter calendar with 'New Event' window." width="600" height="375" />
+					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway-full.jpg">
+					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway.jpg" alt="Blotter calendar with 'New Event' window." width="600" height="375" />
 					  </a>
-				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-aurora-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
+				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 					<li>
 					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome-full.jpg">
