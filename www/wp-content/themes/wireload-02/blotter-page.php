@@ -18,11 +18,11 @@ Template Name: Blotter Page
 		<div class="container top">
   		<div class="description">
   		  <span class="left">
-    			<p>Did you ever mark something in your calendar only to <strong>forget to check the calendar</strong>?</p>
-    			<p>No more. Blotter is a Mac calendar viewer which places your weekly calendar <strong>right on your desktop</strong>. Discreet and out of the way, yet only a glance away.</p>
+    			<p>Present your iCal calendar events and reminders <strong>right on your desktop</strong> with this stunning calendar viewer.</p>
+                <p>Blotter renders your whole week as a part of your wallpaper. It is beautifully discreet yet only a glance away.</p>
   			</span>
   			<span class="right">
-    			<p>With your week right before you, it is fast to see if you can make a meeting on Tuesday or if you’ll be able to go home early on Friday.</p>
+    			<p>With your week right before you, it is easy to see if you can make a meeting on Tuesday or if you’ll be able to go home early on Friday.</p>
     			<p>You can also quickly add new events or tasks using hotkeys and Blotter's status bar menu.</p>
   			</span>
   		</div>
