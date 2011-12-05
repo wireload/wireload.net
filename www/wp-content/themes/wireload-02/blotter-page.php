@@ -90,7 +90,7 @@ Template Name: Blotter Page
         <h2>What People Have Said</h2>
   			<span class="left">
     			<p>Pick of the Week in Leo Laporte's <a href="http://wiki.twit.tv/wiki/MacBreak_Weekly_239">MacBreak Weekly</a>!</p>
-    			<p><em>"Blotter is a great productivity application. It places your iCal calendar directly onto your desktop in a discreet and out of the way fashion, while also being easily accessible. No setup is required, all you have to do is install it from the Mac App Store and your ready to go."</em><br/>- <a href="http://macappolis.com/index.php?id=2973847242085471834">MacAppolis</a></p>
+    			<p><em>"Blotter is a great productivity application. It places your iCal calendar directly onto your desktop in a discreet and out of the way fashion, while also being easily accessible. No setup is required, all you have to do is install it from the Mac App Store and your ready to go."</em><br/>- MacAppolis</p>
           <p><em>"How do you guy[s] live without @BlotterApp?"</em><br/> - @pouramie</p>
     			<p><em>"It makes me use my desktop for something useful, while adding the ease of previewing what is coming up right now, without looking too far away."</em><br/> - <a href="http://www.erikbernskiold.com/2011/04/27/blotter-showing-ical-on-your-desktop/">Erik Bernskiold</a></p>
   			</span>
