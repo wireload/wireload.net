@@ -3,4 +3,4 @@ deploy:
   path: /www/wireload.net/
   presets:
     production:
-      hosts: ['hostadmin@hosting.wireload.net']
+      hosts: ['wireadmin@se.hosting.wireload.net']
