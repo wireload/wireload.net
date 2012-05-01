@@ -65,7 +65,7 @@ Template Name: Quiet Page
 
   			<div class="text">
   				<p>Push distractions aside, silence disruptions and enter a zen like state of focus with Quiet for Mac OS X. With the push of a button, silence noisy applications and fade out all unwanted windows. It gives you that moment of peace you need to get on with work.</p>
-  				<p>Quiet will ask programs which normally vie for your attention to hold their peace. Chat clients such as Adium or iChat by will be set as 'away' or 'busy'. Ringing in Skype will be turned off using the 'Do Not Disturb' mode. Quiet can even hide the Dock to prevent unwanted icon bouncing or badges reminding you of how many emails you have unread.</p>
+  				<p>Quiet will ask programs which normally vie for your attention to hold their peace. Chat clients such as Adium or iChat by will be set as 'away' or 'busy'. Ringing in Skype will be turned off using the 'Do Not Disturb' mode.</p>
   				<p>At the same time Quiet will hide unrelated windows, including the Finder itself, making the window or windows you wish to focus on the only thing on your screen.</p>
 
   				<h5><img src="<?php echo_images_uri() ?>/fake/img1.jpg" alt="How it works" class="i-right" />Preserve your train of thought and
@@ -75,7 +75,6 @@ Template Name: Quiet Page
   					<li>Fade out other windows, or bring them out of focus with the beautiful 'Focus Out' effect.†</li>
   					<li>Optionally use your desktop wallpaper as your focus backdrop.</li>
   					<li>Hide the menu bar until you mouse over it.</li>
-  					<li>Optionally hide the Dock.††</li>
   				</ul>
 
   				<h5><img src="<?php echo_images_uri() ?>/fake/img2.jpg" alt="Quiet silence messengers" class="i-left" />While in 'focused mode', Quiet will silence applications as follows:</h5>
@@ -83,12 +82,10 @@ Template Name: Quiet Page
   					<li>Change your status in Adium and iChat to 'busy'.</li>
   					<li>Silence Skype through the 'Do Not Disturb' mode.</li>
   					<li>Disable the 'new mail' sound in Apple Mail.</li>
-  					<li>Hide Growl alerts.</li>
   					<li>Control all of the above behaviors with individual settings.</li>
   				</ul>
 
   				<p><small>† The 'Focus Out' effect requires a fast Mac with at least 512 MB of Video RAM. Intel integrated video chipsets do not support this effect.</small></p>
-  				<p><small>†† Hiding the Dock will reveal minimized applications.</small></p>
   			</div>
 
   		</div>
@@ -103,7 +100,7 @@ Template Name: Quiet Page
   				<li>
   					<img src="<?php echo_images_uri() ?>/i_ico1.png" alt="Attention Saver" />
   					<big>Attention Saver</big>
-  					<small>Mute iChat notifications,<br />Growl messages and Skype calls.</small>
+  					<small>Mute iChat notifications,<br /> and Skype.</small>
   				</li>
   				<li>
   					<img src="<?php echo_images_uri() ?>/i_ico2.png" alt="Talk to you later (TTYL)" />
