@@ -1427,7 +1427,7 @@ body.blotter {
       padding: 0;
       margin: 0;
       margin-left: -618px;
-      background: url(http://static.wireload.net/wp-content/themes/wireload-02/images/blotter/top_composite_bg.jpg) no-repeat center top; }
+      background: url(http://static.wireload.net/wp-content/themes/wireload-02/images/blotter/top_composite_bg.jpg?v=2) no-repeat center top; }
     body.blotter #page #wrapper {
       width: 961px;
       margin: 0 auto;
@@ -1458,7 +1458,7 @@ body.blotter {
       padding: 65px 0 0px;
       overflow: hidden;
       height: 332px;
-      font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 36px;
       font-style: normal;
       font-variant: normal;
