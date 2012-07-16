@@ -65,22 +65,22 @@ Template Name: Blotter Page
 			<div class="gallery">
 				<ul class="gallery-list">
 					<li>
-					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf-full.jpg">
-					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf.jpg" alt="Blotter calendar on green Mac OS X wallpaper." width="600" height="375" />
+					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf-full.jpg?v=2">
+					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf.jpg?v=2" alt="Blotter calendar on green Mac OS X wallpaper." width="600" height="375" />
 					  </a>
-				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
+				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-on-leaf-ref.png?v=2" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 					<li>
-					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway-full.jpg">
-					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway.jpg" alt="Blotter calendar with 'New Event' window." width="600" height="375" />
+					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway-full.jpg?v=2">
+					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway.jpg?v=2" alt="Blotter calendar with 'New Event' window." width="600" height="375" />
 					  </a>
-				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
+				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-milkyway-ref.png?v=2" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 					<li>
-					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome-full.jpg">
-					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome.jpg" alt="Blotter calendar over a desktop background of Rome." width="600" height="375" />
+					  <a href="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome-full.jpg?v=2">
+					    <img class="sliding" src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome.jpg?v=2" alt="Blotter calendar over a desktop background of Rome." width="600" height="375" />
 					  </a>
-				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome-ref.png" alt="Blotter calendar reflection." width="600" height="70" />
+				    <img src="<?php echo_images_uri() ?>/blotter/blotter-calendar-over-rome-ref.png?v=2" alt="Blotter calendar reflection." width="600" height="70" />
 					</li>
 				</ul>
 			</div>
@@ -104,8 +104,8 @@ Template Name: Blotter Page
       </div>
 			<ul class="advantage-list">
 				<li class="type1"><strong>Less than meets the eye.</strong> Blotter uses very little memory and processing power.</li>
-				<li class="type2"><strong>Rolling 7 day option.</strong> View the 7 next days instead of a regular week.</li>
-				<li class="type3"><strong>Narrow option.</strong> Save space with only a to do list and upcoming events.</li>
+				<li class="type2"><strong>Go down memory lane. Or up.</strong> View past and coming weeks with ease.</li>
+				<li class="type3"><strong>Bring to Front.</strong> Bring Blotter to front for a quick look above the clutter.</li>
 			</ul>
 
 			<a href="http://itunes.apple.com/us/app/blotter/id406580224?mt=12" class="app-store-button"><img src="<?php echo_images_uri() ?>/app_store.png" alt="Available Now On The App Store" /></a>
