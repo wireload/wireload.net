@@ -29,9 +29,10 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 
  //Added by WP-Cache Manager
 define('DB_NAME', 'wireblog');    // The name of the database
-define('DB_USER', 'wireblog');     // Your MySQL username
-define('DB_PASSWORD', 'cimnoyShauckkos'); // ...and password
-define('DB_HOST', 'localhost');
+define('DB_USER', 'root');     // Your MySQL username
+define('DB_PASSWORD', 'root'); // ...and password
+define('DB_HOST', '127.0.0.1:8889');
+define('DB_PORT', 8889);
 
 // WireLoad: Get rid of Contact Form 7 JS and CSS. We have our own.
 define('WPCF7_LOAD_JS', false);
