@@ -1,0 +1,15 @@
+%a.comms{:href => "#{current_article.url}#disqus_thread"} 0
+%span.info
+  %strong.entry-date
+    = current_article.date.strftime('%Y.%m.%d')
+  \/
+  %span.author.vcard
+    %a.url.fn.n{:href => "http://wireload.net/author/"} 
+      = current_article.data.author
+  \/
+  %span
+    = current_article.date.strftime('%H:%M')
+  
+%h3.entry-title
+  %a{:href => current_article.url, :rel => "bookmark"} 
+    = current_article.title

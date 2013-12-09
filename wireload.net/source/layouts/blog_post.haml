@@ -1,0 +1,38 @@
+- wrap_layout :layout do
+  #news-details
+    #nd-head
+      = partial :blog_article_head, :locals => { :current_article => current_article }  
+      %a#lnk-back{:href => "/news"} Back to List of News
+    .post-content.nd-body
+      = yield
+      .tags
+    #nd-comments
+      #disqus_thread      
+        :javascript
+          var disqus_container_id = 'disqus_thread',
+              disqus_domain = 'disqus.com',
+              disqus_shortname = 'wireload',
+              disqus_url = 'http://wireload.net/#{request.path}',
+              disqus_developer = 0;
+
+        - if data.page.wordpress_id
+          :javascript
+            var disqus_identifier = '#{data.page.wordpress_id} http://wireload.net/?p=#{data.page.wordpress_id}';
+        - else
+          :javascript
+            var disqus_identifier = '#{File.basename(current_page.source_file || request.path).parameterize}';
+
+        :javascript
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        %noscript
+          Please enable JavaScript to view the
+          %a{ :href => "http://disqus.com/?ref_noscript" }
+            comments powered by Disqus.
+        %a.dsq-brlink{ :href => "http://disqus.com"}
+          comments powered by
+          %span.logo-disqus Disqus
