@@ -1,0 +1,9 @@
+---
+title: Email Infrastructure Setup
+author: smcfarland
+wordpress_id: 1272
+wordpress_url: http://wireload.net/?p=1272
+date: 2012-06-29 16:11:27
+tags: the-email-school
+---
+A receiving email server has a basic question to answer when it receives email, "I've received an email from a certain IP and it says it's from [blank] domain, is this true?"<br/>There are a few ways to check this, the IP's <a href="http://wireload.net/?p=1243">PTR Records</a>, the domain's <a href="http://wireload.net/2012/05/what-are-spf-records/">SPF Records</a> and <a href="http://wireload.net/?p=1248">DKIM</a>. They are each executed in the order shown. It's best to use all of the checks, if one fails, the whole chain fails and the server will not receive the sent email.<br/>&nbsp;

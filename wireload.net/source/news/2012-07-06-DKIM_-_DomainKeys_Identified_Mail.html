@@ -1,0 +1,9 @@
+---
+title: DKIM - DomainKeys Identified Mail
+author: smcfarland
+wordpress_id: 1248
+wordpress_url: http://wireload.net/?p=1248
+date: 2012-07-06 05:45:51
+tags: the-email-school
+---
+DKIM, or DomainKeys Identified Mail is a way to allow a person or organization to claim responsibility for an email by using the DKIM method to associate a domain name with an email message. DKIM makes this association using something called a 'digital signature'. This is not to be confused with a signature by the person sending the email to you, or by a scan of a signature that is inserted. In this case, a digital signature is a mathematical scheme for demonstrating the authenticity of a digital message or document.<br/>By adding a "DKIM-Signature" field to the message's header your email is given a private key when it's sent. The receiving server gets the public key from your DNS record and verifies the integrity and correctness of the signature. DKIM uses the actual message's body content and the header information, SPF checks only the body.<br/>The "DKIM-Signature" header field consists of a list of "tag=value" parts. The most relevant ones are <strong>b</strong> for the actual digital signature of the contents (headers and body) of the mail message, <strong>bh</strong> for the body hash, <strong>d</strong> for the signing domain, and <strong>s</strong> for the selector.<br/>If spammers are forced to show a correct source domain, other filtering techniques can work more effectively such as whitelists and blacklists. The source domain can also contribute into a reputation system to better identify spam. Conversely, DKIM can make it easier to identify mail that is known not to be spam and need not be filtered.

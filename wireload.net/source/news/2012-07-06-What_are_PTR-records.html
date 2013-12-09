@@ -1,0 +1,9 @@
+---
+title: What are PTR-records?
+author: smcfarland
+wordpress_id: 1243
+wordpress_url: http://wireload.net/2012/07/what-are-ptr-records/
+date: 2012-07-06 05:39:11
+tags: the-email-school
+---
+A PTR-record is a "pointer" DNS record type. It's commonly known as a reverse DNS record, and is what allows others to do a reverse DNS record lookup, as it maps an IP address to a host name. For instance, a person has your IP address and they want to know what your domain/host is.<br/>Example:<br/><blockquote><br/>A record = give me a name I'll give you an IP<br/>PTR record = give me an IP I'll give you a name<br/></blockquote><br/>PTR record syntax:<br/><blockquote><br/>[your ip in reversed order].in-addr.arpa. IN PTR your-domain.com.<br/></blockquote><br/>Not every IP address has a corresponding PTR record. Usually, you cannot add your own PTR record. The PTR record is created by the ISP that "owns" the IP block it came from. They are the ones who need to create the PTR record if there is to be a PTR record.<br/>A PTR record is the the opposite of an A-record. The A-record points a domain/host name to an IP address, the PTR-record resolves the IP address to a domain/host name.<br/>Many recipient e-mail servers will reject your e-mail for policy reasons if you don’t have a valid PTR record, and will often mistakenly cite an <a href="http://www.ietf.org/rfc/rfc1912.txt">RFC 1912</a> “violation” (<a href="http://www.spamstopshere.com/blog/2008/05/13/dns-problems-affecting-e-mail-delivery-ptr-records/">source</a>).
