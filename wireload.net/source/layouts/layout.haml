@@ -1,0 +1,54 @@
+!!! Strict
+%html{:lang => "en-US", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title WireLoad Inc - Annoyingly good software and services.
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
+    %link{:href => "/news/feed.xml", :rel => "alternate", :title => "WireLoad Inc &raquo; WireLoad – Fancy software online and on the Mac. Comments Feed", :type => "application/rss+xml"}/
+    %meta{:content => "WireLoad designs software. We search high and low for interesting problems and then mercilessly work them out with fanciful applications.", :name => "description"}/
+    %meta{:content => "mac, web, productivity, calendar, email migration, email transfer, yippiemove, blotter, quiet, mac app store, mac apps", :name => "keywords"}/
+    %link{:href => "http://wireload.net/", :rel => "canonical"}/
+    %link{:href => "http://wireload.disqus.com/latest.rss", :rel => "alternate", :title => "WireLoad Inc latest comments", :type => "application/rss+xml"}/
+    %link{:href => "/stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}/
+  %body.home.home.page.page-id-290.page-template.page-template-home-page-php.logged-in
+    #page
+      #main
+        #header
+          %a#logo{:href => "http://wireload.net"}
+            %img{:alt => "WireLoad", :src => "/images/logo.png"}/
+          %ul#top-menu
+            %li
+              %a.act{:href => "http://wireload.net"}
+                %span Apps
+            %li
+              %a{:href => "/news/"}
+                %span News
+            %li
+              %a{:href => "/company/"}
+                %span Company
+            %li
+              %a{:href => "http://support.wireload.net/home"}
+                %span Support
+        #body
+          = yield
+        / #body
+        %div{:style => "clear: both"}
+      / #main
+    / #page
+    #footer
+      #foot
+        #copy
+          \&copy;
+          %strong 2006-2011.
+          WireLoad Inc.
+        %a#bot-logo{:href => "http://wireload.net"}
+          %img{:alt => "Wireload", :src => "/images/bot_logo.png"}/
+    %script{:src => "/js/jquery.js", :type => "text/javascript"}
+    %script{:src => "/js/main.js", :type => "text/javascript"}
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-16042104-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
