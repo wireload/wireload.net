@@ -92,7 +92,7 @@ body.quiet {
 	text-align: center;
 	position: relative;
 }
-.product #main {
+.folder-products #main {
 	padding-bottom: 137px;
 }
 #header {
@@ -130,7 +130,7 @@ body.quiet {
 	color: #535d79;
 	text-shadow: #fff 0px 1px 1px;
 }
-.product #top-menu a {
+.folder-products #top-menu a {
 	color: #fff;
 	text-shadow: #000 0px -1px 1px;
 }
@@ -156,7 +156,7 @@ body.quiet {
 	color: #535d79!important;
 	text-shadow: #fff 0px 1px 1px;
 }
-.product #top-menu a {
+.folder-products #top-menu a {
   .act, .act:hover {
 	  color: #fff!important;
 	  text-shadow: #000 0px 1px 1px;
@@ -167,7 +167,7 @@ body.quiet {
 	height: 23px;
 	background: url(../images/tm.png) no-repeat right -87px;
 }
-.product #top-menu a.act span {
+.folder-products #top-menu a.act span {
 	padding-top: 7px;
 	height: 24px;
 }
@@ -1319,7 +1319,7 @@ ul.page-numbers li > *.next:hover {
 	position: relative;
 	margin-top: -81px;
 }
-.product #footer {
+.folder-products #footer {
 	height: 88px;
 	margin-top: -88px;
 	background: url(../images/foot_bg.png) repeat-x left top;
@@ -1333,7 +1333,7 @@ ul.page-numbers li > *.next:hover {
 	position: relative;
 	text-shadow: #fff 0px 1px 1px;
 }
-.product #foot {
+.folder-products #foot {
 	background: none;
 	height: 88px;
 }
@@ -1346,7 +1346,7 @@ ul.page-numbers li > *.next:hover {
 	font-size: 10px;
 	color: #535d79;
 }
-.product #dev {
+.folder-products #dev {
 	background-image: url(../images/a2.png);
 	color: #ced7e4;
 	text-shadow: #000 0px -1px 1px;
@@ -1356,7 +1356,7 @@ ul.page-numbers li > *.next:hover {
 	color: #535d79!important;
 	background-position: 0px bottom;
 }
-.product #dev:hover {
+.folder-products #dev:hover {
 	color: #ced7e4!important;
 }
 #dev:hover strong {
@@ -1369,7 +1369,7 @@ ul.page-numbers li > *.next:hover {
 	left: 0px;
 	top: 28px;
 }
-.product #copy {
+.folder-products #copy {
 	top: 35px;
 }
 #bot-logo {
@@ -1377,7 +1377,7 @@ ul.page-numbers li > *.next:hover {
 	right: 0px;
 	top: 32px;
 }
-.product #bot-logo {
+.folder-products #bot-logo {
 	top: 39px;
 }
 #bot-menu {
@@ -1556,7 +1556,7 @@ a img.aligncenter {
   }
 }
 
-body.blotter {
+body.folder-products-blotter {
   background: none;
 	color:#fff;
 
@@ -1576,7 +1576,7 @@ body.blotter {
     	padding: 0;
     	margin: 0;
         margin-left: -618px;
-    	background: url(../images/blotter/top_composite_bg.jpg?v=2) no-repeat center top;
+    	background: url(../images/blotter/top_composite_bg.jpg) no-repeat center top;
     }
 
     #wrapper {
