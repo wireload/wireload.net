@@ -953,23 +953,29 @@ body.folder-products-quiet {
     	top: 0px;
     	background: url(../images/send_bg.png);
 
-      i {
-      	width: 84px;
-      	height: 11px;
-      	position: absolute;
-      	left: 54px;
-      	bottom: 14px;
-      	background: url(../images/send_but.png) no-repeat left top;
-      }
-      em {
-      	width: 138px;
-      	height: 11px;
-      	position: absolute;
-      	left: 27px;
-      	bottom: 14px;
-      	background: url(../images/thank_you.png) no-repeat left top;
-      	display: none;
-      }
+        button {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+
+        i {
+            width: 84px;
+            height: 11px;
+            position: absolute;
+            left: 54px;
+            bottom: 14px;
+            background: url(../images/send_but.png) no-repeat left top;
+        }
+        em {
+            width: 138px;
+            height: 11px;
+            position: absolute;
+            left: 27px;
+            bottom: 14px;
+            background: url(../images/thank_you.png) no-repeat left top;
+            display: none;
+        }
     }
 
     :hover #but i {

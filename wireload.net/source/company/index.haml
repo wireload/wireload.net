@@ -74,39 +74,40 @@
       340 S Lemon Ave #3501
       %br/
       Walnut, CA 91789 USA
-    / for contact form 7
-    #wpcf7-f1003-p300-o1.wpcf7
-      %form.wpcf7-form{:action => "/company/#wpcf7-f1003-p300-o1", :method => "post", :novalidate => "novalidate"}
-        %div{:style => "display: none;"}
-          %input{:name => "_wpcf7", :type => "hidden", :value => "1003"}/
-          %input{:name => "_wpcf7_version", :type => "hidden", :value => "3.5.4"}/
-          %input{:name => "_wpcf7_locale", :type => "hidden", :value => ""}/
-          %input{:name => "_wpcf7_unit_tag", :type => "hidden", :value => "wpcf7-f1003-p300-o1"}/
-          %input{:name => "_wpnonce", :type => "hidden", :value => "c0ab91081f"}/
-        #contact-form
-          %div
-            %label Name:
-            %br/
-            %span.inp
-              %span.wpcf7-form-control-wrap.your-name
-                %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-required" => "true", :name => "your-name", :size => "40", :type => "text", :value => ""}/
-          %div
-            %label Email:
-            %br/
-            %span.inp
-              %span.wpcf7-form-control-wrap.your-email
-                %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
-          %div
-            %label Your Message:
-            %br/
-            %span.txt
-              %span.wpcf7-form-control-wrap.your-message
-                %textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required{"aria-required" => "true", :cols => "40", :name => "your-message", :rows => "10"}
-          #send-but
-            %span#border
-            %br/
-            %span#but.wpcf7-submit
-              %i
-              %em
-        .wpcf7-response-output.wpcf7-display-none
+    
+    %form#33433847411351.jotform-form{"accept-charset" => "utf-8", :action => "http://submit.jotformeu.com/submit/33433847411351/", :method => "post", :name => "form_33433847411351"}
+      %input{:name => "formID", :type => "hidden", :value => "33433847411351"}/
+      #contact-form.form-all
+        %div
+          %label{:for => "input_1"} Name:
+          %br/
+          %span.inp
+            %span.your-name
+              %input#input_1{"aria-required" => "true", :name => "q1_name", :size => "40", :type => "text", :value => ""}/
+        %div
+          %label{:for => "input_5"}  Email:
+          %br/
+          %span.inp
+            %span.your-email
+              %input#input_5{"aria-required" => "true", :name => "q5_email5", :size => "40", :type => "email", :value => ""}/
+        %div
+          %label{:for => "input_4"} Your Message:
+          %br/
+          %span.txt
+            %span.your-message
+              %textarea#input_5{"aria-required" => "true", :cols => "40", :name => "q4_message", :rows => "10"}
+        #send-but
+          %span#border
+          %br/
+          %span#but
+            %i
+            %em
+            %button#input_2.form-submit-button{:type => "submit"}
+              Submit
+        %div{:style => "display:none"}
+          Should be Empty:
+          %input{:name => "website", :type => "text", :value => ""}/
+      %input#simple_spc{:name => "simple_spc", :type => "hidden", :value => "33433847411351"}/
+      :javascript
+        document.getElementById("si" + "mple" + "_spc").value = "33433847411351-33433847411351";
 
