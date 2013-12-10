@@ -3,22 +3,7 @@ layout: layout_bare
 ---
 #top-bg
 #main
-  #header
-    %a#logo{:href => "http://wireload.net"}
-      %img{:alt => "Wireload", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/logo2.png"}/
-    %ul#top-menu
-      %li
-        %a{:href => "/"}
-          %span Apps
-      %li
-        %a{:href => "/news/"}
-          %span News
-      %li
-        %a{:href => "/company/"}
-          %span Company
-      %li
-        %a{:href => "http://support.wireload.net"}
-          %span Support
+  = partial :header_nav, :locals => {:inverted => true}
   #wrapper
     #promo-head
       %h1.logo Blotter

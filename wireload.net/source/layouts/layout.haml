@@ -1,21 +1,6 @@
 - wrap_layout :layout_bare do
   #main
-    #header
-      %a#logo{:href => "/"}
-        %img{:alt => "WireLoad", :src => "/images/logo.png"}/
-      %ul#top-menu
-        %li
-          %a{:class => request.path == 'index.html' ? 'act' : nil, :href => "/"}
-            %span Apps
-        %li
-          %a{:class => request.path == 'news/index.html' ? 'act' : nil, :href => "/news/"}
-            %span News
-        %li
-          %a{:class => request.path == 'company/index.html' ? 'act' : nil, :href => "/company/"}
-            %span Company
-        %li
-          %a{:href => "http://support.wireload.net/home"}
-            %span Support
+    = partial :header_nav
     #body
       = yield
     / #body
