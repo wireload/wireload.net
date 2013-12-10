@@ -1,0 +1,112 @@
+#about
+  .item
+    %h1
+      %b About
+      WireLoad
+    %p
+      WireLoad designs software. We search high and low for interesting
+      problems and then mercilessly work them out with fanciful applications. Our apps are narrowly focused so that we can polish each part to a shine. We'll take one really good feature over a dozen lousy ones any day. We think you'll really enjoy the quality, ease of use and pleasant user experience that results.
+  .item
+    %img#a-arr{:alt => "Look at this!", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_arr.png"}/
+    %h2 Do you need support for a WireLoad product?
+    #icons-links
+      %div
+        %h3 Blotter
+        %ul
+          %li
+            %a{:href => "http://twitter.com/BlotterApp"}
+              %img{:alt => "Follow Blotter on Twitter", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico1.png"}>/
+              Follow Blotter on Twitter
+          %li
+            %a{:href => "http://support.wireload.net/forums/356140-frequently-asked-questions"}
+              %img{:alt => "The Blotter FAQ", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico2.png"}>/
+              The Blotter FAQ
+          %li
+            %a{:href => "http://support.wireload.net/anonymous_requests/new"}
+              %img{:alt => "Contact Blotter support", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico3.png"}>/
+              Contact Blotter support
+      %div
+        %h3{:style => "color:#6c7f23;"} Quiet
+        %ul
+          %li
+            %a{:href => "http://twitter.com/QuietApp"}
+              %img{:alt => "Follow Quiet on Twitter", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico4.png"}>/
+              Follow Quiet on Twitter
+          %li
+            %a{:href => "http://support.wireload.net/forums/356141-frequently-asked-questions"}
+              %img{:alt => "The Quiet FAQ", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico5.png"}>/
+              The Quiet FAQ
+          %li
+            %a{:href => "http://support.wireload.net/anonymous_requests/new"}
+              %img{:alt => "Contact Quiet support", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico6.png"}>/
+              Contact Quiet support
+      %div
+        %h3{:style => "color:#4582c7;"} YippieMove
+        %ul
+          %li
+            %a{:href => "http://twitter.com/yippiemove"}
+              %img{:alt => "Follow YippieMove on Twitter", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico7.png"}>/
+              Follow YippieMove on Twitter
+          %li
+            %a{:href => "http://www.yippiemove.com/help/"}
+              %img{:alt => "YippieMove online Help", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico8.png"}>/
+              YippieMove online Help
+          %li
+            %a{:href => "http://support.yippiemove.com/requests/anonymous/new"}
+              %img{:alt => "Contact YippieMove support", :src => "http://wireload-cdn.s3.amazonaws.com/wp-content/themes/wireload-02/images/a_ico9.png"}>/
+              Contact YippieMove support
+  .item
+    .left
+      %h2{:style => "color:#2078f2"} Is there anything else you’d like to talk to us about?
+      %p
+        If you have a question or want to get in touch with someone about WireLoad specifically, use the contact form or ping us at
+        = succeed "." do
+          %a{:href => "http://twitter.com/#!/wireload"} @wireload
+      %em Please remember to use the Product Support for support questions - we will unfortunately not be able to respond to support requests through the general contact form.
+      .sep
+      %h2 Corporate Address
+      %br/
+      %b Our mailing address is:
+      %br/
+      %br/
+      WireLoad Inc.
+      %br/
+      340 S Lemon Ave #3501
+      %br/
+      Walnut, CA 91789 USA
+    / for contact form 7
+    #wpcf7-f1003-p300-o1.wpcf7
+      %form.wpcf7-form{:action => "/company/#wpcf7-f1003-p300-o1", :method => "post", :novalidate => "novalidate"}
+        %div{:style => "display: none;"}
+          %input{:name => "_wpcf7", :type => "hidden", :value => "1003"}/
+          %input{:name => "_wpcf7_version", :type => "hidden", :value => "3.5.4"}/
+          %input{:name => "_wpcf7_locale", :type => "hidden", :value => ""}/
+          %input{:name => "_wpcf7_unit_tag", :type => "hidden", :value => "wpcf7-f1003-p300-o1"}/
+          %input{:name => "_wpnonce", :type => "hidden", :value => "c0ab91081f"}/
+        #contact-form
+          %div
+            %label Name:
+            %br/
+            %span.inp
+              %span.wpcf7-form-control-wrap.your-name
+                %input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{"aria-required" => "true", :name => "your-name", :size => "40", :type => "text", :value => ""}/
+          %div
+            %label Email:
+            %br/
+            %span.inp
+              %span.wpcf7-form-control-wrap.your-email
+                %input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{"aria-required" => "true", :name => "your-email", :size => "40", :type => "email", :value => ""}/
+          %div
+            %label Your Message:
+            %br/
+            %span.txt
+              %span.wpcf7-form-control-wrap.your-message
+                %textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required{"aria-required" => "true", :cols => "40", :name => "your-message", :rows => "10"}
+          #send-but
+            %span#border
+            %br/
+            %span#but.wpcf7-submit
+              %i
+              %em
+        .wpcf7-response-output.wpcf7-display-none
+
