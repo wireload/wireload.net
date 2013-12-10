@@ -23,17 +23,17 @@
     #page
       #main
         #header
-          %a#logo{:href => "http://wireload.net"}
+          %a#logo{:href => "/"}
             %img{:alt => "WireLoad", :src => "/images/logo.png"}/
           %ul#top-menu
             %li
-              %a.act{:href => "http://wireload.net"}
+              %a{:class => request.path == 'index.html' ? 'act' : nil, :href => "/"}
                 %span Apps
             %li
-              %a{:href => "/news/"}
+              %a{:class => request.path == 'news/index.html' ? 'act' : nil, :href => "/news/"}
                 %span News
             %li
-              %a{:href => "/company/"}
+              %a{:class => request.path == 'company/index.html' ? 'act' : nil, :href => "/company/"}
                 %span Company
             %li
               %a{:href => "http://support.wireload.net/home"}
