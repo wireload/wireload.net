@@ -1,5 +1,10 @@
-!!! Strict
-%html{:lang => "en-US", :xmlns => "http://www.w3.org/1999/xhtml"}
+!!!
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8] <html class="no-js lt-ie9">
+/ [if gt IE 8]><!
+%html.no-js
+  / <![endif]
   %head
     %title WireLoad Inc - Annoyingly good software and services.
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
@@ -9,7 +14,12 @@
     %link{:href => "http://wireload.net/", :rel => "canonical"}/
     %link{:href => "http://wireload.disqus.com/latest.rss", :rel => "alternate", :title => "WireLoad Inc latest comments", :type => "application/rss+xml"}/
     %link{:href => "/stylesheets/main.css", :rel => "stylesheet", :type => "text/css"}/
-  %body.home.home.page.page-id-290.page-template.page-template-home-page-php.logged-in
+
+  - containing_path = request.path
+  - classes = "file-" + File.basename(containing_path).parameterize
+  - while containing_path = File.dirname(containing_path) and containing_path != "." and containing_path != "/"; classes << " folder-" + containing_path.parameterize; end
+
+  %body{:class => classes}
     #page
       #main
         #header
