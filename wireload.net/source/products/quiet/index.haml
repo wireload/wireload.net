@@ -4,8 +4,17 @@ layout: layout_bare
 #top-bg
 #main
   = partial :header_nav, :locals => {:inverted => true}
+  #discontinued-message
+    %p
+      Quiet
+      %a{:href => '/news/2013/11/Quiet_has_been_withdrawn_from_Mac_App_Store.html'}
+        has been discontinued 
+      and withdrawn from the Mac App Store as it cannot conform to App Store 'sandboxing' rules. If you already own Quiet, your copy will continue to function indefinitely (or until it breaks in a future update of Mac OS X). Thank you for your support and we hope you have enjoyed the benefits of Quiet while they lasted!
+
   #body
     #prod-slider
+      #discontinued
+        Discontinued
       #macbook.off{:style => "opacity: 1; display: block; top: -168px;"}
         #macbook-glow-on.macbook-glow{:style => "opacity: 0.5; display: block;"}
         #mb
@@ -26,8 +35,6 @@ layout: layout_bare
           %span how it works
       #ps-left{:style => "opacity: 1; display: block; top: 78px;"}
         %h1 Quiet
-        %a.button.btn-v2{:href => "http://itunes.apple.com/us/app/quiet/id421759530?mt=12#"}
-          %span Buy now
       #ps-selector.on
         %div{:style => "left: 0px;"}
         %a.off OFF
@@ -101,8 +108,6 @@ layout: layout_bare
               Bring a single window or space
               %br>/
               into focus at a time.
-  %a.app-store-button{:href => "http://itunes.apple.com/us/app/quiet/id421759530?mt=12#"}
-    %img{:alt => "AppStore", :src => "/images/app_store.png"}/
   %ul#right-links
     %li
       %a{:href => "http://support.wireload.net"}

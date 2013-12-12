@@ -51,7 +51,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
-	color: #0b7eff!important;
+	color: #0b7eff;
 }
 a, input {
 	outline: none;
@@ -71,15 +71,59 @@ body.folder-products-quiet {
   #page {
     position: relative;
   	background: url(../images/bg2.jpg) repeat center top;
+    padding-top: 80px;
+
+    #discontinued {
+        position: absolute;
+        left: -15px;
+        top: -20px;
+        text-indent: -10000px;
+        width: 214px;
+        height: 60px;
+      	background: url(../images/discontinued-stamp.png) repeat center top;        
+    }
+    
+    #discontinued-message {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background-color: #efefef;
+        padding: 15px;
+        padding-left: 0;
+        padding-right: 0;
+        -moz-box-shadow: 0 3px 15px rgba(0,0,0,.87), inset 0 0 5px rgba(50,101,130,.15);
+        -webkit-box-shadow: 0 3px 15px rgba(0,0,0,.87), inset 0 0 5px rgba(50,101,130,.15);
+        box-shadow: 0 3px 15px rgba(0,0,0,.87), inset 0 0 5px rgba(50,101,130,.15);
+        
+        p {
+            width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            a {
+                color: #0b7eff;
+                
+                &:hover {
+                    color: #3F85E9;
+                }
+            }
+        }
+
+        text-align: left;
+        color: #1f262e;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
 
     #top-bg {
-      position: absolute;
+        position: absolute;
     	left: 50%;
     	width: 1100px;
     	height: 523px;
     	padding: 0;
     	margin: 0;
-      margin-left: -618px;
+        margin-left: -618px;
     	background: url(../images/quiet_bg_composite.jpg) no-repeat center top;
     }
   }
@@ -378,23 +422,32 @@ body.folder-products-quiet {
 	font-size: 12px;
 	font-weight: bold;
 	color: #fff;
-  text-shadow: #363e56 0px -1px 1px;
-}
-.button span {
-	display: block;
-	position: relative;
-	margin-right: -15px;
-	background: url(../images/but.png) no-repeat right -28px;
-	height: 22px;
-	padding: 6px 12px 0px;
-}
-.button:hover {
-	background-position: 0px -56px;
-	color: #fff!important;
-	text-shadow: #003ce2 0px -1px 1px;
-}
-.button:hover span {
-	background-position: right -84px;
+    text-shadow: #363e56 0px -1px 1px;
+
+    span {
+      	display: block;
+      	position: relative;
+      	margin-right: -15px;
+      	background: url(../images/but.png) no-repeat right -28px;
+      	height: 22px;
+      	padding: 6px 12px 0px;
+    }
+    
+    &.disabled {
+        span {
+            color: rgba(200, 200, 200, 0.75);
+        }
+    }
+
+    &:hover {
+    	background-position: 0px -56px;
+    	color: #fff!important;
+    	text-shadow: #003ce2 0px -1px 1px;    
+
+        span {
+        	background-position: right -84px;            
+        }
+    }
 }
 .btn-v2 {
 	background-position: 0px -176px;
