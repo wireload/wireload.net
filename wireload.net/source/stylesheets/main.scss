@@ -1,3 +1,5 @@
+@import "bits_of_bootstrap";
+
 @mixin extruded-white-text {
   color: #f9f9f9;
   text-shadow: rgba(48, 48, 48, 0.5) 0px 1px 0px;
@@ -1076,6 +1078,14 @@ body.folder-products-quiet {
 
 .wpcf7-validation-errors {
   display: none;
+}
+.folder-news .pagination {
+    clear: both;
+    padding-top: 20px;
+    border: 0px;
+
+    ul > li > a, ul > li > span {
+    }
 }
 
 
