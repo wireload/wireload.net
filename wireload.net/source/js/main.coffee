@@ -1,3 +1,261 @@
+jQuery.fn.Gallery = (_options) ->
+  
+  # default options
+  _options = jQuery.extend(
+    speed: 800
+    duration: 4000
+    effect: "fade" #slide
+    holder: ".holder"
+    list: "li"
+    prev: "a.prev"
+    next: "a.next"
+    vertical: false
+    buttonsOnHover: false
+    pager: "ul.switcher"
+    circle: false
+    infinitive: false
+    waitActive: false
+    pause: "a.pause"
+    random: false
+    IEversion: 7
+  , _options)
+  @each ->
+    
+    Run = (_a) ->
+      _t = setTimeout(->
+        if _random
+          loop
+            _i = Math.floor(Math.random() * _max)
+            break unless _i is _a
+          _a = _i
+        else
+          _a++
+          _a = 0  if _a >= _max
+        ChangeEl _a
+      , _duration)
+    ChangeEl = (_new) ->
+      return  if _new is _old
+      clearTimeout _t  if _t
+      if _effect is "fade"
+        if jQuery.browser.msie and jQuery.browser.version < _ieVersion
+          _list.eq(_old).removeClass("active").hide()
+          _list.eq(_new).addClass("active").show()
+        else
+          _list.eq(_old).removeClass("active").animate
+            opacity: 0
+          ,
+            queue: false
+            duration: _speed
+
+          _list.eq(_new).addClass("active").animate
+            opacity: 1
+          ,
+            queue: false
+            duration: _speed
+
+        _thumb.removeClass("active").eq(_new).addClass "active"
+        _old = _new
+        _a = _new
+      if _effect is "slide"
+        if _inf
+          if _old is 0
+            _left = 0  if _new is 1
+            _left = _ws  if _new is _max - 1
+            _slide.css _dir, -_left
+          if _new is 0
+            if _old is _max - 1
+              _x = _ws
+              _left = 0
+            if _old is 1
+              _x = 0
+              _left = _ws
+          else
+            _x = _new * _d
+          if _vert
+            _slide.animate
+              top: -_x
+            ,
+              queue: false
+              duration: _speed
+              complete: ->
+                _list.removeClass("active").eq(_new).addClass "active"
+                _thumb.removeClass("active").eq(_new).addClass "active"
+                _slide.css _dir, -_left  if _new is 0
+                _old = _new
+                _a = _new
+
+          else
+            $(_prev).css "z-index", 0
+            $(_next).css "z-index", 0
+            _slide.animate
+              left: -_x
+            ,
+              queue: false
+              duration: _speed
+              complete: ->
+                $(_prev).css "z-index", 50
+                $(_next).css "z-index", 50
+                _list.removeClass("active").eq(_new).addClass "active"
+                _thumb.removeClass("active").eq(_new).addClass "active"
+                _slide.css _dir, -_left  if _new is 0
+                _old = _new
+                _a = _new
+
+        else
+          if _circle
+            if _wait
+              if _new <= _max - _vis
+                _x = _new * _d
+              else
+                _x = (_max - _vis) * _d
+            else
+              _new = 0  if _new >= _max - _vis + 1
+              _x = _new * _d
+          else
+            _next.removeClass "disabled"
+            _prev.removeClass "disabled"
+            if _wait
+              if _new <= _max - _vis
+                _x = _new * _d
+              else
+                _x = (_max - _vis) * _d
+                _next.addClass "disabled"  if _new is _max - 1
+            else
+              if _new < _max - _vis
+                _x = _new * _d
+              else
+                _x = (_max - _vis) * _d
+                _new = _max - _vis
+                _next.addClass "disabled"
+            _prev.addClass "disabled"  if _new is 0
+          _list.removeClass("active").eq(_new).addClass "active"
+          _thumb.removeClass("active").eq(_new).addClass "active"
+          if _vert
+            _slide.animate
+              top: -_x
+            ,
+              queue: false
+              duration: _speed
+
+          else
+            _slide.animate
+              left: -_x
+            ,
+              queue: false
+              duration: _speed
+
+          _old = _new
+          _a = _new
+      Run _new  if _f
+    _hold = jQuery(this)
+    _speed = _options.speed
+    _duration = _options.duration
+    _effect = _options.effect
+    _holder = _hold.find(_options.holder)
+    _slide = _holder.find("ul")
+    _list = _slide.find(_options.list)
+    _prev = _hold.find(_options.prev)
+    _next = _hold.find(_options.next)
+    _vert = _options.vertical
+    _btn = _options.buttonsOnHover
+    _switcher = _hold.find(_options.pager).empty()
+    _pause = _hold.find(_options.pause)
+    _circle = _options.circle
+    _inf = _options.infinitive
+    _wait = _options.waitActive
+    _ieVersion = _options.IEversion
+    _random = _options.random
+    _f = true
+    _max = _list.length
+    _a = _list.index(_list.filter(".active:eq(0)"))
+    _a = 0  if _a is -1
+    _list.removeClass "active"
+    if _btn
+      _next.hide()
+      _prev.hide()
+      _hold.mouseenter(->
+        _next.show()
+        _prev.show()
+      ).mouseleave ->
+        _next.hide()
+        _prev.hide()
+
+    _new = undefined
+    _old = _a
+    _t = undefined
+    _tr = undefined
+    _i = undefined
+    _left = undefined
+    _list.each (i) ->
+      $("<li><a href=\"#\">" + (i + 1) + "</a></li>").appendTo _switcher
+
+    _thumb = _switcher.find("li")
+    if _effect is "fade"
+      _holder.addClass "plug-fade"
+      if jQuery.browser.msie and jQuery.browser.version < _ieVersion
+        _list.hide().eq(_a).show()
+      else
+        _list.show().css(opacity: 0).eq(_a).css opacity: 1
+    if _effect is "slide"
+      if _vert
+        _holder.addClass "plug-Vslide"
+      else
+        _holder.addClass "plug-slide"
+      _x = 0
+      if _vert
+        _dir = "top"
+        _d = _list.eq(0).outerHeight(true)
+        _vis = Math.ceil(_holder.height() / _d)
+      else
+        _dir = "left"
+        _d = _list.eq(0).outerWidth(true)
+        _vis = Math.ceil(_holder.width() / _d)
+      _ws = _max * _d
+      if _inf
+        i = 0
+
+        while i < _vis
+          _list.eq(i).clone().appendTo _slide
+          i++
+      if not _inf and not _circle
+        _f = false
+        _prev.addClass "disabled"  if _a is 0
+    _thumb.eq(_a).addClass "active"
+    _list.eq(_a).addClass "active"
+    Run _a  if _f
+    _pause.mouseover(->
+      _f = false
+      clearTimeout _t
+    ).mouseleave ->
+      _f = true
+      Run _a
+
+    _thumb.click ->
+      _a = _thumb.index($(this))
+      ChangeEl _a
+      false
+
+    _next.click ->
+      _a++
+      if _a >= _max
+        if _effect is "slide" and not _inf and not _circle
+          _a--
+        else
+          _a = 0
+      ChangeEl _a
+      false
+
+    _prev.click ->
+      _a--
+      if _a <= -1
+        if _effect is "slide" and not _inf and not _circle
+          _a++
+        else
+          _a = _max - 1
+      ChangeEl _a
+      false
+
+
 $ ->
   # Preload images.
 
@@ -348,4 +606,15 @@ $ ->
       $("#but").animate
         top: 0
       , 100
+
+  $(".gallery-box").Gallery
+    speed: 800
+    duration: 10000
+    effect: "slide"
+    infinitive: true
+    holder: ".gallery"
+    pager: "ul.paging"
+    pause: "ul.gallery-list"
+
+
 
