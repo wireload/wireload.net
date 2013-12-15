@@ -82,7 +82,7 @@ function browserCanAnimateOpacity() {
 function slide(i) {
 	var items = $("#s-wrap .item");
 	var curItem = items.filter(".cur");
-	var bgs = $("#s-bgs .sbg");
+	var bgs = $("#s-bgs > div");
 	var curIdx = items.index(curItem);
 	var idx;
 	var t = 1000;
@@ -105,7 +105,7 @@ function slide(i) {
 	$("#s-controls li").removeClass("active").eq(idx).addClass("active");
 
 	bgs.eq(idx).css({left: 946});
-	if (items.eq(idx).attr("id") == "sw-blotter") {
+	if (!items.eq(idx).hasClass('slide')) {
 		items.eq(idx).css({top: 0});
 		t = 1500;
 	}
@@ -177,7 +177,7 @@ function initProductSlider() {
 	    firstPos = { x: event.pageX, y: event.pageY };
         clickedBackground = true;
         // While the user is interacting with the toggle, don't select text.
-        setSelectable($('body.quiet'), false);
+        setSelectable($('body.folder-products-quiet'), false);
 	});
 
     // Clicking the knob enables it to be dragged around.
@@ -187,17 +187,17 @@ function initProductSlider() {
 	    lastPos = {x: event.pageX, y: event.pageY};
 	    originalLeft = $("#ps-selector div").css('left').replace('px', '');
         // While the user is interacting with the toggle, don't select text.
-        setSelectable($('body.quiet'), false);
+        setSelectable($('body.folder-products-quiet'), false);
 	});
 
     // React to mouseup anywhere on the page in case the mouse slides off
     // the original click target.
-	$("body.quiet").mouseup(function(event) {
+	$("body.folder-products-quiet").mouseup(function(event) {
         if (!grabbed && !clickedBackground)
             return;
 
         // The user is done interacting, allow text selection again.
-        setSelectable($('body.quiet'), true);
+        setSelectable($('body.folder-products-quiet'), true);
 
         var endPos = {x: event.pageX, y: event.pageY};
 
@@ -243,7 +243,7 @@ function initProductSlider() {
 
 	});
 
-	$("body.quiet").mousemove(function(event) {
+	$("body.folder-products-quiet").mousemove(function(event) {
 	    if (!grabbed)
 	        return;
 

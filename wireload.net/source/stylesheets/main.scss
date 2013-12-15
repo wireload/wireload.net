@@ -230,50 +230,56 @@ body.folder-products-quiet {
 	margin-left: -2px;
 	position: relative;
 }
-#s-bgs {
-	width: 946px;
-	height: 405px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	overflow: hidden;
-	z-index: 1;
-}
-#s-bgs .sbg {
-	width: 946px;
-	height: 405px;
-	position: absolute;
-	left: 946px;
-	top: 0px;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#s-bgs .sbg:first-child {
-	left: 0;
-}
-#s-bg1 {
-	background: url(../images/blotter_bg.jpg);
-}
-#s-bg2 {
-	background: url(../images/Quiet_bg.jpg);
-}
-#s-bg3 {
-	background: url(../images/YippieMove_bg.jpg);
-}
-#s-bg {
-	width: 940px;
-	height: 399px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-#s-bgs .border {
-	width: 946px;
-	height: 405px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	background: url(../images/s_border.png);
+
+#slider {
+    #s-bgs {
+    	width: 946px;
+    	height: 405px;
+    	position: absolute;
+    	left: 0px;
+    	top: 0px;
+    	overflow: hidden;
+    	z-index: 1;
+
+        > div {
+            z-index: 1;
+        	position: absolute;
+        	width: 940px;
+        	height: 381px;
+        	top: 12px;
+            left: 946px;
+        	background-position: center;
+        	background-repeat: no-repeat;
+
+            &:first-child {
+                left: 0;
+            }
+        }
+        
+        .blotter
+        {
+        	background: url(../images/blotter_bg.jpg);
+        }
+
+        .screenly
+        {
+        	background: url(../images/screenly_bg.jpg);
+        }
+
+        .yippiemove
+        {
+        	background: url(../images/YippieMove_bg.jpg);
+        }   
+
+        .border {
+        	width: 946px;
+        	height: 405px;
+            left: 0;
+            top: 0;
+        	background: url(../images/s_border.png);
+            z-index: 1;
+        }
+    }
 }
 #s-controls, #ps-controls {
 	position: absolute;
@@ -339,14 +345,16 @@ body.folder-products-quiet {
           z-index: 10;
         }
 
-        .s-right {
-        	position: absolute;
-        	font-size: 19px;
-        	color: #1f272f;
-        	text-shadow: #cfe6dd 0px 1px 1px;
-            span {
-            	color: #678d00;
-            }
+        &.screenly h1 {
+            position: absolute;
+            left: 555px; 
+            top: 250px;    
+            
+            width: 312px; 
+            text-align: center; 
+            font-size: 60px;
+            color: #fefefe;
+            text-shadow: 0 1px 0 #000;
         }
     }
 }
