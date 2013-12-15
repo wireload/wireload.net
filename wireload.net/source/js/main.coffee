@@ -30,7 +30,7 @@ $ ->
       t = 1500
     else
       items.eq(idx).css top: -20
-      t = 1000
+      t = 800
     unless browserCanAnimateOpacity()
       curItem.css("visibility", "hidden").hide(->
         bgs.eq(curIdx).animate
