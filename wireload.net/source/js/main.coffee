@@ -257,14 +257,25 @@ jQuery.fn.Gallery = (_options) ->
 
 
 $ ->
-  # Preload images.
-
-  # Animate the shadow downwards instead so it looks like the MB and the shadow start
-  # together and then separate, like if the MB is lifting up.
-
-  # Simplified code for IE only.
   browserCanAnimateOpacity = ->
     not ($.browser.msie and ($.browser.version is "7.0" or $.browser.version is "8.0"))
+
+  getFrame = (element) ->
+    rect = element.offset()
+    rect.right = rect.left + element.width()
+    rect.bottom = rect.top + element.height()
+    rect
+
+  inRect = (point, rect) ->
+    point.x >= rect.left and point.x < rect.right and point.y >= rect.top and point.y < rect.bottom
+
+  setSelectable = (element, aFlag) ->
+    if aFlag
+      element.removeClass "unselectable"
+    else
+      element.addClass "unselectable"
+
+  stop = false
   slide = (i) ->
     items = $("#s-wrap .item")
     curItem = items.filter(".cur")
@@ -319,18 +330,6 @@ $ ->
           stop = false
 
       ).removeClass "cur"
-  getFrame = (element) ->
-    rect = element.offset()
-    rect.right = rect.left + element.width()
-    rect.bottom = rect.top + element.height()
-    rect
-  inRect = (point, rect) ->
-    point.x >= rect.left and point.x < rect.right and point.y >= rect.top and point.y < rect.bottom
-  setSelectable = (element, aFlag) ->
-    if aFlag
-      element.removeClass "unselectable"
-    else
-      element.addClass "unselectable"
 
   initProductSlider = ->
     # Clicking the background (and not the knob) causes a slide.
@@ -524,10 +523,6 @@ $ ->
       left = 49  if left > 49
       $("#ps-selector div").css "left", left
 
-  img0 = false
-  img1 = false
-  img2 = false
-  stop = false
   setupQuiet = ->
     images = new Array()
     images[0] = "/images/quitet_logo.png"
