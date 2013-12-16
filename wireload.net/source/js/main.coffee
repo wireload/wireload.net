@@ -578,25 +578,29 @@ $ ->
         , t, "swing"
     ), 1000
 
-  t = setInterval(slide, 7000)
-  $("#s-controls li").click ->
-    if not $(this).hasClass("active") and not stop
-      clearInterval t
-      slide $("#s-controls li").index(this)
+  setupMain = ->
+    t = setInterval(slide, 7000)
+    $("#s-controls li").click ->
+      if not $(this).hasClass("active") and not stop
+        clearInterval t
+        slide $("#s-controls li").index(this)
 
+  setupContact = ->
+    $("#send-but").hover (->
+      unless @className is "sended"
+        $("#but").animate
+          top: -6
+        , 100
+    ), ->
+      unless @className is "sended"
+        $("#but").animate
+          top: 0
+        , 100
+
+  setupMain() if $("#front-page-slider").length
   initProductSlider() if $("#prod-slider").length
   setupQuiet() if $("body.folder-products-quiet").length
-
-  $("#send-but").hover (->
-    unless @className is "sended"
-      $("#but").animate
-        top: -6
-      , 100
-  ), ->
-    unless @className is "sended"
-      $("#but").animate
-        top: 0
-      , 100
+  setupContact() if $("body.folder-company").length
 
   $(".gallery-box").Gallery
     speed: 800
