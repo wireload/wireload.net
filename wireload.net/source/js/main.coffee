@@ -333,27 +333,19 @@ $ ->
       element.addClass "unselectable"
 
   initProductSlider = ->
-
     # Clicking the background (and not the knob) causes a slide.
-
     # While the user is interacting with the toggle, don't select text.
-
     # Clicking the knob enables it to be dragged around.
-
     # While the user is interacting with the toggle, don't select text.
-
     # React to mouseup anywhere on the page in case the mouse slides off
     # the original click target.
 
     # The user is done interacting, allow text selection again.
-
     # Detect simple clicks on the background (outside of the knob).
-
     # The end of click and drag of the knob.
-
     # If the user just clicked and released, slide over.
-
     # Otherwise check how far the knob was dragged.
+
     psSlide = (i) ->
       curItem = items.filter(".act")
       idx = undefined
@@ -534,7 +526,7 @@ $ ->
   img1 = false
   img2 = false
   stop = false
-  window.onload = ->
+  setupQuiet = ->
     images = new Array()
     images[0] = "/images/quitet_logo.png"
     images[1] = "/images/but.png"
@@ -595,7 +587,9 @@ $ ->
       clearInterval t
       slide $("#s-controls li").index(this)
 
-  initProductSlider()  unless $("#prod-slider").length is 0
+  initProductSlider() if $("#prod-slider").length
+  setupQuiet() if $("body.folder-products-quiet").length
+
   $("#send-but").hover (->
     unless @className is "sended"
       $("#but").animate
