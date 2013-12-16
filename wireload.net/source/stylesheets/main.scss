@@ -1,4 +1,5 @@
 @import "bits_of_bootstrap";
+@import "bourbon/bourbon";
 
 @mixin extruded-white-text {
   color: #f9f9f9;
@@ -349,15 +350,20 @@ body.folder-products-quiet {
 
         &.screenly h1 {
             position: absolute;
-            left: 555px; 
-            top: 250px;            
+            left: 570px; 
+            top: 260px;            
             width: 312px; 
             text-align: center; 
 
-            color: #fefefe;
-            font-family: "Helvetica Neue";
+            color: #e3e7eb;
             font-size: 60px;
-            text-shadow: 0 0 12px rgba(255,255,255,.6);
+            text-weight: 100;
+            text-shadow: 0 2px 2px rgba(0,0,0,.5);
+            
+            @include hide-text;
+            background-image: url(../images/itsasign.png);
+            width: 267px;
+            height: 59px;
         }
     }
 }
