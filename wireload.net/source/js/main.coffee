@@ -585,6 +585,21 @@ $ ->
         clearInterval t
         slide $("#s-controls li").index(this)
 
+    $('.item.screenly h1').easyab(
+      'slot': 1
+      'name': 'screenly-slogan'
+      'default-value': 'itsasign'
+      'alternatives': [
+        'value': 'simplified'
+        'alternative': ($this) -> 
+          $this.find('.itsasign').hide()
+          $this.find('.simplified').show()
+          link = $this.closest('a')
+          url = link.attr('href')
+          link.attr('href', url.replace('itsasign', 'simplified')) if url
+      ]
+    )
+
   setupContact = ->
     $("#send-but").hover (->
       unless @className is "sended"
