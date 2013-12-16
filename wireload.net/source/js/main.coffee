@@ -405,6 +405,8 @@ $ ->
         left: 0
       , 400).addClass "act"
       changeState()  if slState is "on"
+
+    slState = $("#ps-selector").attr("class")
     changeState = ->
       if slState is "on"
         slState = "off"
@@ -442,9 +444,9 @@ $ ->
           , 400
         else
           $("#macbook-glow-on").show()
+          
     items = $("#ps-wrap .item")
     curItem = items.filter(".act")
-    slState = $("#ps-selector").attr("class")
     $("#ps-controls li").click ->
       psSlide $("#ps-controls li").index(this)
 
@@ -475,7 +477,7 @@ $ ->
       setSelectable $("body.folder-products-quiet"), false
 
     $("body.folder-products-quiet").mouseup (event) ->
-      return  if not grabbed and not clickedBackground
+      return if not grabbed and not clickedBackground
       setSelectable $("body.folder-products-quiet"), true
       endPos =
         x: event.pageX
@@ -484,7 +486,7 @@ $ ->
       if clickedBackground and not grabbed
         clickedBackground = false
         backRect = getFrame($("#ps-selector"))
-        changeState()  if Math.abs(firstPos.x - endPos.x) < 3 and Math.abs(firstPos.y - endPos.y) < 3 and inRect(endPos, backRect)
+        changeState() if Math.abs(firstPos.x - endPos.x) < 3 and Math.abs(firstPos.y - endPos.y) < 3 and inRect(endPos, backRect)
         return
       grabbed = false
       knob = $("#ps-selector div")
