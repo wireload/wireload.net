@@ -83,19 +83,19 @@
           %br/
           %span.inp
             %span.your-name
-              %input#input_1{"aria-required" => "true", :name => "q1_name", :size => "40", :type => "text", :value => ""}/
+              %input#input_1{:required => 1, :minlength => 2, :name => "q1_name", :size => "40", :type => "text", :value => ""}/
         %div
           %label{:for => "input_5"}  Email:
           %br/
           %span.inp
             %span.your-email
-              %input#input_5{"aria-required" => "true", :name => "q5_email5", :size => "40", :type => "email", :value => ""}/
+              %input#input_5{:required => 1, :name => "q5_email5", :size => "40", :type => "email", :value => ""}/
         %div
           %label{:for => "input_4"} Your Message:
           %br/
           %span.txt
             %span.your-message
-              %textarea#input_5{"aria-required" => "true", :cols => "40", :name => "q4_message", :rows => "10"}
+              %textarea#input_5{:required => 1, :cols => "40", :name => "q4_message", :rows => "10"}
         #send-but
           %span#border
           %br/
@@ -111,3 +111,5 @@
       :javascript
         document.getElementById("si" + "mple" + "_spc").value = "33433847411351-33433847411351";
 
+- content_for :extra_js do
+  %script{:src => "/js/jquery.validate.min.js", :type => "text/javascript"}

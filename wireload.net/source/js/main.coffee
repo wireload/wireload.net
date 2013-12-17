@@ -601,6 +601,8 @@ $ ->
     )
 
   setupContact = ->
+    $("#33433847411351").validate()
+    
     $("#send-but").hover (->
       unless @className is "sended"
         $("#but").animate

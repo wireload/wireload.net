@@ -968,130 +968,146 @@ body.folder-products-quiet {
 	background: url(../images/send_form.png) no-repeat;
 	margin-top: 25px;
 	position: relative;
-}
-#contact-form div {
-	width: 452px;
-	float: left;
-	margin: 12px 0px 0px 37px;
-}
-#contact-form label {
-	font-size: 13px;
-	color: #39425c;
-	font-weight: bold;
-	margin-left: 10px;
-}
-#contact-form .inp {
-	width: 452px;
-	height: 45px;
-	background: url(../images/inpts.png) no-repeat left 2px;
-	float: left;
-	margin-top: 0px;
-}
-#contact-form .inp.error {
-	background-position: 0px -41px;
-}
-#contact-form .inp input {
-	width: 430px;
-	margin: 14px 0px 0px 12px;
-	border: 0px;
-	background: none;
-	font: 15px Arial, Helvetica, sans-serif;
-}
-#contact-form .txt {
-	width: 452px;
-	height: 120px;
-	background: url(../images/inpts.png) no-repeat left -90px;
-	float: left;
-	margin-top: 5px;
-	padding: 0px;
-}
-#contact-form .txt.error {
-	background-position: left bottom;
-}
-#contact-form .txt textarea {
-	width: 430px;
-	height: 100px;
-	border: 0px;
-	background: none;
-	margin: 9px 0px 0px 12px;
-	padding: 0px;
-	font: 15px Arial, Helvetica, sans-serif;
-}
+    font-size: 15px;
 
-#contact-form
-{
-  #send-but {
-  	width: 192px;
-  	height: 42px;
-  	position: absolute;
-  	bottom: 4px;
-  	left: 166px;
-  	margin: 0px;
-  	overflow: hidden;
-  	cursor: pointer;
+    > div {
+    	width: 452px;
+    	float: left;
+    	margin: 12px 0px 0px 37px;
+        position: relative;
+    }
 
-    #but {
-    	width: 192px;
-    	height: 42px;
-    	position: absolute;
-    	left: 0px;
-    	top: 0px;
-    	background: url(../images/send_bg.png);
-
-        button {
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-        }
-
-        i {
-            width: 84px;
-            height: 11px;
+    label {
+    	font-size: 13px;
+    	color: #39425c;
+    	font-weight: bold;
+    	margin-left: 10px;
+        
+        &.error {
+            text-shadow: none;
+            font-weight: normal;
+            color: #b94a48;
             position: absolute;
-            left: 54px;
-            bottom: 14px;
-            background: url(../images/send_but.png) no-repeat left top;
-        }
-        em {
-            width: 138px;
-            height: 11px;
-            position: absolute;
-            left: 27px;
-            bottom: 14px;
-            background: url(../images/thank_you.png) no-repeat left top;
-            display: none;
+            right: 5px;
+            bottom: -18px;
+            line-height: 16px;
         }
     }
+    
+    .inp {
+    	width: 452px;
+    	height: 45px;
+    	float: left;
+    	margin-top: 0px;
+        
+        
+        input {
+        	width: 412px;
+        	padding: 15px 28px 13px 12px;
+        	border: 0px;
+        	background: url(../images/inpts.png) no-repeat left 2px;
 
-    :hover #but i {
-    	background-position: left -11px;
+            &.error {
+                background-position: 0 -39px;
+            }
+        }
     }
 
-    #border {
-    	width: 184px;
-    	height: 46px;
-    	position: absolute;
-    	left: 4px;
-    	top: 0px;
-    	background: url(../images/send_sh.png) no-repeat left top;
-    	z-index: 1;
+    .txt {
+    	width: 452px;
+    	height: 120px;
+    	float: left;
+    	margin-top: 5px;
+    	padding: 0px;
+
+        textarea {
+        	width: 430px;
+        	height: 100px;
+        	border: 0px;
+        	background: none;
+        	padding: 8px 6px 7px 12px;
+        	background: url(../images/inpts.png) no-repeat left -80px;
+
+            &.error {
+                background-position: left bottom;
+            }
+        }
+
     }
 
-    input {
-      visibility: hidden;
+
+    #send-but {
+      	width: 192px;
+      	height: 42px;
+      	position: absolute;
+      	bottom: 4px;
+      	left: 166px;
+      	margin: 0px;
+      	overflow: hidden;
+      	cursor: pointer;
+
+        #but {
+        	width: 192px;
+        	height: 42px;
+        	position: absolute;
+        	left: 0px;
+        	top: 0px;
+        	background: url(../images/send_bg.png);
+
+            button {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+
+            i {
+                width: 84px;
+                height: 11px;
+                position: absolute;
+                left: 54px;
+                bottom: 14px;
+                background: url(../images/send_but.png) no-repeat left top;
+            }
+            em {
+                width: 138px;
+                height: 11px;
+                position: absolute;
+                left: 27px;
+                bottom: 14px;
+                background: url(../images/thank_you.png) no-repeat left top;
+                display: none;
+            }
+        }
+
+        :hover #but i {
+        	background-position: left -11px;
+        }
+
+        #border {
+        	width: 184px;
+        	height: 46px;
+        	position: absolute;
+        	left: 4px;
+        	top: 0px;
+        	background: url(../images/send_sh.png) no-repeat left top;
+        	z-index: 1;
+        }
+
+        input {
+          visibility: hidden;
+        }
     }
-  }
 
-  .sent {
-  	cursor: default;
+    .sent {
+      	cursor: default;
 
-  	#but i {
-  	  display: none !important;
-  	}
-  	#but em {
-  	  display: inline !important;
-  	}
-  }
+      	#but i {
+      	  display: none !important;
+      	}
+      	#but em {
+      	  display: inline !important;
+      	}
+    }
 }
 
 .wpcf7-validation-errors {
