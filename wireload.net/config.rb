@@ -12,7 +12,7 @@ activate :blog do |blog|
     blog.layout = "blog_post"
 end
 
-page "/blog/feed.xml", :layout => false
+page "/feed.xml", :layout => false
 
 ### 
 # Compass
