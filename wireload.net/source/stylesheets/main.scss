@@ -1805,6 +1805,8 @@ body.folder-products-blotter {
       	font-size:13px;
       }
     }
+    
+    
     .container {
       @include linear-top-bottom-gradient(#f9f9f9, #DCE7F0);
 
@@ -1853,10 +1855,11 @@ body.folder-products-blotter {
         padding-top: 20px;
         padding-right: (242px - 195px) / 2 - 5px;
 
-        div {
-          margin: auto;
-          width: 195px;
+        > div {
+            margin: auto;
+            width: 130px;
         }
+        
       }
     }
 
