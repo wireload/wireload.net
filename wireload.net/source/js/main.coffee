@@ -601,18 +601,44 @@ $ ->
     )
 
   setupContact = ->
-    $("#33433847411351").validate()
+    contact_form = $("#33433847411351")
+    
+    contact_form.validate(
+      submitHandler: (form) ->
+        form = $(form)
+        sendButton = $("#send-but")
+        form.ajaxSubmit
+          beforeSubmit: (formData, jqForm, options) ->
+            jqForm.find("img.ajax-loader").css visibility: "visible"
+            $("#but").animate
+              top: -37
+            ,
+              duration: 400
+              complete: () -> 
+                console.log('sent')
+                sendButton.addClass "sent"
+                $("#but").animate
+                  top: 0
+                , 1200              
+            
+            
+            true
+
+          iframe: true
+    )
     
     $("#send-but").hover (->
-      unless @className is "sended"
+      unless @className is "sent"
         $("#but").animate
           top: -6
         , 100
     ), ->
-      unless @className is "sended"
+      unless @className is "sent"
         $("#but").animate
           top: 0
         , 100
+        
+
 
   setupMain() if $("#front-page-slider").length
   initProductSlider() if $("#prod-slider").length

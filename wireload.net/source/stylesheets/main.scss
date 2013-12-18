@@ -1091,6 +1091,7 @@ body.folder-products-quiet {
         	top: 0px;
         	background: url(../images/send_sh.png) no-repeat left top;
         	z-index: 1;
+            pointer-events: none;
         }
 
         input {

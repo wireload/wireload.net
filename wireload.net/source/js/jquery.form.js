@@ -325,7 +325,14 @@ $.fn.ajaxSubmit = function(options) {
 				return;
 			}
 			
-			var doc = io.contentWindow ? io.contentWindow.document : io.contentDocument ? io.contentDocument : io.document;
+            var doc;
+            try {
+                doc = io.contentWindow ? io.contentWindow.document : io.contentDocument ? io.contentDocument : io.document;
+            } catch(e) {
+                // Might fail due to SOP - we will interpret that as success.
+                doc = { location: { href: 'about:null' } }
+            }
+      
 			if (!doc || doc.location.href == s.iframeSrc) {
 				// response not received yet
 				if (!timedOut)

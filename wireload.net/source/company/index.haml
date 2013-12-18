@@ -103,7 +103,7 @@
             %i
             %em
             %button#input_2.form-submit-button{:type => "submit"}
-              Submit
+              Send
         %div{:style => "display:none"}
           Should be Empty:
           %input{:name => "website", :type => "text", :value => ""}/
@@ -112,4 +112,5 @@
         document.getElementById("si" + "mple" + "_spc").value = "33433847411351-33433847411351";
 
 - content_for :extra_js do
+  %script{:src => "/js/jquery.form.js", :type => "text/javascript"}
   %script{:src => "/js/jquery.validate.min.js", :type => "text/javascript"}
