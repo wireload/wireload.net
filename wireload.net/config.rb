@@ -71,15 +71,13 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
   activate :minify_css
-  
-  # Minify Javascript on build
   activate :minify_javascript
+  activate :minify_html, :remove_input_attributes => false
   
   # Mark all static resources with content hash to allow long cache expirations.
   activate :asset_hash,
-    :ignore => [/blog\/uploads\/.*/, /downloads\/.*/]
+    :ignore => [/blog\/uploads\/.*/, /downloads\/.*/]  
   
   # Use relative URLs
   # activate :relative_assets
@@ -91,4 +89,12 @@ configure :build do
   
   # Or use a different image path
   # set :http_path, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user   = "aljungberg"
+  deploy.host   = "se.hosting.wireload.net"
+  deploy.path   = "/www/beta.wireload.net"
+  deploy.clean  = false
 end
