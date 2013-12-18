@@ -37,10 +37,6 @@ jQuery.fn.Gallery = (_options) ->
       return  if _new is _old
       clearTimeout _t  if _t
       if _effect is "fade"
-        if jQuery.browser.msie and jQuery.browser.version < _ieVersion
-          _list.eq(_old).removeClass("active").hide()
-          _list.eq(_new).addClass("active").show()
-        else
           _list.eq(_old).removeClass("active").animate
             opacity: 0
           ,
@@ -192,10 +188,7 @@ jQuery.fn.Gallery = (_options) ->
     _thumb = _switcher.find("li")
     if _effect is "fade"
       _holder.addClass "plug-fade"
-      if jQuery.browser.msie and jQuery.browser.version < _ieVersion
-        _list.hide().eq(_a).show()
-      else
-        _list.show().css(opacity: 0).eq(_a).css opacity: 1
+      _list.show().css(opacity: 0).eq(_a).css opacity: 1
     if _effect is "slide"
       if _vert
         _holder.addClass "plug-Vslide"
@@ -258,7 +251,7 @@ jQuery.fn.Gallery = (_options) ->
 
 $ ->
   browserCanAnimateOpacity = ->
-    not ($.browser.msie and ($.browser.version is "7.0" or $.browser.version is "8.0"))
+    true
 
   getFrame = (element) ->
     rect = element.offset()
