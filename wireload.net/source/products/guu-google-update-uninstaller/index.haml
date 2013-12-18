@@ -1,0 +1,49 @@
+#news-details
+  #nd-head
+  .nd-body.post-content
+    %h2.entry-title
+      GUU – Google Update Uninstaller
+
+    %p
+      %img.aligncenter.size-medium.wp-image-601{:alt => "Google Update Uninstaller", :height => "300", :src => "/images/GUU-300x300.png", :title => "Google Update Uninstaller", :width => "300"}/
+    %h2 Why?
+    %p Google Chrome is a great product in many ways. However, like many other Google products, it is using a very rogue mechanism for keeping itself up to date. Unlike other browsers, such as Safari and Firefox, it doesn’t prompt you for updates. Instead it is running a sneaky background tool called Google Update. What makes matters worse is that Google Update is really hard to get rid off.
+    %p
+      %img.aligncenter.size-full.wp-image-817{:alt => "", :height => "290", :src => "/images/Google-Update.png", :title => "Google Update", :width => "534"}/
+    %p
+      If you’re a power user, chances are you are running
+      = succeed "." do
+        %a{:href => "http://www.obdev.at/products/littlesnitch/index.html"} Little Snitch
+      In that case, you’ve probably already noticed that Google Update is randomly trying to update itself without your consent. This is annoying to say the least. If you’re like us, you don’t want applications to randomly update themselves, and instead do this when you instruct them to. To solve this problem, we wrote Google Update Uninstaller.
+    %h2 How it works
+    %p
+      %img.aligncenter.size-full.wp-image-875{:alt => "", :height => "267", :src => "/images/GUU-1.0b-Confirmation-Dialog.png", :title => "GUU 1.0b Confirmation Dialog", :width => "534"}/
+      %br/
+      %img.aligncenter.size-full.wp-image-874{:alt => "", :height => "270", :src => "/images/GUU-1.0b-Success-Dialog.png", :title => "GUU 1.0b Success Dialog", :width => "534"}/
+    %p Google Update Uninstaller is really easy to use. All you need to do is to download and run the application. It will then automatically uninstall Google Update and prevent it from being re-installed.
+    %p If you’d like to remove the block that Google Update Uninstaller puts in, just launch it again, and the block will be removed.
+    %h2 The technical details
+    %p If you’re curious what Google Update Uninstaller really does, these are the commands we run:
+    %p Local uninstallation:
+    %pre{:lang => "bash"}
+      :preserve
+        python ~/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/\
+        Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/\
+        install.py --uninstall
+        touch ~/Library/Google/GoogleSoftwareUpdate
+    %p Global uninstallation:
+    %pre{:lang => "bash"}
+      :preserve
+        sudo python /Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/\
+        Contents/Resources/GoogleSoftwareUpdateAgent.app/Contents/Resources/\
+        install.py --uninstall
+        sudo touch /Library/Google/GoogleSoftwareUpdate
+    %p
+      Kudos to
+      %a{:href => "http://raamdev.com/howto-remove-google-software-update-on-mac-os-x"} Raam Dev
+      for a good write-up on Google Update.
+    %h2 Download
+    %ul
+      %li
+        %a{:href => "/downloads/GUU_1.0.pkg"} Version 1.0
+    .tags
