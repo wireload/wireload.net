@@ -1,4 +1,9 @@
-%a.comms{:href => "#{current_article.url}#disqus_thread"} 0
+- if current_article.data.wordpress_id
+  - disqus_identifier = "#{current_article.data.wordpress_id} http://wireload.net/?p=#{current_article.data.wordpress_id}"
+- else
+  - disqus_identifier = current_article.url
+
+%a.comms{:href => "#{current_article.url}#disqus_thread", "data-disqus-identifier" => disqus_identifier} 0
 %span.info
   %strong.entry-date
     = current_article.date.strftime('%Y.%m.%d')
