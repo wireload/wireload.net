@@ -89,6 +89,13 @@ configure :build do
   
   # Or use a different image path
   # set :http_path, "/Content/images/"
+
+  after_build do
+    # Install the wktextview sample - it's better to only uncompress it after the build because it slows down the system
+    # needlessly to have to scan all these files before the build.
+    `cd build/downloads/ && rm -Rf wktextview-sample && tar -xvjf wktextview-sample.tbz`
+    `find build/ -name .git -delete`
+  end
 end
 
 activate :deploy do |deploy|
