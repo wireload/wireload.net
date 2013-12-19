@@ -1,9 +1,0 @@
----
-title: What are SPF-records?
-author: smcfarland
-wordpress_id: 1223
-wordpress_url: http://wireload.net/2012/05/what-are-spf-records/
-date: 2012-05-01 06:36:53
-tags: the-email-school, yippiemove
----
-SPF or Senders Policy Framework was formerly known as Sender Permitted From, and sometimes also called SMTP+SPF. In 2004 it became known as Sender Policy Framework. <br/>SPF is a system that is used by a domain to prevent email spam by detecting if a sender is using email "spoofing." Spoofing is when a sender is trying to falsify where their email originates from. An SPF record is a TXT-record in a Domain Name System (DNS). SPF records simply list all the servers that are allowed to send email from your domain.<br/><!--more--><br/>The SPF record is made up of two main components: mechanisms and qualifiers. Think of the mechanism as a way to find IP addresses. Qualifiers are the action to be taken on email sent from the IP address fetched by the mechanism. <br/>The four available actions for the qualifier are:<br/><ul><br/>	<li>+ = Accept</li><br/>	<li>- = Reject</li><br/>	<li>? = Neutral</li><br/>	<li>~ = Soft Fail (meaning accept and mark as spam)</li><br/></ul><br/>Here is an example of an SPF record:<br/><pre><br/>v=spf1 ipv4:207.97.227.239  -all<br/></pre><br/>This allow emails from the given IP address and reject the rest.<br/>The Mail Transfer Agent (MTA) that transfers email from server to server uses this DNS information to check on the validity of a given IP address/domain to see if it is allowed or not. Sometimes your email will put a suspect email into your spam folder, and sometimes it will reject it completely. The SPF check happens before the message body is received, so you will not see a rejected email.<br/>To learn more about SPF-records, take a look at the <a href="http://en.wikipedia.org/wiki/Sender_Policy_Framework">Wikipedia-page</a> and <a href="http://tools.ietf.org/html/rfc4408">RFC 4408</a>.
