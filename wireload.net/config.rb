@@ -17,6 +17,7 @@ activate :authors do |authors|
 end
 
 page "/feed.xml", :layout => false
+page "/sitemap.xml", :layout => false
 
 ### 
 # Compass

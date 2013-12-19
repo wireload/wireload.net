@@ -7,7 +7,7 @@ gem "middleman-minify-html"
 #gem "middleman-blog-authors", :path => '/Users/siker/dev/middleman-blog-authors' 
 gem "middleman-blog-authors", :git => 'git@github.com:wireload/middleman-blog-authors.git'
 
-# For feed.xml.builder
+# For feed.xml.builder and sitemap
 gem "builder", "~> 3.0.0"
 
 gem "nokogiri"
