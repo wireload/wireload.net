@@ -108,6 +108,6 @@ activate :deploy do |deploy|
   deploy.method = :rsync
   deploy.user   = "aljungberg"
   deploy.host   = "se.hosting.wireload.net"
-  deploy.path   = "/www/beta.wireload.net"
+  deploy.path   = "/www/wireload.net"
   deploy.clean  = false
 end
