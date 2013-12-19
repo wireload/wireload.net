@@ -83,7 +83,7 @@ configure :build do
   
   # Mark all static resources with content hash to allow long cache expirations.
   activate :asset_hash,
-    :ignore => [/blog\/uploads\/.*/, /downloads\/.*/]  
+    :ignore => [/downloads\/.*/]  
   
   # Use relative URLs
   # activate :relative_assets
