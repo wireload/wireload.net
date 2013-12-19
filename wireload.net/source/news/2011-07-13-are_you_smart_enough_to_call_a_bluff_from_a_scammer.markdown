@@ -1,6 +1,6 @@
 ---
 title: Are you smart enough to call a bluff from a scammer?
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 749
 wordpress_url: http://wireload.net/2011/07/are-you-smart-enough-to-call-a-bluff-from-a-scammer/
 date: 2011-07-13 07:24:38

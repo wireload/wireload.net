@@ -1,6 +1,6 @@
 ---
 title: Blotter 1.4 is now available
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 718
 wordpress_url: http://wireload.net/2011/07/blotter-1-4-is-now-available/
 date: 2011-07-11 11:36:30

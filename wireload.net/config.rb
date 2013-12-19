@@ -12,6 +12,10 @@ activate :blog do |blog|
     blog.layout = "blog_post"
 end
 
+activate :authors do |authors|
+    authors.author_template = "authors/author.html"
+end
+
 page "/feed.xml", :layout => false
 
 ### 

@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:wireload/middleman-blog-authors.git
+  revision: deb3931f8c1cd473a0f10d76ab7a1f47271463da
+  specs:
+    middleman-blog-authors (0.0.1)
+      middleman-core (>= 3.1.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -103,6 +110,7 @@ DEPENDENCIES
   builder (~> 3.0.0)
   middleman (~> 3.2.0)
   middleman-blog (~> 3.5.0)
+  middleman-blog-authors!
   middleman-deploy (~> 0.0.11)
   middleman-minify-html
   nokogiri

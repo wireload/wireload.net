@@ -1,6 +1,6 @@
 ---
 title: Blotter 2.2.1 is out- Adds support for Mavericks and more
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 1647
 wordpress_url: http://wireload.net/2013/10/blotter-2-2-1-is-out-adds-support-for-mavericks-and-more/
 date: 2013-10-22 22:22:02

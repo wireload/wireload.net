@@ -1,6 +1,6 @@
 ---
 title: Blotter now supports Retina displays
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 1606
 wordpress_url: http://wireload.net/2013/07/blotter-now-supports-retina-displays/
 date: 2013-07-21 01:31:34

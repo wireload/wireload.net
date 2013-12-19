@@ -1,6 +1,6 @@
 ---
 title: Terminating the YippieMove affiliate program
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 708
 wordpress_url: http://wireload.net/2011/07/terminating-the-yippiemove-affiliate-program/
 date: 2011-07-08 11:21:07

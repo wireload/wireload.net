@@ -1,6 +1,6 @@
 ---
 title: Quiet has been withdrawn from Mac App Store
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 1651
 wordpress_url: http://wireload.net/2013/11/quiet-has-been-withdrawn-from-mac-app-store/
 date: 2013-11-03 22:17:13

@@ -1,0 +1,13 @@
+---
+title: #{author.name}
+pageable: true
+per_page: 10
+---
+
+%h1.header= author.name
+
+%ul#news-list
+  - page_articles.each do |current_article|
+    = partial :blog_article_list_format, :locals => { :current_article => current_article }
+
+%script{:async => "", :src => "//disqus.com/forums/wireload/count.js", :type => "text/javascript"}

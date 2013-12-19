@@ -1,6 +1,6 @@
 ---
 title: How can I stay up to date with WireLoad?
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 661
 wordpress_url: http://wireload.net/2011/07/how-can-i-stay-up-to-date-with-wireload/
 date: 2011-07-07 03:21:21

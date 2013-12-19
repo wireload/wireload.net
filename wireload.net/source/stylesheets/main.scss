@@ -1111,11 +1111,7 @@ body.folder-products-quiet {
     }
 }
 
-.wpcf7-validation-errors {
-  display: none;
-}
-
-.folder-news {
+.folder-news, .folder-authors {
     h1 {
         margin-bottom: 1em;
     }
@@ -1128,7 +1124,6 @@ body.folder-products-quiet {
         }
     }   
 }
-
 
 #news-list {
 	width: 923px;

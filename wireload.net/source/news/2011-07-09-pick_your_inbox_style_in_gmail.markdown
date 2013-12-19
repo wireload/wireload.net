@@ -1,6 +1,6 @@
 ---
 title: Pick your inbox style in Gmail
-author: Viktor Petersson
+authors: Viktor Petersson
 wordpress_id: 713
 wordpress_url: http://wireload.net/2011/07/pick-your-inbox-style-in-gmail/
 date: 2011-07-09 06:49:19

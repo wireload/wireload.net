@@ -7,10 +7,11 @@
 %span.info
   %strong.entry-date
     = current_article.date.strftime('%Y.%m.%d')
-  \/
-  %span.author.vcard
-    %a.url.fn.n{:href => "http://wireload.net/author/"} 
-      = current_article.data.author
+  - if not current_article.authors.empty?
+    \/
+    %span.author.vcard  
+      - current_article.authors.each do |author|
+        = link_to_author(author)
   \/
   %span
     = current_article.date.strftime('%H:%M')
