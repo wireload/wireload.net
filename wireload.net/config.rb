@@ -15,6 +15,7 @@ end
 activate :authors do |authors|
     authors.author_template = "authors/author.html"
 end
+ignore "authors/author.html.haml" 
 
 page "/feed.xml", :layout => false
 page "/sitemap.xml", :layout => false
