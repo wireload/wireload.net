@@ -15,12 +15,12 @@ end
 activate :authors do |authors|
     authors.author_template = "authors/author.html"
 end
-ignore "authors/author.html.haml" 
+ignore "authors/author.html.haml"
 
 page "/feed.xml", :layout => false
 page "/sitemap.xml", :layout => false
 
-### 
+###
 # Compass
 ###
 
@@ -38,13 +38,13 @@ page "/sitemap.xml", :layout => false
 ###
 
 # Per-page layout changes:
-# 
+#
 # With no layout
 # page "/path/to/file.html", :layout => false
-# 
+#
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
-# 
+#
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
@@ -80,19 +80,19 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html, :remove_input_attributes => false
-  
+
   # Mark all static resources with content hash to allow long cache expirations.
   activate :asset_hash,
-    :ignore => [/downloads\/.*/]  
-  
+    :ignore => [/downloads\/.*/]
+
   # Use relative URLs
   # activate :relative_assets
-  
+
   # Compress PNGs after build
   # First: gem install middleman-smusher
   # require "middleman-smusher"
   # activate :smusher
-  
+
   # Or use a different image path
   # set :http_path, "/Content/images/"
 
@@ -106,7 +106,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :rsync
-  deploy.user   = "aljungberg"
+  deploy.user   = ENV["DEPLOY_USER"]
   deploy.host   = "se.hosting.wireload.net"
   deploy.path   = "/www/wireload.net"
   deploy.clean  = false
