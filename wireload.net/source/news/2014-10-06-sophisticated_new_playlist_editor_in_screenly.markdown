@@ -22,6 +22,8 @@ What you can see here is a typical lunch menu, which is something that we've had
 
 Using this new rule based playlist editor, you can create very precise schedules by combining conditions with **AND** and **OR**. This enables all your advanced scheduling needs, while still being easy to understand (as it almost reads like a normal sentence).
 
+Another important note about the new playlist editor is that **start and end dates** now are **optional**. This is very useful if you want to create a custom permanent playlist, such as a lunch menu.
+
 With the introduction of this new playlist editor, we also had to make some changes to the way we display the scheduled assets for a given node. Since playlists might turn on and off frequently, just listing all assets as they come and go would be repetitive.
 
 Instead, we now give you a concise overview of which assets are active in the screen in the new *Assets in rotation* section, listing each asset only once even if it repeats multiple times. Please note that just because an asset is listed here it doesn't mean that it is showing on the screen at the current time. That is dictated by the playlist itself.
