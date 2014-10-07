@@ -13,7 +13,7 @@ We think it is one of the most sophisticated playlist editors in the digital sig
 
 What we have come up with is a rule-based editor. Take a look at the following screenshot:
 
-<span class="shadowed"><img src="/uploads/2014/10/Screenly_Lunch_menu_screenshot.png" alt="Screenly's new playlist editor" /><span class="sh tl"></span><span class="sh tr"></span><span class="sh bl"></span><span class="sh br"></span></span><br/><br/>
+<span class="shadowed"><img src="/uploads/2014/10/screenly_lunch_menu_screenshot.png" alt="Screenly's sophisticated new playlist editor" /><span class="sh tl"></span><span class="sh tr"></span><span class="sh bl"></span><span class="sh br"></span></span><br/><br/>
 
 What you can see here is a typical lunch menu, which is something that we've had numerous requests for. In addition to the regular start and end date, you'll also notice that we've specified the following:
 
@@ -26,7 +26,7 @@ With the introduction of this new playlist editor, we also had to make some chan
 
 Instead, we now give you a concise overview of which assets are active in the screen in the new *Assets in rotation* section, listing each asset only once even if it repeats multiple times. Please note that just because an asset is listed here it doesn't mean that it is showing on the screen at the current time. That is dictated by the playlist itself.
 
-<< Insert playlist screenshot >>
+<span class="shadowed"><img src="/uploads/2014/10/screenly_screen_playlist.png" alt="Screenly's  new playlist viewer" /><span class="sh tl"></span><span class="sh tr"></span><span class="sh bl"></span><span class="sh br"></span></span><br/><br/>
 
 In addition to this major update to the playlist editor, we've also rolled out a number of other smaller improvements to Screenly that will improve the overall experience of Screenly.
 
