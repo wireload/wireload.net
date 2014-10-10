@@ -7,7 +7,7 @@ tags: news, screenly
 
 While things have been quiet around here, we certainly have not been lazy. To the contrary, it means that we've been super busy.
 
-Today, we're happy to unveil one of the things that we have been working on: a significantly improved playlist editor.
+Today, we're happy to unveil one of the things that we have been working on: a significantly improved playlist editor in [Screenly](http://www.screenlyapp.com).
 
 We think it is one of the most sophisticated playlist editors in the digital signage industry. Contrary to most playlist editors with advanced features, we have really focused on simplification. The goal has been to be able to enable advanced scheduling without making simple scheduling more complicated.
 
