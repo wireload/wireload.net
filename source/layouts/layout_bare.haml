@@ -6,7 +6,7 @@
 %html.no-js
   / <![endif]
   %head
-    %title WireLoad Inc - Annoyingly good software and services.
+    %title= content_for?(:title) ? yield_content(:title) : (current_resource.data.title || "WireLoad Inc - Annoyingly good software and services.")
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
     %link{:href => "/feed.xml", :rel => "alternate", :title => "WireLoad Inc &raquo; WireLoad – Fancy software online and on the Mac. Comments Feed", :type => "application/rss+xml"}/
     %meta{:content => "WireLoad designs software. We search high and low for interesting problems and then mercilessly work them out with fanciful applications.", :name => "description"}/
