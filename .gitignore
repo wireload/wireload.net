@@ -19,3 +19,5 @@
 # Ignore VIM temp files
 *.swp
 .vagrant
+
+Gemfile.lock
