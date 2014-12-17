@@ -7,7 +7,7 @@ tags: news, screenly
 
 Ever since we first launched Screenly we&rsquo;ve received requests from customers for turnkey Screenly devices. Many customers simply wanted to order a pre-configured Screenly device, plug it into the wall and be ready to go. Starting today, this is possible.
 
-### Added support for static IPs
+### Pre-configured Screenly devices available today
 In order to offer such a solution, we&rsquo;ve teamed up with the fine folks over at [Pi Supply](https://www.pi-supply.com/). Together we have developed a [Screenly Pro starter kit](https://www.pi-supply.com/product/screenly-pro-digital-signage-starter-kit/).
 
 The kit includes:
