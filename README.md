@@ -15,19 +15,29 @@ To fix formatting of an old blog post:
 
 ### How to Make Site Changes
 
-1. Install [Middleman](middlemanapp.com).
+#### Install Middleman
 
-        gem install middleman
+    gem install middleman
 
-2. Run it in server mode:
+Alternatively, use the Vagrant VM, as the above will fail on Yosemite.
 
-        bundle exec middleman server
+    vagrant up
 
-3. Open [http://127.0.0.1:4567/](http://127.0.0.1:4567/) to view site.
+#### Run it in server mode:
+
+    vagrant ssh
+    cd /vagrant
+    bundle exec middleman server
+
+#### Open a browser window.
+
+Just point your browser to [http://127.0.0.1:4567/](http://127.0.0.1:4567/) to view site.
 
 Now you can simply edit the markdown, HAML, CSS, JavaScript and so on which makes up the site. Middleman will automatically compile it.
 
 ### How to Deploy
 
+    vagrant ssh
+    cd /vagrant
     export DEPLOY_USER=YourUserOnHosting
     bundle exec middleman build && bundle exec middleman deploy
