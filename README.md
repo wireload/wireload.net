@@ -29,4 +29,5 @@ Now you can simply edit the markdown, HAML, CSS, JavaScript and so on which make
 
 ### How to Deploy
 
+    export DEPLOY_USER=YourUserOnHosting
     bundle exec middleman build && bundle exec middleman deploy

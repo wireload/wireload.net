@@ -77,7 +77,6 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  require v8
   activate :minify_css
   activate :minify_javascript
   activate :minify_html, :remove_input_attributes => false
