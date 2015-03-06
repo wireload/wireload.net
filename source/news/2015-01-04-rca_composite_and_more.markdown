@@ -5,7 +5,7 @@ date: 2015-01-04 15:00:00
 tags: news, screenly
 ---
 
-Here is a brief update on what we have been working on and released since our [last update](http://wireload.net/news/2014/12/turkey_screenly_devices_and_more.html). In short, here's a quick summary:
+Here is a brief update on what we have been working on and released since our [last update](http://wireload.net/news/2014/12/turnkey_screenly_devices_and_more.html). In short, here's a quick summary:
 
  * Added support for Composite/RCA
  * Improved the HTTPS/SSL support
