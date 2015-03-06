@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~> 3.2.0"
-gem "middleman-blog", "~> 3.5.0"
-gem "middleman-deploy", "~> 0.0.11"
+gem "middleman", "~> 3.3.10"
+gem "middleman-blog", "~> 3.5.3"
+gem "middleman-deploy", "~> 0.0.12"
 gem "middleman-minify-html"
 gem "middleman-blog-authors", :git => 'git://github.com/wireload/middleman-blog-authors.git'
 gem "therubyracer"
+gem 'libv8', '3.16.14.3'
 
 # For feed.xml.builder and sitemap
 gem "builder", "~> 3.0.0"

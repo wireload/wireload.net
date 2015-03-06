@@ -1,13 +1,13 @@
-- wrap_layout :layout do
+= wrap_layout :layout do
   #news-details
     #nd-head
-      = partial :blog_article_head, :locals => { :current_article => current_article }  
+      = partial :blog_article_head, :locals => { :current_article => current_article }
       %a#lnk-back{:href => "/news"} Back to List of News
     .post-content.nd-body
       = yield
       .tags
     #nd-comments
-      #disqus_thread      
+      #disqus_thread
         :javascript
           var disqus_container_id = 'disqus_thread',
               disqus_domain = 'disqus.com',
