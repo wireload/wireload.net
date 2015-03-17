@@ -11,5 +11,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
 
   config.vm.provision "shell",
-      inline: "apt-get install -y ruby-dev git-core vim libxml2 libxml2-dev libxslt1-dev build-essential && gem install middleman && cd /vagrant && bundler install"
+      inline: "apt-get install -y ruby-dev git-core vim libxml2 libxml2-dev libxslt1-dev libghc-zlib-dev build-essential && gem install middleman && cd /vagrant && bundler install"
 end
