@@ -9,7 +9,7 @@ Welcome to this brand new series of blog posts. In this [series](/news/tags/scre
 
 <span class="shadowed"><img src="/uploads/2015/03/international_college_hong_hong_secondary.png" alt="International College Hong Kong Secondary." /><span class="sh tl"></span><span class="sh tr"></span><span class="sh bl"></span><span class="sh br"></span></span>
 
-Today we're talking with Ross Parker (Technology Director) and Isaac Wan (Project Consultant) from [International College Hong Kong Secondary](http://www.ichk.edu.hk/).
+Today we're talking with Ross Parker (Technology Director) and Isaac Wan (Student and Project Consultant) from [International College Hong Kong Secondary](http://www.ichk.edu.hk/).
 
 ## Could you describe the digital signage project?
 
