@@ -110,4 +110,5 @@ activate :deploy do |deploy|
   deploy.host   = "se.hosting.wireload.net"
   deploy.path   = "/www/wireload.net"
   deploy.clean  = false
+  deploy.flags = '-rlvz'
 end
