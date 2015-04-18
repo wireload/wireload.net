@@ -17,4 +17,6 @@ In addition to Graphite, HostedGraphite also [Grafana](http://grafana.org/), whi
 
 Thanks to our partnership with HostedGraphite, it is now super easy to add your dashboards from HostedGraphite to Screenly. We've even put up a [quick tutorial](http://www.screenlyapp.com/use-cases/dashboard/hostedgraphite.html) on how to do this.
 
+You can sign up for your 14 day free trial of HostedGraphite [here](https://www.hostedgraphite.com/accounts/signup/).
+
 *Still haven't tried Screenly? [Sign up now](https://login.screenlyapp.com/signup).*
