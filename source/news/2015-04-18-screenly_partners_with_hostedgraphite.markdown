@@ -15,6 +15,6 @@ For those not familiar with Graphite, it is a very popular tool for graphing all
 
 In addition to Graphite, HostedGraphite also [Grafana](http://grafana.org/), which is a separate graphing tool which you can use to render the same data sets.
 
-Thanks to our patnership with HostedGraphite, it is now super easy to add your dashboards from HostedGraphite to Screenly. We've even put up a [quick tutorial](http://www.screenlyapp.com/use-cases/dashboard/hostedgraphite.html) on hos to do this.
+Thanks to our partnership with HostedGraphite, it is now super easy to add your dashboards from HostedGraphite to Screenly. We've even put up a [quick tutorial](http://www.screenlyapp.com/use-cases/dashboard/hostedgraphite.html) on how to do this.
 
 *Still haven't tried Screenly? [Sign up now](https://login.screenlyapp.com/signup).*
