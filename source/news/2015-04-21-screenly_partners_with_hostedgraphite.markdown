@@ -1,7 +1,7 @@
 ---
 title: Screenly partners with HostedGraphite
 authors: Viktor Petersson
-date: 2015-04-22 09:00:00
+date: 2015-04-21 09:00:00
 tags: news, screenly, partnership
 ---
 
@@ -15,7 +15,7 @@ For those not familiar with Graphite, it is a very popular tool for graphing all
 
 <p><span class="shadowed"><img src="/images/hostedgraphite_graph.png" alt="HostedGraphite Graph" /><span class="sh tl"></span><span class="sh tr"></span><span class="sh bl"></span><span class="sh br"></span></span></p>
 
-In addition to Graphite, HostedGraphite also provides [Grafana](http://grafana.org/), a separate graphing tool you can use to render data sets in a nicer way.
+In addition to Graphite, HostedGraphite also provides [Grafana](https://www.hostedgraphite.com/hosted-grafana), a separate graphing tool you can use to render data sets in a nicer way.
 
 Thanks to our partnership with HostedGraphite, it is now super easy to add your dashboards from HostedGraphite to Screenly. We've even put up a [quick tutorial](http://www.screenlyapp.com/use-cases/dashboard/hostedgraphite.html) on how to do this.
 
