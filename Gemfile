@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "middleman", "~> 3.3.10"
 gem "middleman-blog", "~> 3.5.3"
-gem "middleman-deploy", "~> 0.0.12"
+gem 'middleman-deploy', "~> 1.0"
 gem "middleman-minify-html"
 gem "middleman-blog-authors", :git => 'git://github.com/wireload/middleman-blog-authors.git'
 gem "therubyracer"
