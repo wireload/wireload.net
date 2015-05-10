@@ -6,6 +6,10 @@
     .post-content.nd-body
       = yield
       .tags
+    %link{:href => "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css", :rel => "stylesheet"}/
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"}
+    :javascript
+      hljs.initHighlightingOnLoad();
     #nd-comments
       #disqus_thread
         :javascript
