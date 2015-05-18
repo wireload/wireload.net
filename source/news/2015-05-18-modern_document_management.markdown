@@ -1,7 +1,7 @@
 ---
 title: Modern document management for your startup
 authors: Viktor Petersson
-date: 2015-05-10 09:00:00
+date: 2015-05-18 09:00:00
 tags: news, tips, startup
 ---
 
@@ -13,7 +13,7 @@ Many modern companies are using Google Apps for their email. With that, you get 
 
 At WireLoad, we're big fans of Markdown. We've used it for years for everything from blog posts, to page content and most recently even for legal documents. The benefits of Markdown are clear: it's easy to read and write for all types of users and it is widely supported across text editors.
 
-There are however some drawbacks. When writing documents with Markdown, you'll likely miss things like page breaks. Some implementations of Markdown do support this, while others do not (it's '*****' in those who do support it).
+There are however some drawbacks. When writing documents with Markdown, you'll likely miss things like page breaks. Some implementations of Markdown do support this, while others do not (it's '*****' in those that do support it).
 
 Since we do need this, what we've done is that we use LaTeX for features that are missing in Markdown (more about that later). A document could then look something like this:
 
