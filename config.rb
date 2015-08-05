@@ -106,8 +106,8 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :rsync
-  deploy.user   = ENV["DEPLOY_USER"]
-  deploy.host   = "se.hosting.wireload.net"
+  deploy.user   = "deployer"
+  deploy.host   = "se2.hosting.wireload.net"
   deploy.path   = "/www/wireload.net"
   deploy.clean  = false
   deploy.flags  = "-rlvz"
