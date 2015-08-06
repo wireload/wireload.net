@@ -18,15 +18,6 @@ To fix formatting of an old blog post:
 #### Install Middleman
 
     gem install middleman
-
-Alternatively, use the Vagrant VM, as the above will fail on Yosemite.
-
-    vagrant up
-
-#### Run it in server mode:
-
-    vagrant ssh
-    cd /vagrant
     bundle exec middleman server
 
 #### Open a browser window.
@@ -37,7 +28,4 @@ Now you can simply edit the markdown, HAML, CSS, JavaScript and so on which make
 
 ### How to Deploy
 
-    vagrant ssh
-    cd /vagrant
-    export DEPLOY_USER=YourUserOnHosting
     bundle exec middleman build && bundle exec middleman deploy
