@@ -110,7 +110,7 @@ when 'us'
     deploy.method = :rsync
     deploy.user = "deployer"
     deploy.host = "us.hosting.wireload.net"
-    deploy.path = "/www/wireload.net"
+    deploy.path = "/www/www.wireload.net"
     deploy.clean = false
     deploy.flags = "-rlvz"
   end
@@ -119,7 +119,7 @@ when 'se'
     deploy.method = :rsync
     deploy.user = "deployer"
     deploy.host = "se2.hosting.wireload.net"
-    deploy.path = "/www/wireloa.net"
+    deploy.path = "/www/www.wireload.net"
     deploy.clean = false
     deploy.flags = "-rlvz"
   end
