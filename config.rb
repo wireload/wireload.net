@@ -104,23 +104,16 @@ configure :build do
   end
 end
 
-case ENV['TARGET'].to_s.downcase
-when 'us'
-  activate :deploy do |deploy|
-    deploy.method = :rsync
-    deploy.user = "deployer"
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user = "deployer"
+  deploy.path = "/www/www.wireload.net"
+  deploy.clean = false
+  deploy.flags = "-rlvz"
+  case ENV['TARGET'].to_s.downcase
+  when 'us'
     deploy.host = "us.hosting.wireload.net"
-    deploy.path = "/www/www.wireload.net"
-    deploy.clean = false
-    deploy.flags = "-rlvz"
-  end
-when 'se'
-  activate :deploy do |deploy|
-    deploy.method = :rsync
-    deploy.user = "deployer"
+  when 'se'
     deploy.host = "se2.hosting.wireload.net"
-    deploy.path = "/www/www.wireload.net"
-    deploy.clean = false
-    deploy.flags = "-rlvz"
   end
 end
