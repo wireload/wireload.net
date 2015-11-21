@@ -16,9 +16,9 @@ The event is hosted at BBVA's Innovation Center, and is free to attend. You will
 
 ## Experimental WiFi support
 
-By far the most popular feature request that we have received for Screenly has been the ability use USB WiFi dongles with the Raspberry Pi.
+By far the most popular feature request that we have received for Screenly has been the ability to use USB WiFi dongles with the Raspberry Pi.
 
-After extensive tests here at Screenly HQ, we are today excited to announce experimental support for WiFi. The WiFi support is limited to certain USB Wireless dongles. We still recommend a wired network connectivity for production installations, but we understand that there are certain situation where that simply isn't possible.
+After extensive tests here at Screenly HQ, we are today excited to announce experimental support for WiFi. The WiFi support is limited to certain USB Wireless dongles. We still recommend wired network connectivity for production, but we understand that there are certain situation where that simply isn't possible.
 
 If you're interested to enroll in the WiFi beta, [please let us know](https://wireload.zendesk.com/anonymous_requests/new?ticket[fields][468723]=screenly_pro&ticket[subject]=WiFi%20Beta%20Request).
 
@@ -32,7 +32,7 @@ Over the last year, we have attracted many larger customers. These customers ten
 
 We have displayed the MAC address during the pairing process for some time. Many users however requested that we would make this information available even after the pairing (as it is frequently used for device discovery and identification).
 
-We're happy to announce that this we've now made this information available to you. In addition, we also now expose the local network IP address for the device.
+We're happy to announce that we have now made this information available to you. In addition, we also now expose the local network IP address for the device.
 
 <p><span class="shadowed"><img src="/uploads/2015/11/network_status.png" alt="Update Network data in Screenly" /><span class="sh tl"></span><span class="sh tr"></span><span class="sh bl"></span><span class="sh br"></span></span></p>
 
