@@ -101,5 +101,6 @@ configure :build do
     # needlessly to have to scan all these files before the build.
     `cd build/downloads/ && rm -Rf wktextview-sample && tar -xvjf wktextview-sample.tbz`
     `find build/ -name .git -delete`
+    `chmod a+rX -R build/`
   end
 end
