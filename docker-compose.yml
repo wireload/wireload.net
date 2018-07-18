@@ -1,0 +1,16 @@
+version: '3'
+services:
+  middleman:
+    build: .
+    command: middleman build
+    image: wireload_net:latest
+    volumes:
+      - .:/usr/src/app
+  nginx:
+    image: nginx:stable-alpine
+    volumes:
+      - ./build:/usr/share/nginx/html
+    ports:
+      - 8080:80
+    depends_on:
+      - middleman

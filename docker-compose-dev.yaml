@@ -1,0 +1,6 @@
+version: '3'
+services:
+  middleman:
+    command: middleman server
+    ports:
+    - 4567:4567

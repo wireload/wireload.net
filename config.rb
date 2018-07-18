@@ -103,17 +103,3 @@ configure :build do
     `find build/ -name .git -delete`
   end
 end
-
-activate :deploy do |deploy|
-  deploy.method = :rsync
-  deploy.user = "deployer"
-  deploy.path = "/www/www.wireload.net"
-  deploy.clean = false
-  deploy.flags = "-rlvz"
-  case ENV['TARGET'].to_s.downcase
-  when 'us'
-    deploy.host = "us.hosting.wireload.net"
-  when 'se'
-    deploy.host = "se2.hosting.wireload.net"
-  end
-end

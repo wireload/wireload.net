@@ -1,33 +1,31 @@
-To fix formatting of an old blog post:
+## How to Make Site Changes
 
-* Rename it from .erb to .markdown.
-* Convert its content from HTML to markdown.
-    * Method 1: http://html2markdown.com
-    * Method 2:
+## Development mode
 
-            brew install haskell-platform
-            cabal install pandoc
-            # copy the content
-            pbpaste | ~/.cabal/bin/pandoc -f html -t markdown|pbcopy
+```
+$ docker-compose \
+  -f docker-compose.yml \
+  -f docker-compose-dev.yaml up
+```
 
-* Hand edit the markdown to fix any incorrect linebreaks.
+And point your browser to localhost:4567
 
+## Test mode
 
-### How to Make Site Changes
+To test a "build" of the website, run:
 
-#### Install Middleman
+```
+$ docker-compose \
+  -f docker-compose.yml up
+```
 
-    gem install middleman
-    bundle exec middleman server
+And then point your browser to localhost:8080
 
-#### Open a browser window.
+# Deploying
 
-Just point your browser to [http://127.0.0.1:4567/](http://127.0.0.1:4567/) to view site.
+Just pushing should be sufficient. The branches have the following mapping:
 
-Now you can simply edit the markdown, HAML, CSS, JavaScript and so on which makes up the site. Middleman will automatically compile it.
-
-### How to Deploy
-
-    bundle exec middleman build &&
-    rake deploy:se &&
-    rake deploy:us
+| Branch | URL |
+|--------|:---:|
+| master | stage.wireload.net |
+| production | www.wireload.net |
