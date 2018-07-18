@@ -5,7 +5,7 @@
 ```
 $ docker-compose \
   -f docker-compose.yml \
-  -f docker-compose-dev.yaml up
+  -f docker-compose-dev.yml up
 ```
 
 And point your browser to localhost:4567
@@ -26,6 +26,5 @@ And then point your browser to localhost:8080
 Just pushing should be sufficient. The branches have the following mapping:
 
 | Branch | URL |
-|--------|:---:|
 | master | stage.wireload.net |
 | production | www.wireload.net |
