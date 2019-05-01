@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="IdProvider" IDEtalkID="91C105BC1889D5716D1FA7FEF44A55D4" />
+  <component name="ParserProjectConfiguration">
+    <class-path />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
