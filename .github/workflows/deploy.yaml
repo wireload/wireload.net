@@ -30,15 +30,24 @@ jobs:
         uses: actions/configure-pages@v2
 
       - name: Build container
-        run: docker-compose build
+        run: |
+          echo "Skipping build"
+          # docker-compose build
 
       - name: Build content
         run: |
-          docker run \
-            --rm \
-            -v $(pwd):/usr/src/app \
-            wireload_net:latest \
-            middleman build
+          echo "Skipping content build"
+          # docker run \
+          #  --rm \
+          #  -v $(pwd):/usr/src/app \
+          #  wireload_net:latest \
+          #  middleman build
+
+      - name: Retrieve static build
+        run: |
+          mkdir -p build
+          wget -q https://storage.googleapis.com/wireload-hosting/wireload.net-static.tgz
+          tar xfz wireload.net-static.tgz -C build/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
