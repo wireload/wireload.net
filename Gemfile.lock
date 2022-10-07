@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/wireload/middleman-blog-authors.git
+  remote: https://github.com/wireload/middleman-blog-authors.git
   revision: deb3931f8c1cd473a0f10d76ab7a1f47271463da
   specs:
     middleman-blog-authors (0.0.1)
