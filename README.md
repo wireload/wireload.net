@@ -23,8 +23,4 @@ And then point your browser to localhost:8080
 
 # Deploying
 
-Just pushing should be sufficient. The branches have the following mapping:
-
-| Branch | URL |
-| master | stage.wireload.net |
-| production | www.wireload.net |
+Just pushing should be sufficient.

@@ -7,8 +7,8 @@ RUN apt-get update -qq && \
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
-ADD Gemfile /usr/src/app
-ADD Gemfile.lock /usr/src/app
+COPY Gemfile /usr/src/app
+COPY Gemfile.lock /usr/src/app
 
 RUN gem install bundle && \
     bundle && \
