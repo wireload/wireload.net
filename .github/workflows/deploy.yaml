@@ -32,23 +32,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
-      - name: Build container
-        run: |
-          docker-compose build
-
-      - name: Build content
-        run: |
-          docker run \
-            --rm \
-            -v $(pwd):/usr/src/app \
-            wireload_net:latest \
-            middleman build
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'build/'
+          path: 'rip/'
 
       - name: Deploy to GitHub Pages
         id: deployment
